@@ -1,0 +1,383 @@
+# ========================================================
+#  News Monitor - Detected Article Links
+#  Newly detected news links are instantly appended below
+# ========================================================
+
+[2026-11-09 11:21:55] [Ciberseguridad] European Cybersecurity Month (ENISA)
+https://news.google.com/rss/articles/CBMigwFBVV95cUxNMjliTlAtQjQ3UVZhWExjQjQyeUJMRTBaRjE1dXVfUnJFUGVSbFNJS1pEZUJmeTN3c1ZILUVIVXZYM3BObmUwczdKTjd3OTFZRTNSWkgwVHNLMEw0Zzhxb2NUczhfTm5xUGhQU2RYVWdVc3RwVEQzWUZRLW1vbC14eEtvQQ?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents (OpenAI)
+https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tRzhtYk1MeTljUjdBLW5pMUJCVWJYZ0RzUXB3a0VnVlVtTEtCRHhDR1ZGeEZwOXNvdUp3N2hOMklObzBQbHRsV3lna0xiLXNlSHBOS3RyS0M3dFRZMFE?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] GPT-6 Cyber vs GPT-6 Astra: qué obtienes por el doble de precio (OrcaRouter)
+https://news.google.com/rss/articles/CBMiZEFVX3lxTE03SmEyV1BFbXZpc0h2WE1xR2ZwUW5EN0NVSk1Dbm1QTkhGeml2d25qM3pFTkRFTFRsN2dUdGdpM1EyMUhST1QxTW02ZzFFZkJOMjlPaGF6cEQzQTI1d0RuOEZiaXI?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] President Trump’s cyber strategy for America (PwC)
+https://news.google.com/rss/articles/CBMirAFBVV95cUxPVHVGaDNSOUJ3SG95TUgzTWpJbE1FWkRzcTRHSU5qM0VXdnAxd3ZrRjNnc3FKVU9fWWRlZm5TT296bVdEdWhkdmloZ0lobHJULU9aX0NTWkhCYmU3U1pSZWxJN2pGUDd1VVdMNmpnRmMxa2RaTHF0bDh1bm5DelJUMGdGYXBva2QtckNwQWhsVHI2RzJrNHd6bFkyY3AtQVo5eEJya0s3TEJ2eFk3?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Cybersecurity Market Size, Share & Forecast Report, 2034 (Fortune Business Insights)
+https://news.google.com/rss/articles/CBMijgFBVV95cUxPMFIxZDUwdGM1SkItQTllQTFQenlBYnVnZnhpdXJkQlRSQWFFdFY4MDg0VVNSY2RaUDhjbE0xcElnNnVSNmhfQnFzQXJuLXAzbEFoaE16WXFEQWVKeURtaHZXckRFOVNHSURwN0p0OE5tLXZvT3FJVnpoWEJTLWJ2d0hOWUVxdS1rd1ktYkZB?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Cybersecurity and New Technologies | Office of Counter-Terrorism (Welcome to the United Nations)
+https://news.google.com/rss/articles/CBMigAFBVV95cUxNa25PdUhyZ1hJS042Q0FCTTVoeHhOQ1BVd2JSeE1LUFc4a1dsaUhPb1EwUU9vWTE5OVowUG1lN1dSNHBYTFZsYkRiOXpTZ0NDSUlWSmFJUUF4UEZHeFUxRGVtZVBrMWdvTWJmNUVDZ3l3dFZBTU91OFNGWUJlNGo4Sg?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Critical security issue affecting PHP (National Cyber Security Centre)
+https://news.google.com/rss/articles/CBMidEFVX3lxTE8wdm9SdW95Tm5BYjN5d0Qwa0h3a0E5T2hOT2ZoNHFleTdxcHg0WnhjdWlrdHc3bnlpOHRtUGR2bjEzcTFlOVdxOVBGNWJKUGV1Rjhsa2VnTUxPNFNKWG94eVNLanFpaUdXNDBRTmo0WFo2Q0Zx?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Mes de la Concientización sobre la Ciberseguridad (Cal OES News (.gov))
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLTlRZ0RPZ0NxQzVvX0lzVkxzTUZuR0VHbUllRTg3d1VKa2FYdDI2QXBXTjRBRjBMOWdUN0tOTzdkeWxSTE9UclIzbHhPTGtpekZZNWRJV1lvNDAtb2dXeENqdnJvV05JeWhDWWdyVDhyYW1yOGEzYy02cWhlMUJiZTF0SjNJTXAz?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] La ciberseguridad y otros temas cruciales ocupan un lugar central mientras los expertos se reúnen en Dubái (World Economic Forum)
+https://news.google.com/rss/articles/CBMi6AFBVV95cUxORzVyR1pjWWFadkV5ZWptVzF4eFFXLUZlX2Y0WUNaUlNOa2ZtZl8yWHpKTEN3Wk1RVmF0Z2NVN05nVV9BeUVnVVdURjRyaWJ5R3B4SjdCNHZVbF8yWUFHeFRZc0hXVXd1VmZKTlRrazJfZFJhc0pzOFc2ejk4YUl0a01HbEFxQ3RtTV9YbFBESEY3VTM2dEg0cWs4R01UYlNha0xGTXNINzk5RVFMcFg3Sjh1OGNlTUd0UTA2eGJUNkZkYWU2cENXNjJKUmtjb0szWUthazhPV0g1aTh0NWMyeXMwV1IxZU9p?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Next ‘24: Make Google part of your security team, supercharged by AI (Google Cloud)
+https://news.google.com/rss/articles/CBMivgFBVV95cUxOVVVEa2RsWDVVa0ZpZmNDTzVEazVhT2RMUjBYNk5QTmJFQlUwc2ZYZUdSUFh3ckRSMDdON1JONjZub2YxWmlCNjlsbDRoUkEwMnpSdkZwWmZoWGlsQnBkVzE4Z21KOXpMUzRMakh2ajBJNzNOeGNSMkxXcXRzbTctcURJQmRyaXpXekN6UXQyWFB5TXg3QmVXOUJuTjRWMW4tNEpJSHlEVnVRM09ZTUU0NGNpVFBuVFdpVzY2aVhB?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] 10 remote work cybersecurity risks and how to prevent them (TechTarget)
+https://news.google.com/rss/articles/CBMinwFBVV95cUxPdVBrU3RIcVBab0ZXYjFENExkM0tjWDM4UnBxMTNTVGpaVzhLYlZoUF82YjAtV2hQdzdLZ3p1ak1BTVVsZ2M0RkljNlNPQ2h2RGl3YUFDWXZQZ0x5d0ZYbXhlOGZQMllRTklMaU1nVkh4TG1kbWhEVE1oem5QbWJrQVpHOGJxTnp1ZVZaZm1sOFVFMzFfVGdkZENjeXZWbDA?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] La ciberseguridad centrada en las personas: el nuevo enfoque que exige la Ley N.º 21.663 en Chile (IAPP)
+https://news.google.com/rss/articles/CBMiugFBVV95cUxQT3pxR2k3eEp6QzNja2QxOEh1OVY3TlplZ3JtN1dEZFgzQTN3ZlNRa3dVZWJJdUxFTmVGNzFqY21Wd3d2eVRTS2hCb3lkdXRxOVB1OTJSX2RFLU1wX1dyTFI5dkNQV0J2TWQySjF0d2k0NExHZWtmMW5OcjNNYVg2TXd1Ri12bmNMeGs1ZWNhM2tnVWNwWEk5QUlfcVJQcmxGemRrcUJqaWRTSXJTNVBtbFdISGZ2UHlZVXc?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Inteligencia artificial y ciberseguridad con GenAI (Zscaler)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUzREd0VBeEJzaFdwaG1POTFaWFlTOHU0UG1nMFBBLUJrMndYZ1g2MzJhOERTZFpFTzI1VGNnSTFmdHF1cjdIZmxyVTdCa21NUmpEcU11ODc4eHZUNTFZSlA5bXk5ejRFZXlxQzRrRDhfSGpxa2g3U1JuYWhMQ2RZVzR4c28yU3FG?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Cybersecurity Awareness Month (CISA (.gov))
+https://news.google.com/rss/articles/CBMiX0FVX3lxTE95SEI5S1Q3SDNnUk9DUUdJVHpNTHZkMjdVcXJnRk1nM2VneGU2WXZGS1BuWmsxX0p3YWtLWWhPQzJ4WEUtVjluWTJRVzBRSUhQcVdFZ0JPRWxtR1FTUWFF?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Mes de la Concientización sobre la Ciberseguridad 2024 Inicio (National Cybersecurity Alliance)
+https://news.google.com/rss/articles/CBMinAFBVV95cUxQMDU1bnI4MDVyZkVJSWN2VTF5YjlOeFd3UVp2VTVTMGV3WnF2VTExdXdyYlRZVVJCNEhOS3ZPV3QyT3FQcXVFSTNhdDhlMFRXUGJTcnQzcnpXMC1TVnZkbkh2UjVRaEZGYU5WLVI3SWJ1ZDZWbmtSY3VEMENLbm9hOC1DeXo0UFRrb2NOYndMRTBCalNjQTNhZkVoV2w?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] New network code on cybersecurity for EU electricity sector (European Commission)
+https://news.google.com/rss/articles/CBMioAFBVV95cUxQYjZZQkZwTEpsVTBvTl9fRF9RTFNQX09ITUQzSGRPdE5tdnZuOV9IZm5nNjZ5NVkzUURtRW9VYWFDUi04czJLSmlETWhlXzZKNnk0bk82bHVGdlpiazRlTXdSQVdCTkRKbDd6WkJIdVFQaGF6dVo5NUlSYmpIUzUzMW1VdkticzNQd2FNLWJnMG54eENxNmFyejY5R0phYjBL?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Una doctoranda de la ULL, en la Selección Española de Ciberseguridad del INCIBE | (ULL)
+https://news.google.com/rss/articles/CBMixwFBVV95cUxNV1BsdVZFRnpSYUo0cDJhWkhRNVp6cWtVVjRBTDJVbkFKajVCLUU2ekdqaDI3dzhNSDNidVFRVWREUEthZ2hRdF9OT2xpQTQwMHEzVGZpSHJla0lfeWllMnRWQTdjRWxtVkxieHU2ZWk5NFV0ZUpIcWl1MU5UYlZJWWlkOWcxLWNvYXloQy1kWVZ2SUpjelhqZ2VZS0dadTd4NndIdFlnTU83MWttbW9XNVZJdGh0RDBmSmVTLVpzVHpfQzFCOHV3?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Emiratos Árabes Unidos y Uruguay firman acuerdo para la prevención de ataques cibernéticos (GUB.UY)
+https://news.google.com/rss/articles/CBMigwJBVV95cUxNR1hmeTA3bU9sY21FSGdjMWNXUHlZN1FUc3RGN1F4X0lmSzd6QW5uYmlDZzMtN3NNcjB2dVV1MmRtXzQ2S0w2LUctbmQxdmswaDRQekJheGZ5WTBQZmRqN1ZKVndMWEhHLWljNG9rc29YXzh5b19jSGV2R2NmNFlhclV6UjIzNXJzV2lycVliVGZ4TFVpSFBGZ0NWTFhUOVRqWnBCQkJQeEtwc2RHRmpMNW8tZXlKZ05YYzQzSmNXMTg4S1M4RV9nN0VGWGdjSTBKSkJ1WnVxOUdxdTR3eXNRaThma052di1XOE1VN3BkTDAtN2diQmpVTG5LMHpORUVIUmo0?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Cooperación en materia de ciberseguridad entre el Canal de Panamá y el Comando Sur de los EE. UU. (pancanal.com)
+https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSG1NNHNXYU5wWG4waHFXUTVNMmswaldMcHp5MHUtNFNRR1RQWEtfVWdGNEphcGRtX2Vva2pYaU9kbWpjakZYRWE1QUg4VnY3azFJTldhS1hnMEZRbnlndzJ2b3B3QlZoWGl4R2xKS0NfN2tPQ2pXWVZKR3hORXl2c29GckZfZ3VKSHNZOV9ta1pDTnFrV1g1QXVPWndTLTc1MlAyQWpQbFlhYlp2UlVsdk92ZWREbmhM?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] ChatGPT and large language models: what's the risk? (National Cyber Security Centre)
+https://news.google.com/rss/articles/CBMiigFBVV95cUxPakI4WDlDckx1aTkyME9vRFZpQklXa01jTk96ZHZkWUZ0X2JpdmVoVGQxX2FQdzBUVlhaX0hFbGlqWXdkYUo1Mk45N0xycDQ1ZGg3RVpmSXlHZ2NFSHpJWkJlRm82UDQwTkhQUHNLblhkaUtDMVFUazdxb0J4RXJmYmRoTVpiMWJfMWc?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Anteproyecto de Ley de Coordinación y Gobernanza de la Ciberseguridad (Departamento de Seguridad Nacional (DSN))
+https://news.google.com/rss/articles/CBMiTEFVX3lxTE5mcjM4SVlfa2xacWpuWXdHS21CMEFGcjBHNVg0cmlBc2lLemZVRnRBbnpDRkItRnNSZWFuUzRtbkpKNUxPdDBGMXNBMGg?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] COMUNICADO DEL MINISTERIO DE JUSTICIA Y DEL DERECHO A LA OPINIÓN PÚBLICA (Ministerio de Justicia y del Derecho)
+https://news.google.com/rss/articles/CBMizAFBVV95cUxOZ1Zyd2lvd01sV05oY3RVOXFxb0lvLVlmMmRDY0c1TFg1OEM3MTNvTG42LVdUWGNuYVpfLWtqSk1CLTBiYms0bkVvVTg0bGp2NmNlRUlPYnBJSmdzQVFQazNKNm9OYXpFdVhDeFZ4QjNPbEt5bWJvNENKMG1rX1Z3RWFKSlNxMjVUaG80R1l5WlZiX252S3U5dk1Eb0wtVFZVRUIxTkhESE5mYS1DWEw0bnBRZDV3VUE1SlRoWEtjbHdOSVJ2TFJ0UVZlZkw?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Ministerio de Ciencia y Ministerio del Interior presentaron resultados del informe sobre I+D en ciberseguridad en Chile (Ministerio de Ciencia, Tecnología, Conocimiento e Innovación)
+https://news.google.com/rss/articles/CBMi7wFBVV95cUxNcGhUbWt5Q1JKdkdDU29OdkVILTBGSC13alAyVEJoRUt2MndhOW5mUHJMclNQdmNCVzNlMzRYVGpDOVBpeUZMaXhmbl9SQ2RROFl0YlMwSWtEbDJTd1hOM1ptMU1DTlBkY1ZMZzhOQ2p6V2RPZGlpb25fb1ZlQ1hPY0h1R01OMFNHblR0TUlDby13NW83ZGpIQkppTGlGTHc0d1k4cld4X3NaM0wwU1ljVENaYTB0QTRGZnJyZ09CdkJDX1lrTGVuR3F2VU42RWFoWXhBaEVHWlpKcDdrWVdLVjhkaURTb3l1NGlqazhFUQ?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] El laberinto de la Ley de Ciberseguridad en España: retrasos, presión de Europa y nuevas exigencias en camino (Demócrata)
+https://news.google.com/rss/articles/CBMixAFBVV95cUxPQUxRTWlaN1c3Vnk1ZEFJTUplT1VZMHhVSXpGQzFWcUkwUnJYVzNmZ2xwZU9za1JnaXBoZ0FfWTFyUzctUWtRcGItQjlnTTlPN2JsbmNEdjNUbUJMYzljcTktdDh3RDJZZFhIanhRVVE3R0dNTGJtYWxlNHBheUlITy1fLWhxcEFwWEg1bzRVcEhPVk5mNkw5Q3Z1MFhRWXZZSV91U3ZCbmM1aEVlcnN6Q2VINExNbW50RWI4Z2JoSk5ldGRS0gHKAUFVX3lxTFB3aUdGdVhKRXZla3VIWHVEYXF5czVFeldKR2x6T3RINl8tVlRVaEVCdkUyLUQtNHh5anU0S21pWGRPTkJQek5NSDRubXhZZzV3bjVJdmYwN2tjdUp2Q2VFX0dfMmVOTm5JWXZxcmdDOEw5UUJCTzF4WlRtTDA4YmRpRmc0MkNwYmFON3ZHRXZkSEhtSGt3cDN1b2ZjS19yMmxDSnB2V1pLVmtKMER2eDRySC1HekVoVUtHSXN3VmpwM1M5MlM0YzJCbnc?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Indra acuerda la compra de la firma madrileña de ciberseguridad TRC (Expansión)
+https://news.google.com/rss/articles/CBMigAFBVV95cUxOcW1adEdhNklCX0FTRHE5dHFEWERpcUZ2NktVMHdjbzZqSTRnNTRtZUthczY4eFNkbHZESUtwRV9kdHIwcWZkTlV2ZEd1eUZickE4WXhlQjE4MWVTRkdkTlN4dVR4bFZ1MVVfZnp6Wld1NXJmQzA3bDBZYk5RWkl1MdIBgAFBVV95cUxPdFdqOTV2dzFMUzNTVTV4V2JfV0N0WTZ2cXpTM1g2REpUSDVQQV8ySnVFTTEyb09nLTVjYlRLUk92MUtHTmxtOWxyb0RMWEFKb3hrbXdUM0VLLVZjT01HclRMT1B2bTZFZGZZMm9fZXl3dzhqWlFFb1hYNlFnZjhoLQ?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Indra acuerda comprar el 30% de la firma de ciberseguridad TRC, con la opción de alcanzar el 100% (Cinco Días)
+https://news.google.com/rss/articles/CBMi4wFBVV95cUxQem5uOWR4d0N0eXJBMTNhY2w5UWJFTHRkWk03VWN5VG5JSkJ2NVA5ZllCd045LU52NXhYaDhxWjAyV0hSc19ZSlFDS2VvOV8xMWFCWmt5bVg3SndfeVRjOFh6UWVtYXp3Yi1EMm4tUTlZVzRmSDRlU1RiV014dXBYMC1wWkU2ck1UN05VcFQ5QzBUUjhmRS0yUklkM3BnaW9wR1d3cTlJcDlDNU9uR2x0WFBZQTZVYU05VjQwMERhR1N2czJNczhSSEVwYlVseGRoLWVSTVliX3hVNVVuN1FrbHo1MNIB9wFBVV95cUxQTWNfaEEzcWVhV0l2ekh0eURBWHlVYTdMY2lTVG5iUU5TMUNUQ21peXljQXZOUWhOYVVtd1RpZUx3OC1jWm9uUm05b0kzdzRPdUZlTWY1UllWZFl1aGNsYWduaVVySU5ObmtkWG9ob2FlSkUtNFB2Qm40UXMyaDlqamRTNlZRblMyMG9GUjV5Vzd2bEh1cUNvcGd3cmJwd0FGUFZXNWRVd1kxdldXc2xGeXh4MGxFNVlCOS1rRGtYUDVjY3BmLW1Ydmxyc2drVkRvc0RKOWdwN3RVQjQ3SWxnY3FRbngybGtGVkhoTFRmMVpROG5rS1Zz?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Una de cada 2 exportadoras con riesgos en sistemas de ciberseguridad: ¿cuáles son? (Gestión)
+https://news.google.com/rss/articles/CBMitwFBVV95cUxONThiUjRIRjBxYU9FMGp1ZHN2RXo0dnRodFNQaWhZTEpOVlA0ejZVNjJmc3FaQ2xMczdRN1hRUWVGandYYk1IQTN5R0U4UkVWNk1xSGVUbVROMENoT0tVdWNCamR4RTkyeWZVdm5mbHBuakJWOVVKd1lsVFdjb0NwdEJnNlFzOVRHcFl6T3JLSUhyeU16dk1lbmZGdEdMMmUxTWRIMEFQTnU0NDlIREh3RVo0bWZybFk?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] ANCI inicia consulta pública para definir los estándares básicos obligatorios de ciberseguridad en Chile (trendTIC)
+https://news.google.com/rss/articles/CBMi0wFBVV95cUxPdVpsNnE4M3NKdHZlSGFOSW1Da2ZVdHJCWjhBY09KMm52emFHX0gzd3NSLXFPVnQtN2tubHlkNmk1cDk0ZmxlNk5reWZyS0VqbnAtM2ExSGJUd0lfV25ydllaYUZvY0RjSC1DbkFHTWEzZk9MangyN0RhSDJfbmNWWDJqb0U1U0xldmxlZjY0cndqd3VKcE80NjE0dzJsdXVnazNmYmtuUHAyWGp0elFja1huQ2ZNeUNWRG43ZHBSeXNrd0s0c0tEOGlXSFctalIzTGxv?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Aiuken compra la firma de ciberseguridad 4Elitech y se refuerza en el sector industrial (Expansión)
+https://news.google.com/rss/articles/CBMimgFBVV95cUxQT3BydkI2X3NyZldOcVNLeU9lNWJqNmZuRVhwajlFcTVxZ3Azb3lFaEtxQlFDY252Vk5aNHM5ZFpzQ1lPeUY3X2xac2haWGpkV3VhQTFLM3F1VjBUZFBHWjhOWXdCRkstLWJIbXZDcFB4SDl5b3B1OHJDaG5IZ1FUMXJwOXp5LW1iZWZwcU41SkJ3cTFGRDRSNkx30gGaAUFVX3lxTE1CdjdYZHFfRlpPeDRCSUdBNXpRNWN4TW9tWWJ0c2p5TWYwdURNNWJhb3d6bWFGdXF3NVRaTHAxM2hmSXZVUVRzdzlfNGozeWh1UUt3ZWZnamcyQXlWcmRqR2NnYmhGQTNOUkw4VVZuWk9TR1BIU0dMTXd6Z2tlU3pZbkpFUEZTSEZ1aGZmdUkzZ3Y1elVDYVVLR1E?oc=5
+
+[2026-11-09 11:21:55] [Ciberseguridad] Industrial Defender incorpora la monitorización de la seguridad de red y Risk Signal™ (PR Newswire)
+https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRFd4Q3hPWkpqSGRNM081QVF2U1FadElqTG50c2YzSEpmRFlGOFBrM0NxMUoybmZNRlp2OGJyZHRiQ2ZtS0pFZ3JPMmx6dl9UNlVWZUVpbWhtQkR5YmVBMEdPN251SGhWLUV5QkdkbEsyaWU1MURiOXdTcDhaVmp5VG1ZOU11UTl3U2RHSTZmdFVIWlpwVEFhM1FuaTZFcDR5alN0a3NPb2U0TFI2UjV0NmxpaUdQX1R3R2U1ZnNreWloQUY2LXowMWtFclZmWDZWNmczdW5nRQ?oc=5
+
+[2026-11-09 11:21:56] [IoT] Semtech Launches SGP.32 Multi-Profile eSIM for Global IoT Deployments (Quantisnow)
+https://news.google.com/rss/articles/CBMisAFBVV95cUxNVVJhSjNLeDI4M1dCa24tUHJjdTk0Q2dsemh4MFIwMVFlTTNIV3NiMkVyel9VRzRPbGEzM2RYdV94XzI2bFd0THM2Y1JuYV9aOElTWnpwLVFVYmc0ZkIwa1pPVWZ5WFZpOWZRcWRvVzJTY3FiNTJtamhXNWVVMkVmaW4ycTdwN0M5NW1ZOVYtMzRjZkFUUEVYci1CY2p0b0NtNXR1R201cTh2VlJuTjdBTg?oc=5
+
+[2026-11-09 11:21:56] [IoT] SparkFun IoT RedBoard ESP32-P4 – Arduino UNO-like ESP32-P4 v3.x development boards with WiFi 6 or PoE options (CNX Software)
+https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRjgxSzlhR2g3Mk9LbXF6aG1vTEw3eVJycVVRWUNraUJmUGY1Um1VbmNSME8xd05YekNyNlJ2SThlYlhtZWZKaUJqNlFkQjNYWmlaZVhrTjlkenpSUldGaTBMRkUyWjZqMmRCeGNSUm55Q1U0SEcwMTVGX0h1eFVoenVvdVM4T0ZsVjRBbGs4MU9EVkhvNmVIdkhIclc0QXhrQjYzYVJXM2lWbzczMnVlX3RES3kwTnJOc1NFb2VVdXplYnZvdXBNQkkwMnFMS21McjVpLUE2Zi1QU0RfWG1QRXB30gHqAUFVX3lxTE5ZVmxTT3M4S3p2bFJnUHo4ZjZUbDg3d0xlN2xLb2pCY2ZzeEhXelVkdmdHTy1uNW5WZXZjYTdSTFkzUXAwVTlYcmtvVEZlMVhJaHhBRHVmRUJudUlST2FaTS1iV3BSQWJXQndwazR6YVhlSVFDNW5ZOE4wdWxKbnBQZ3FUTVBfdW9yWWx5QmdJTFhiTDRFbkRLTHBFVW16S010bG1lUWZFSlV1NVZ5U29PVGtIcjhjdzRVQl9uM2oySG50MXZjUWZqcVFNZEdrZXdOdGFaaVk2R3RLcXRTZnZxSXNDa3R1Sk52dw?oc=5
+
+[2026-11-09 11:21:56] [IoT] Smart home IoT users in the MENA region put privacy first, survey of 164 people finds (Bioengineer.org)
+https://news.google.com/rss/articles/CBMirgFBVV95cUxPOXd6Tjc1MEk3WDN3MGtOM0l1OGxsSWFENnd4cVRFYWt1UGxOaUgyS0h0TXVodmVIVVZ2ZHdWZnUzVE9IRjFwT0NYWnRlT3B4SkNSc2xvTzFwNExLVndhb05kVnlqRDV5NGJ4NUU2NGVpZlZUbVpTVXNmVURNVG02OFhhdDJtZHplVGhobXhTajFvalFfZ2I2THg4WVA0eFNtSFdqUlV6QnJfTWNxN2c?oc=5
+
+[2026-11-09 11:21:56] [IoT] Semtech Launches SGP.32 Multi-Profile eSIM for Global IoT Deployments (lincolnjournal.com)
+https://news.google.com/rss/articles/CBMijgJBVV95cUxOTWpYMlNrbTRlYmFqVXdpUXJ1Mk5QNjlyRlRpMEg0NjFwWmdaeHRMenBUampHNWJxZ0RHV2dDM2NzemZVV1AwOHo0VU10bHhRYktFYnRuUHdCQTVoWGtxRnJ4bHN5QnRvaGVOekNrbTllZmdYck8zN1dWWFBzQWJRcUxGMXlDaUJwSlpmSUhEMzRfeGhLNEpUVlZlemR0X3ZEemJEVXhSemhvRWpLNHlpS0R4VDNIeUlPUEJESFV2MHM5ekh1QXRaZTN2SVMzTlRsRlhwM1I2RWxZdnBYUkp4RWdtaW1WM1pNUkNMLVRPU0hpTHhMM1hPRzJiVU56UUJxVlRYMzVYLWFvRDlCV1E?oc=5
+
+[2026-11-09 11:21:56] [IoT] Vodafone IoT, Skylo launch satellite connectivity service (Advanced Television)
+https://news.google.com/rss/articles/CBMipwFBVV95cUxNWmMzc25PRmg4a2prYUgtRFc0dGpNNnZ5VHc3QzBrci1VY29VYVR2bzFGTDRSWXFOdFU3UHNkNkRWYU1vMzdrOFhjdjQ4c1lpWFd6T0J4VE9UUG9PNjJPRVBaV0VXSHFKbW93TWlJOG9TOFBhOHhWbGZsSnVoZTlzUHctZlRBQUJ4eGtCMkxrak5Yc25HOUtSSHFtQ1EtNkk0Vy1BOEJqOA?oc=5
+
+[2026-11-09 11:21:56] [IoT] AddSecure brings secure, centralised IoT connectivity management to UK customers (Cision News)
+https://news.google.com/rss/articles/CBMiywFBVV95cUxNbkNnalYySk1uRXlkZkFQbzNwTGJjRjVfVjFPcXNkc1VhNXp1bDRrR2xRNXpiOFlXRkZxZm9CTlV5YlB0YkEzaUZDalZFam90a0o0M3dTNW1IeHpoenNaeUFtUVpOQ2o1TUt2dEFJY0UwOUg1TlJOOWMwbnMycnp0OUdualhQTDVaTXJIRHpfeEJSQ19jWVdGWk9YeTFvYjI1bGNuMkdZNWNMQWRNUFdGTF9UU2FhLXdmWlZmd25uQmJldjRkU3NLaXUxdw?oc=5
+
+[2026-11-09 11:21:56] [IoT] Semtech Launches SGP.32 Multi-Profile eSIM for Global IoT Deployments (The Joplin Globe)
+https://news.google.com/rss/articles/CBMiggJBVV95cUxQNlU0NmJVakUyV05TRlV3WXp5bzZRcGdtTVUxdXE3YWRqZTlRaUY5WlA0X283N0R1Y1F4LVBlT2ZwZnBZVHBBLTJhbEdHUGExN1ZzODdGSzJ2NVZuT0xmWGMwaE4taHlabVBPbmZoOEEtYkRtT0hNeEYzeV9kWUdreXhRXzdSRm9lMjFiQzZLeHZRNDM0TkhUc1RtVHpyNVpiUDNVeElOUGFnXy00c25Vamo3RTM3MXpCZDFjenVDX2s2N1g4S1UyMGhuSWwtdkpjbEMxOGJ6dW5WZVJQTmVzbjdsdGZIYnQ2SHI1dVotc21NOUtKR2djZ2xFSkdvdElfQ2c?oc=5
+
+[2026-11-09 11:21:56] [IoT] Edge AI Is Here: Qualcomm’s Dragonwing IOT Day Shared What’s Possible (Forbes)
+https://news.google.com/rss/articles/CBMiuwFBVV95cUxNREFBMXJvZkszTm9iaGdoR1RfajhSMFB4empJaWhTaEppaEpOdG9pQ2VaZFdFNjc0TXBlLUpxWFZQUTk5X0V2SV9jd1d3SkF5NmxTNE9LcFlQWERzQlM5dXFFMmdOc3VDZFNjcXZndnRKS3ZoUXNXOGlOY2UtcTRRQlpqdFFsNTBpWXNhVzd1eEZYOVg4Q2ZoZHpUWFFVNURPeFlFeV9RUEJ6Z3BoSzV1dnZCTHM4NGI5NW5z?oc=5
+
+[2026-11-09 11:21:56] [IoT] Securing AI systems in industry: why semiconductors matter more than ever (IOT Insider)
+https://news.google.com/rss/articles/CBMitAFBVV95cUxOUjFrQ2VHVTFyZlBSNDNyMWlPVGl3U3VpaUdLUG93ajBEYmNsM29oa0VPaENxb0t1M1FGYjhDcmRFLThFSUlERmZuN1dkbmdLZjFhemFqb29QUjdCZkltb2JBRWZURHpBSFR4NVFnbkQ5OWxRUldtN1pqNHZKZnRYa0pDT1Z0Z3VNbHNObkwxUzFzd0NSWVplTVNqMElKQkhKRkpTajczRWhrX0hnU3NjVGVSczA?oc=5
+
+[2026-11-09 11:21:56] [IoT] Quectel Showcases Its Comprehensive End-to-End IoT Solutions Portfolio at Electronica 2026 (Business Wire)
+https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcWJtMzNNTVl5REJVbXY1X2RVeG1BbW5FcGN1M3k3N1c3YWZYVl9pVTN1MU9ZWXNIbVI5YTkydE4zdWYyOGp2VGNRNC14Um03UXlmQVJJbnlUbTdvMXZ3MzR3cWtOVTJlbmdUUTNFQ0Q1NDgzaWxTN2lYck5CbllMWm5ZVEdUc3N4QzA1Ul8yOHptSUZ0TzRYVHAxVGF5VGdYZ19LZ0VweU5lcE9jNy1lSXNpNWZ2YS1POHpCTXpFbFQxNUZDakxxa2FCZ2VpSm1SbF9YRmRvcFU4UTYteXNmbQ?oc=5
+
+[2026-11-09 11:21:56] [IoT] Allot Brings IoT Security into the 5G Network to Help Protect Against AI-Driven Cyberattacks (Yahoo Finance)
+https://news.google.com/rss/articles/CBMilwFBVV95cUxPMXBtZU9KdmdKQ1c2d0tkZDJ6Vm1mTkhOdU1vUjlId0hsaDBLWjBjZUtiY1JRZE9hd2ZTN19lc3EybUhObGVoX3pjRUgyS19kSUpLWlA5cGQwdjNvZ0dmOVFScUEtbXZxc1liMU43MVBxN0ZMd3lub2dnRVJ4UGltZFF6Nmp5TnJsdEdTZFF3NWRBU3JhNS1F?oc=5
+
+[2026-11-09 11:21:56] [IoT] Industrial IoT routers gain AWS Greengrass V2 support for offline operations (IoT News)
+https://news.google.com/rss/articles/CBMidEFVX3lxTE9XRWlkSDUtSDlkRzhPUlppLWUtMk5Rc05BRjNYNV9XcVY2WjhBNkxfZkl2b1BtRFRvaElIYW5xaGlCc3BfYjQzQmhRN2lMU2RzSTFMeVRSV180enQ3SUJrcUFfQWVZSHAzRGMzdVQydFhKVFpU?oc=5
+
+[2026-11-09 11:21:56] [IoT] NVIDIA's FOX blueprint sends AI agents from a defect alert to a root-cause report (MarketScale)
+https://news.google.com/rss/articles/CBMizwFBVV95cUxQSGJIY2JvN1NHMjItRDhLNGtuMmJUUl91Zkg1VHRJZ2d3bE53d0xFQWM2Mi1tVUdrMktfS0phVld1bWpKR05TWFY1VlZuYlcyQUpOcHBzY2VWTVFmdHhuWjRCdHI1MmlVU2VPY0xFaVEzbFcxSnU5cGE4OEZieGpreUtOVHJZUU16V2dNaWNEZUpyYU1lT2FjZERhaUdETEZkSnNkVzZfTV8yNnlXSjQyNEZuVHRCcm05dUpaQUttWE9vMlJmSC1CSXpuLTlfd00?oc=5
+
+[2026-11-09 11:21:56] [IoT] Batching Signatures Lowers The Cost Of Post-quantum IoT Data On Ethereum (Quantum Zeitgeist)
+https://news.google.com/rss/articles/CBMieEFVX3lxTE1ZNnJFa1RaRHNWbDI5NzNPTm9MSmdKd1Exd0RUTWhRcGgyc2tQYjVkZzQ5U3prbHdFLUNRME5tcC1ubFZKcXJwdDl6amxNanpGUDR2RTRuTG9MdHQ2WUpKUE9NNXltWTVxRnFFQTFlMThBTWl1WjBucQ?oc=5
+
+[2026-11-09 11:21:56] [IoT] The 25 Hottest IoT And 5G Services Companies: 2026 Edge Computing 100 (CRN)
+https://news.google.com/rss/articles/CBMirgFBVV95cUxQbDIyZlJMd3FHdDc1MTk5cGY5RFZpZDZRc2Jia0M5SE9iYTgxXy0xUmNndldLS1NHZUZzOHA3aVVUZnZJSTBNb2QxdmFNWnE0cEVkWHNMYjlXaDhPcHlJRXppOGVaOElrQ2hicm9IdlRvbVBvUUdCTzhSWVJ2NHZpRFc4MnFyVHJNc1RZaVBPd1Foa19yLTNZYlBtdmh1bzFqZGQ1ZHlFSktQQTI4aFE?oc=5
+
+[2026-11-09 11:21:56] [IoT] Embedded Editor Report: Qualcomm Dragonwing IoT (Embedded Computing Design)
+https://news.google.com/rss/articles/CBMinAFBVV95cUxQNDNSamg4RVQ1d0h5NXhMbkwtVWxkNUlDNDNGRkFrZk55RUJnbmc5MW1tblFIbG1qNjNmUTJDRE1LTTRGN0JCWXBma2hiWUxIN1FoVUlQM2hyZlBhbV8tMUdFNV9yeUNGSDVMaWZCM0N6dGp2YXgtMV9WSFl4dFNDSDJNS19mMWxUN3N2cktPVmRraklyX0pDTGQxYXc?oc=5
+
+[2026-11-09 11:21:56] [IoT] Hybrid Feature Selection Boosts IoT DDoS Detection Accuracy (Bioengineer.org)
+https://news.google.com/rss/articles/CBMijAFBVV95cUxPTGtIcHVnT1c3aXpGTzBFTUxMdkRrQTU2OUtLRTJ3cnphc2ZwcGcwcHA5NjlWdTc1d3NaNThfV1JvUUFoOVJDV2EwaVlNNHFwYkJTYzMzd2p2T2pwY0lRZUUxcjA5SUdtSU02c1FGeXRIamJ6aEl2WEpVa1JRYWxhaDhCWW1tOVNOQW1IOQ?oc=5
+
+[2026-11-09 11:21:56] [IoT] Robotics and IoT research explodes after 2016, three-decade mapping of 21,733 papers shows (Bioengineer.org)
+https://news.google.com/rss/articles/CBMiswFBVV95cUxQWkVrbFZIQzdOS0FTTlJpdXc0cFI3blJJd1l2MXh5R2g2ZUlQSFBKc0NRbU9pQWxMVUtJb3RkdVpXLWVPNXFDaGRqSU95d0xPNmd0WlZ6aEo3dEIzeTNoUTdLNHRIb2d3OWFWRG5aN0gxUVVlQ1hoOHFrVlVIbmlOZEwtZE9SY2lBMlRBa1NVaWNDaTlOSEhKZEtIYWgwT2hCU0N3WmNMRWZfRTZuRjFDX2tDRQ?oc=5
+
+[2026-11-09 11:21:56] [IoT] New Algorithm Improves Channel Estimation in NB-IoT Links (Bioengineer.org)
+https://news.google.com/rss/articles/CBMiigFBVV95cUxQRUg5ajRORVV4N3p2WTFxRGVpOWpHcXlkelFJbkYzZEJOaVY0ZDU1Sk5JdXZDdE95M3BrZGpZZ1BJN080VTBDd1pHUUNtbnoxYzFOQ1dZM3d3T0kzdmZ5bXEwc1ppR1VjaVFvRXJSaC1Pc2J6Qks3QXZUdjFnTW00SUg1RFBtWndrZEE?oc=5
+
+[2026-11-09 11:21:56] [IoT] European Supermarket Cyberattacks Expose Security Risks in Connected Refrigeration Systems (IoT Business News)
+https://news.google.com/rss/articles/CBMiygFBVV95cUxPeWN5cC0xWXVoTExoRzlQaVA1YTM0bTF4TTMwRmdGa2VQa2hIX19kcTRrR0RhV2pRZlY4YkMxbzZ1VUJ5T0U1ckY0N2RpTTJVSVAxcWxpYS1fZTNzaDFZb09QcXhRTFNBajFDdFhBMXhPd3JBSi1kMDhrS012aGpZcEwxMFJqZ0cyQTJFZXNxZ3Z1REhTUWZoaXhQSmxJSUlEQk5yc3Q5bFNhaWx0VUNuWWlZMHRHVDZlWGYtRUt4NFU4TDNXLUg5YVlB?oc=5
+
+[2026-11-09 11:21:56] [IoT] Experts: Cyberattacks on Euopean groceries expose vulnerability of IoT devices (Chain Store Age)
+https://news.google.com/rss/articles/CBMingFBVV95cUxNNllGVFZGT3NFRWFvQmktNG5ZRFBBa0N1bGlEelFTUFFwMVRPa0pEMVQxak1ma0pkUlA0dWtZSGtuNTBJc0dsSDJSU3JGNDh2V0ZMZHh2dXVKYjUyaVZLZzNGZ2ZiN2pvVDgtUEZuVVhlRVFnVHNSQ3gtWnpwN0RKWjVrbi1rT2RaaHJ3OXZTSjc4NHl5Ty10WmN0Yk5IUQ?oc=5
+
+[2026-11-09 11:21:56] [IoT] Samsara Inc. $IOT Shares Newly Bought by Calamos Advisors LLC (MarketBeat)
+https://news.google.com/rss/articles/CBMivAFBVV95cUxOdmVVVmVLOXBKVVlTQjBTOHdhMUJNOER4TDcyVUF0WjlTXzMyZ3paVVhvbVVLZWR5Nm9UaUl2QlZPVDhLSXR2ZlB5QVVlc3lWTFpzZlNxaV9kM0xFQmFxdjFWbmM2Nl95Nk9xMjFPMm5qMjlkTXhxY3JScmlNWEVoTHVWd212NkdseUlBYUEtM2hQZWhPNm1oTTFKeE50aDRNbXpFRWpHU3BzNklNYm5xMFJFOGlhRks5ell1eQ?oc=5
+
+[2026-11-09 11:21:56] [IoT] Federal agencies urge cold chain operators to lock down refrigeration controllers (MarketScale)
+https://news.google.com/rss/articles/CBMitwFBVV95cUxOR2hjU1dCZUFVTEpjQlJQRXJWWi1OMS1FZlZBaDlQcnduVlVZaUNfYmdvZ1RlbjdudUVPVTAzQUNnYXlwSjhmcmdReTNhXzdwc0wya1VVVDBXTE5ZM2pCLU5WS2twRWNOQWZQTXlrc1FlMElUU2NveVFwaFVxSFJSbkpJcmdOTENSSE9uVWpJTjJPa0l3WGFWZjl3UzZVRWxLbVFNb3lyMzB3eDI2RnRKbkh4ak5CUVU?oc=5
+
+[2026-11-09 11:21:56] [IoT] Eseye looks to enhance IoT profile choice with SGP.32 deployment (Computer Weekly)
+https://news.google.com/rss/articles/CBMirgFBVV95cUxOel9uYjNkM1J3UmhveGQ4U3RQWDFjZWN3eVUtZnZ3MGpWODRFSEZsLXVNa0ZpdDJKdGlnM0Z3NVF2cXI5UHJ1bnBCRVZ2b1EzT3F6MGNpbHFDTDdiSzZkR2MwZzgySjRuWFgxaDhLSXpLa3FTcGpOTkJvM01kRV9fOWFsZVJvcGdpbGJSclQ0TmxuRTlMRENXX01YVGlKQzhBNU56bVd0TlVoYkV3aVE?oc=5
+
+[2026-11-09 11:21:56] [IoT] Commentary: Why eSIM is becoming critical for Malaysia’s next phase of IoT growth (The Edge Malaysia)
+https://news.google.com/rss/articles/CBMiUEFVX3lxTE5UVFNmMDBUdDNpZkdBRGZqenlmVHE1Vk1kcTNqVVlEdlF5dElHcWFoRE1sX1Z2aDNoU0hTS0VoaDJZWXBrbGhkbUlud21jWW14?oc=5
+
+[2026-11-09 11:21:56] [IoT] Anthropic warns small AI models could self-replicate through IoT devices (Ars Technica)
+https://news.google.com/rss/articles/CBMitAFBVV95cUxOcll6TXkzdEQ3b0VLVnFVX1hHYXBNUncxU2YtVWNvSjhVMV9kUlkxbVluYXNVYmtsQmc2YWN0MGtXV213RjIwc0VsOTFkeWxKZkVFNWxpa1gzcG1hc0RkRVo4a0taSVlZQlZ5bmFDcTdQVlRSSEZGbmp6SG9fdTBybU1tNDhxVk9tWV9OeHVQaDVHS1hac1BRbTFmTVA4NlZOQnhfMW5la0xBNGZONWp1bWtlLWk?oc=5
+
+[2026-11-09 11:21:56] [IoT] Fibocom LTE Cat.1 bis Modules: Starlink DTC Field Test Report (StreetInsider)
+https://news.google.com/rss/articles/CBMiugFBVV95cUxOWDBtdGFHS1ByTTZZSFFyZE9LeG5TWklad0wwVFlTc3U5ck1sYWFnX2VPMmlJLXNyZEJmY0VrYXN3dFdSR1Vvdmw4ZTlHQWxTTl9ycGl5ajcyWXhwNjBDQnVuWkxHVmNCMFJlQWVCMkNBNVBjaHc0UndNazFHOUU0TUFwWlRNT2FoNUM1RUNJQ25QbDI0MG1QbW91Zm9HaUhQb2NZd09KNjNLU1ItLWh6ak1JRnBBVnFlU0E?oc=5
+
+[2026-11-09 11:21:56] [IoT] Is Blue House Refrigerator Safe from Hacking? (조선일보)
+https://news.google.com/rss/articles/CBMihwFBVV95cUxQOWticlQ0VUJXd0JfUE1tNmJQOVo5aTdMSU8wZDFyalQ4XzU2OVZmOHVyb0Zwb2xldWwweFNKODh6RWlRaGJVNWtfUmpsS0Q3SF96cC1qYlJYRDVtMVJZU05oY3ZJbVZPNWN1YXQ5eWpfcVg0RUVFTlBpeEEyS0NUbDExZ3Q5MTA?oc=5
+
+[2026-11-09 11:21:56] [IoT] Intelligent IoT, Building a New Perspective on Cable Smart Manufacturing [Electrical Materials Annual Conference] (Shanghai Metals Market)
+https://news.google.com/rss/articles/CBMikwJBVV95cUxPenhPY2liclVNY1NKa3Rkb19rSHVLWG9fMkZaaGw1YlY0NVFuc1V4TzMxTGQwMG5JU3BSUDc3TDYyVkt3N2Z5eEJkU3VlRzUwSnZmdWs4T2pKWWJUUW9NdlptaU91NTNaNlVoeVdodUlqeEtfUWZXbUpXT2VreXQwZ01IWUVQQWFqT2NwbFI0WDRwbEdlQV9PdUxobmRYbHNRTll1Q1hoSHZpQlJYU21oQ0ozRVVHOElTS3p0RWhHeE03QUE3OVdtY2pUeDlQRW9NZUoxYl9Db09PZkdFVFNKLWN4bjRMOUVKZzl2TlV2UWNyeVo2cFRUTE8tVVFFOXNzZVJ5R3pCMnU3QW5IRERMbFVERQ?oc=5
+
+[2026-11-09 11:21:56] [IoT] Supermarket fridges hacking saga exposes dark side of IoT (Business Daily)
+https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeml0X3hxa0RhZjVqYUV4TTRrRThGRGZPVGJSTFdmRDg2MGsxOUdPQ0gyUHJqZ0FxT1JGWGpFcEg5NnBJdlBCUHRSdXZqRXkzTTVPV1FqVllKRXo1SUYzcm1iS2UwT1ZsbXJsbW1HMTBFU3RqbEswMTJrZEd2WUVqeW1uSll3bFVldjNFdnkyck44b3NpTWV4TmJRRThTTk80SkJYWFgtMVNZcmxxbjF5bWgxRFBYMW5VU245NVZOdVFGQTA?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Leuze integrates cybersecurity into industrial sensor development to meet CRA requirements (Engineer Live)
+https://news.google.com/rss/articles/CBMitwFBVV95cUxOeG54bWJZdG1LSlVDVHROem5pRVhIbTJmUUIzQWh2MGxNSU85VFpHM0Q4a1lIQmVsVTI4aVlFdkh3akJkbEhwVFJfaTVsNEZ4UExVWThPcG52UnVQRWQxQ1czcGF4d0VsSXlWUkZBZ3RIQlFvcjRpTG9MbW1XSUVvX0tEMkpzRkpyWkg5SG85SGFseG9xU1hhY20tSUpTRmVyV2oxeW9Ia0FZOVlQX3g2N09vbmlzYnM?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] A hybrid generative and transformer-based framework for anomaly detection in industrial sensor time-series for predictive maintenance (Nature)
+https://news.google.com/rss/articles/CBMiX0FVX3lxTE5IVFdnVE1fdHFWOS1GUmJ3VHp5OHE4dnJuNnI0Um5KLTdDNTNxNU4wYzUzTUVvMlM5bENyTE5aVWJxMDc5ak9EUE1BMG9uRzZrRzBHczdYWU1ZdDJVREl3?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] New Sensor Method Reveals Hidden Heat Inside Industrial Storage Tanks (Bioengineer.org)
+https://news.google.com/rss/articles/CBMimgFBVV95cUxNbjRiZXJiTl9NVnlDemE3eGJDMmhpcWNmMU5UN1piVk1DWnEtbWlxYWNrWlllNTBQMkI3VHBsT214OXdQSzdrZXdleW1xbFhGVjJjODQ2cmJXa1Via1AxWG5vS0MtbzN5Vzh0VzFJVEIyS2lXTWdrWHdVM19hZzUyQTdHN3BrUjE4UUNkbHdKWXRDNHVKLV9leUFR?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] ABB publishes first Environmental Product Declarations in Industrial Sensor segment (ABB)
+https://news.google.com/rss/articles/CBMivwFBVV95cUxPMVg0RnhWR1FCYTZVMEZtQmdUbjY5YThnb05XVkprbWNMU0NQanQyYktQLUwzRVl0ZHc1amlkNmNkTkt0dmFoMllBVXF4eDhia3BWbnIzaG5pRWV6Y3luSmVERjl4dHZ4VjVwN1B1dnNOMUtSenlaNGdZZm5jaXZBVXRNVWd5SmtOQ2ZpaVpIbGhESzU3RHZWM1FvYWhoRWhFaUp6eVEwZWF1dnQ4RjM0eVdIYzREWlVlRDFNdFZWZw?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] New Omnivision GS HDR sensor advances next-gen industrial vision systems (Engineer Live)
+https://news.google.com/rss/articles/CBMinwFBVV95cUxQdElrbGZ4cXZSb2pHVEw5dC1iUGdBQXRqenp5Q2pQWThiNjNGMU5uZWJQT2c2eEVYZHZWTGlzUzZIM1FhaU5vNkJ0Zks4TDZVQW5nMW8yd3VuOWc4R2d3V0JhcVlqVWFOdlh3RGg5cUJfTmlaanFCYmNsRmNnMl83YmRGTElkY0VWVnpDMUs5bVpCNjRGZXl0YzFUZkc1bXM?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Emerging Smart Sensor Applications in Industrial Internet of Things (IDTechEx)
+https://news.google.com/rss/articles/CBMiugFBVV95cUxOUExPakRoSWdscXdvWFVyNnl1Uk1iY2I5Q1pOQVJUZzVjdk1kMVRrSGxLU1FVRFVXNXBPYVZZcjBWanhpQWV2ekVULUQ4eVZJV1I1VDlLXzJIX21YZEd5MnBEV0dQckRnbF9YZ0xteWNfZUxyYXR4M0RkTWNmNHMzaFdENnVXbkxyWHRVNUdLWlotc1pFNXVuV1lFRTZxVm5ZbHR3c2RrSVNJTFdWVTdNNE8wbWNCQ2sxZEE?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Industrial robot transmission components cross-machines fault diagnosis via fault intrinsic representation and channel self-healing under sensor failure (Nature)
+https://news.google.com/rss/articles/CBMiX0FVX3lxTE1VN2M1ZkhjVVZTbUZ5YXA1V3lHLU9CU1JjN0JLT0l5UzhGemh3ZnVkaDg3b3cycDdWWTdzZ2RBUGhrMkxwcVVnUG1aV1cydUhuVlBWNFZndDQ3OTlwU0hn?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Honeywell Launches New Infrared Gas Sensor to Help Keep Industrial Workers Safe (Honeywell)
+https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZUppUVYzZlV5dFZud0ZqbklYdVJiUnBld2dVX1I4MDVscVIzVTRqVVAtOHJHT25PWFVrMGhsU3hOOVQxaVNuYld0QzhVRGNVNklxd3BQZ3Via2UyRnptaTVWeHBsOUJkcUVuR1NNVktzeHlZR2h6WWUtMWVoTEFDcE94Yi1teUpTRnhRSm1hanpybS1hMHp1NHprb1IyeDVTX2pzR19qOXR4X2JHVTVnWjNQa3RFdkZFdC04ZXU3M0w0SUt2dEpZTC1EN0dSVHB5NWZOdy1B?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] CT industrial products manufacturer completes $1.06B purchase of sensor company (Hartford Business Journal)
+https://news.google.com/rss/articles/CBMitwFBVV95cUxQaEFqM0VGR0hmLUdlQlZ0WUtDUHB2c3plZDVFbUlrX1lKTE1iNTByM25pdUdvZ1JsczhVYWhKbFdRZkwxRHFsLTJVa1V6cWZDQzc4aWhqMXJXb0p4aTFvU2ttZlBHdUEzcGs5SThha241SUhycHY0Sm9xSmhJZzRmSi1rTGR5aEpRS05UMjUzWk5GcWJQN09ielJrUjJMVXZrLTF5OV96dXA5Qlc5NFZmSUFDY2tHLU0?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Battery-free sensor startup takes aim at industrial efficiency (University of Michigan)
+https://news.google.com/rss/articles/CBMinwFBVV95cUxPVDgtck1MMDJ1UTgxM2hlbVo1dU5PY284T0RpYm1hWm5iUEVDZTN5S1hERHlSR0JvTWVVS3RJRUxJS29PdzNrSUZkRkV3YlhHNHRQOU1BQWlQdG9wR0tMd0laaXFCdDA0UzFJYnVUazBVVmo4NzBrQWdlNkxKa1lDRzRlM3Q2LTJ1ME9Sa2RuUmxrdlhuc2ZZN1Z0alFDTXc?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] SmartSens Unveils Ultra-Large Format Ultra-High Resolution Industrial Camera Image Sensor Series (思特威SmartSens)
+https://news.google.com/rss/articles/CBMiWEFVX3lxTE0wQ191ZjFSTER5SHNxcXo4NXdfUXU3UlJhOTNfX2FsQWs1eVRLQnZSclVsTGpSUnl2d0VucXdjU2pORFkwQV91dGhXcFRzaVZBTVlUd3hDNjY?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Ouster announces 3D industrial sensor suite (The Robot Report)
+https://news.google.com/rss/articles/CBMigAFBVV95cUxQOFFnd0Z6VnpvNVlWc2dkRkFoazBZRWNncGdJRmNia2RzeEhqalRkU0tVUXNiN1p3bDBhYk1aNms3ay1MUlV3SDl2MDRENjZ3a2lBczVMeEphdkQ0cmR3NG9tdk5rNmdiWXppWnZjTFQ3X0lRcUc0NjBXNjFRak9JdA?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Galvanic lead-free oxygen sensor for industrial safety is a world first (Envirotec Magazine)
+https://news.google.com/rss/articles/CBMiswFBVV95cUxPdU5Xb0MzUDA2WmVoOTBhTUFoWnJMc1R0N2lwYTFJRXdqdjhqRVpBQ1lIVWFBWXlwUk1PVkE0OElRUFN3T0hvbWZXbU9udHFlWmpQZEtCemFmZF96dVAtSjBERVdVWm1qS1cwUFdxNmNUeHlnOE5JSlBTbHpCMFZyUGRpZ0piQ2RuVTV1Qkl1c0xraHJmRnplTUdrUmdRYkhCb01fU2l6TkNRWk9FVXpJcmUtaw?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Sony Semiconductor Solutions to Release an Industrial CMOS Image Sensor with Global Shutter for High-Speed Processing and High Pixel Count Offering an Expanded, High-Precision Product Lineup Supporting Faster Recognition and Inspection (sony-semicon.com)
+https://news.google.com/rss/articles/CBMiaEFVX3lxTFBGb2lTWWNMNUpfX3hDeXFyd0lBQWxfd0pSVWRYZ2xJY040dmhwLUpMM0FGWGtpVTRSSjE0VHRYNm5TNDJ4OGt2UjJ5ZnQ2NldWbF8xWi0zaUNOaExPM1Z5bWJWWXZ3TWhj?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] SmartSens Launches High-Performance Global Shutter CMOS Image Sensor for Industrial Machine Vision Applications (思特威SmartSens)
+https://news.google.com/rss/articles/CBMiWEFVX3lxTFBpdHh6RlZ6bk1aVEVNelJnWUlQUmd3X05paHB6MTZDaXhEcDVodTVReXFzQzRWS2Vnc1Z1OGhESlk5UVpDR0VjUEFRNmhROEpXRnVJdG5CXzQ?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Comparison of deep learning models for predictive maintenance in industrial manufacturing systems using sensor data (Nature)
+https://news.google.com/rss/articles/CBMiX0FVX3lxTE1LNDJfR2ZDUlFxckctSFNTRmprZVlBRGE2WndvaVZPQkVuMFNhaW0yWFkyYUcxeGFRLUxkSk5UMFN1QnZzTm5zNWlzdTlmWjduU1RmZWVsVFF3WVRPZHd3?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] A novel swarm intelligence optimization method for efficient task allocation in industrial wireless sensor networks (Nature)
+https://news.google.com/rss/articles/CBMiX0FVX3lxTE55TzV2dG1rTWRwcFFLbUdvLXhIZE5uUldQUGlMX0xvWU9IdGdadTdwMXk2QXgxT3NXcFQ0NFB2Y19CQTRKTFBmTnd1dmp2QXUtSkFYUkNMdWpuSDM4OXN3?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Waste-to-sensor: high-sensitivity detection of heavy metals in water using Arc-ferrite/N-rGO nanocomposites from industrial and electronic waste (Nature)
+https://news.google.com/rss/articles/CBMiX0FVX3lxTE1sTkhsUnFSXzlLMDFSdHIweFlrektwSndvRmpfc09Sc0cya2xtdWhmaW85d2t1eXdSZW90alJaNTVPS3dqblI1UXJoTEVNV1k2WjZqZUJhUVUtX0lfNXNR?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] composite for medical diagnosis and industrial applications (Nature)
+https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Vd3UzTC1oa0VwdEFTRnhVY0FZbkZmaHFkZE4tVTB3dnRsdV9LbzdUSDRqN0I4N05oRjF2dVR6dFVjMlBtM1RxQUc2cDU4S3R3QXoxMFI2MjZLVG52M0Vv?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Renesas Expands Industrial Sensing Portfolio with 3 Magnet-Free Inductive Position Sensor ICs and Innovative, Web-Based Solution Design Tool (Renesas)
+https://news.google.com/rss/articles/CBMizwFBVV95cUxNNDBYY05RWm53NFdoWmhLSlNlYVBRUEJjSzBxSjNRc0NxOHFzUXlCdEJWTVBhSUFqSm96eFhKR1E0SUZQSE82dzFrYkMzOXpMbUp4Y2FBT2Q1T2V5NGU3U1RMbXc0Y3F0N2dhczhqbTNZYjdfekczcFRMT3A4MUxmeEF5RzlwYXMzVnVNY1lsWkhWZEJ0bkdXMnREODRVaG5ua1RBOFlyS1FmT2JjMnZWV2JCNG9hbGZLeDRibl9jWV9DR2h0U1FqOFU4bk9SMUU?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Treon Industrial Node X Vibration Sensor Wins Prestigious Red Dot Product Design Award (PR Newswire Canada)
+https://news.google.com/rss/articles/CBMi1gFBVV95cUxQa3RnMXdvNWQ5VmJ4VXpBdGRaakxhVW1LdU9OU2JlYmNRQ05RTWxZWUM4SUMxMXl3RVI4UFp1N3A3b3l5OERBZHN5cGo5d3dGcThWdmUxOXRYT0lqS3d5bjltZDZhTHpvM09URENJRlJFV3BOTEtobTFzUmhXR00xejVJUHRhenB0RzJxTjdoc3dLbkVibUxTNVU0ZjlMREk0T0YzQUh0ZVFWUzBSUzZBRWprdXYtTVBRSXdDX3Z6NHJGaHBTMWM2YkRhTnNHZDdTcmtMa093?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Sensor + Test 2025: ST’s sensing solutions to empower industrial systems (STMicroelectronics)
+https://news.google.com/rss/articles/CBMiTkFVX3lxTE9teGdwRTlFZGFvZVY5a1VoZ19xejloUV9XeXY1aGxjS0I2aV82V2Jjd1hsQzIybFpTZHBsV2k1OC1KRFRmMDdXYVNtVzNHZw?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Prophesee releases industrial-grade neuromorphic sensor (Imaging and Machine Vision Europe)
+https://news.google.com/rss/articles/CBMijwFBVV95cUxOaWdRMlk0SmJ4WDJxM09nZFQxMW04UEM2TC14bE10Ymt2VVhNZFY1c3drTFNHaHViRGNWQ0xnZWZ5WWswWlhFbFFyV0Q3b1VVel9Hc1VobHV6RXo4bENKSC1GVHlkeDk0R00tSHVTUFdwSEZvcFZRcHRjWDI3ODV5MXhMSG5xVVVWQnhVSXkxdw?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Fritzmeier steps up sensor sales with CNH Industrial (Future Farming)
+https://news.google.com/rss/articles/CBMirAFBVV95cUxOS2hpaE54RGZlSHVHUkY1UDBVQ0dVT3dQY3BvZU41Si1jbFFEUmR2aXBmLUw4OTFXRndSTXpXME9FQVJDdl8wY0hRYUtTR1owQmlvcWJReld0WERMZFpWbHZEeDVWMEMyQnlFUFNsc0xNby1ncW9Db3dfZHQyLVNfTzFlaUdYNmxBQ0YyTF81cnZ5eXdZVkZTR25JeHNhOXhmZ3lfX19rY2FqRkg0?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] SmartSens Announces 5MP Global Shutter CMOS Image Sensor for Industrial Machine Vision Camera (思特威SmartSens)
+https://news.google.com/rss/articles/CBMiWEFVX3lxTE1mZFdJVW5sdnlyWXluZ1BMRTk2Zy1jTVY2TF80eWxOX2FkNXVhdDFnZHBaemZTOWJyWERaakFBMHlnSmVmRjF4ZEZSMm9GVmFDdDFFOUpUdkc?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Texas Instruments Releases Digital Temperature Sensor Family for Medical and Industrial Applications (All About Circuits)
+https://news.google.com/rss/articles/CBMitAFBVV95cUxQM1AwbXFTcGJpQnlQd0dKRXROTjc0Rm1EZEVlQWZjZnJueWpiUjRUUVdOaFRSSlc3X2hheGVVWEc3c0xPWjZpY19VbUlMTDEwSG5KNVdnRUJEakFyM2VYLU5rZTktUUhZb2syR3ZxRzJSckIyMl9BSmJVVzNfZXdZU01vQlJvZF9MdTBWaHMwN0hOS0ZJRmlSbzUzN2hCeVVzTDE3TjFSMTNacl9vdEN3X3hHQXQ?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Silicon Sensing Marks 30 Millionth Inertial Sensor for Industrial, Marine & Defense Applications (Unmanned Systems Technology)
+https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTnhPYWtiamR5MFlMaXQzeHdoR1diNzQ0YkFicVRMX2w1TEdVN21IU0RKbjFucUUtby1uTnlNRUdaOW91eWszMmg5UzE5QUIwOEJzRXc1RGVmV0VLTzhtbHhnd0ZhNWhTQ1BPMERlWThGckRBQlZ5alVZRUhvTm1idXpobms5T21CVGEzV2FabnVaQ1ZlVURRZ1l2M3VRUURpT0psN1RGOUcydGw5eWN5ZzFpc21WXzdaZ1A3VFVCR3VsbVhtNkZfTGZUZUN4c1prQ3ZwQ2lHSTBwaWhJ?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] TI Unveils New Sensor Chips for Automotive, Industrial Uses (Dallas Innovates)
+https://news.google.com/rss/articles/CBMikAFBVV95cUxOZ1MxWlhIYWp6Z3J1QUZHUXdlWXBBSDJaNU14TjJPaUpoN3ctME9PX1gxZ1dQRlpkUkc3eXlBZ0VFc0l0ODc1UVpvenBIV1FaaFhxWW5aSXhyR0JsZlVxTURaX1l5TDVlS0pOdXp2cU5pakhzS0ZpaXc0MTBvY2pBbEVnNTBkNVBPX1BjNldTdUY?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] Industrial Sensor Market Size & Share, Growth Analysis 2035 (Global Market Insights Inc.)
+https://news.google.com/rss/articles/CBMiekFVX3lxTFBLUFctZkJlZER6Uy14N0ZNaXJ2Vmw2Q2xzYVpDYXlsVlA0S1BmRFVWbHR5UjdrZ19aOWJFN1Z2QXVLQ0RoR0ZTOG5nQWpBY2w2VllpNEVWQW1Ua3p3elFuUk1tUENYMUtCR0dVaWNycHpMNi1ZVGRFYlhB?oc=5
+
+[2026-11-09 11:21:56] [Sensores Industriales] OMNIVISION Launches Industry’s First 2.2-micron Global Shutter HDR Sensor for Flagship Industrial and Robotics Machine Vision Cameras (Business Wire)
+https://news.google.com/rss/articles/CBMimAJBVV95cUxNanFVMWlEVUtsTEE4TWZMRV9jWDFqWTZMTXhCb0ItQmUySXp3ODJSempQcElBaTk4NlJoeFZ5Tl9zM3FwRGFrSF9KSlVKOTRGSlRSUmc3bzRxeS1Ncklmamw4YXl2V2QwVXUzTWJocWdkbENIaFhKcmJQQUlFZ3BncWRRY0VNRGtINWtqcFh1eUt1dFBaY1llR3RnMUR1OWQ5VHh6NENiVThGcmltYkRoaFNUR1l4QU9YRUpRMmRYWW10NlBkYVUwSDNPTjBja1dGbkVUYmpHUW5YR21yNXVRY01OX0steUFHdGxKX1BOWlRxV1BoTlZaVXZiLVBzYTRtNjhXc3R4cHVab1lYQ2lsRzIwLVBwYUg0?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] OpenAI GPT-5.4-Cyber: así es la IA para ciberseguridad (El Chapuzas Informático)
+https://news.google.com/rss/articles/CBMie0FVX3lxTE1VRWxVSERpemhianFVbTEwWk5EM2MwZk0tZkYzaFBXNmVsYk5qbVYycjVLQkFWUGdBZ1lsTklYbWJfOHFIYXU0cDZ2azBNZXdhV2JRZVZna2k5M2t5clZqV0RpTXdOY0otd09aaFhmZDJKWG1aeHZrQVk2RQ?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] Luz verde al Gobierno para entrar en la firma de ciberseguridad S2 a pesar de las pérdidas (El Confidencial)
+https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUl3SC1QclJ6blZYVmo5NF9CNGMwcXVpNWk3a2gxeG9ETUl6RmxEdnltZHd4eEtFUDVRaUxmZnlYZmlHV3lZc3lZNnYyUks1cnhIOUtoMFpmZmtYMG5vX19YTy1rX1loYkxiZjgxc0FTMXhXX0lzLU5yQlpHc2tycnluWFd2bWRvMDdhXzhFMnNvcVZMbzBpOG12RkVjU3J0MEZTWnA1aGVscXhzaXBBcjdKc0xCLVczVkE?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] La catalana Olga Forné, coronada como la mejor responsable de ciberseguridad del mundo (CatalunyaPress)
+https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQWxXdHROdTdwTFRXeU91ZFpfZ0lKUXlRdzJyZF94Skh4bmRGME10eFhvN3NXNDU4QlRQeUFyY0JQRS13ejQwWU5MTkpYNjg4SXkzNHhEcTUyNmpSTnUya1lRcFdmOTVHczZPVDJrT01MUDF3R2x6eUJhX3d3d3ZOUUthbnpuZ1lvLUE5eDhVNkdUbVl6V0FRVDlabmk1c3B3U1dLXzJTRWNIbF9GYUV4ZEdCNXM5bGxfQ3E4QlZSOXB6ZURoM3d5Tjk0WjI1andWNUNrazVB?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] Field Services 2.0 de Grupo Be IT: Impulsa la Ciberseguridad en México (eSemanal)
+https://news.google.com/rss/articles/CBMinwFBVV95cUxOdC1ucTk1dERvdE9DNTJQNGZmejVUQTMwVEd3VzRvRl9HRGhWdHpYVTc5UTdNOGIxRUlHT0lSc1Q0WG1BSTg2TjlCaXJ6T3lhN0xuY0RoNEJXcjZBSUdzczNYbzF0eXRKcWJSeXB2czEwMWVsUFJOX0xNaDJHcmk4dGE1bEN5eTBaeG5Ga2xPNXg1cHhvZGM0TDBOQ20tSzA?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] México pasa de panzazo prueba de conocimientos en ciberseguridad (El Economista)
+https://news.google.com/rss/articles/CBMixAFBVV95cUxOa25OSlMtQUQwUXF4RVFZTlpwNE1Fd1lFZ3BjSXpBem9ncVdPSW4xa2ZLX1l5TGhwN0hDODd4aWRXcUFCLXozWTByLUF0cWJiZy1aY2w5UUhyaHAweXpFTmg2UWJaX1hkTWQzRklBeWdnWjNyamdZZFRpV2JrdVdidWh6YktTMkxyQ2I3MkM0NjZTRFV5M05pU1J3TV9SZGF4emFKSTN4cW4zejBCSW1WSkQ0cDRRM2xfTGdSdGtETlBJWEY30gHKAUFVX3lxTE40ZkpNa0haTG50M0xhRlA3dnBNMERFWm5lSFI0LUZxWTdXcE1EbWk3ZXFzNkJlcENESjVVRHFjVTdGZU5qc3REUUtTZEFkb1NuVUpORzQwTkxDVWpkLW5leXhacTFXNkpaQTl5alVaVkZIWkNfeWJrM3EwaENqNFJ3d0VIWHN1bUdPQlRhT29WbzVweTZWaEozQmNZS21wZlltdHpNMWx3OUI3UWpqLUZUUlRUSnJYT05wQWRqV005RkdrZXowTU9jekE?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] ESET Latinoamérica presenta a las ganadoras de la Beca Mujeres en Ciberseguridad edición Chile (Tour Innovación)
+https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMWdGYWI2bHBQc0RNUkRseV9wRkJEX1BKSnU2dUZLWmgtVkNrSFBYNEx6TXZxVFhhR1FKZWFFLWtZaU9rWU9tUXR1YzI5bkIzY0lVT0YySS0zYVViZGZ4d3BYV1RxQ2N2ekdLZWJiM05CakJMc1JMZDJra1NvNzlIaDdoTlpUeF9uN2lRMUF0cFFrMEwwYnFhS3kwRVpyZVEtdHFmZ0VVeEtXd19ndXlNWmpzZkNoVW50SGFNeGt5azlXdmpWazBaNFkzbVNteEdfSWc?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] Santander y Forgepoint Capital anuncian una alianza estratégica para impulsar la inversión y la innovación en ciberseguridad (Banco Santander)
+https://news.google.com/rss/articles/CBMipAJBVV95cUxNZk9zQUdFRkJiMV94M0R1a3B6c09KR0dGU090QmdoZk1FeXBDLTRtajVreElxQV9KV3NUQXNSeXhKRW9WLURnaF85TklSdnBUdnNwdlFyeUhJTm1aTVM5Q1lrTEJlemR3NVU1MHlJVVhjeXQ5ZGtDaU1xelhPOGI0MlN5N19LcDF4QldVMkRMQm1lOHl0dDdQRmhvdGxIMHJyWExLRkdkVFNIdVdmV01yU1FLbWl1SWo3d0hjZ29sVDBJLWxSSmg5cmh3VzJPRTNZVmhVNlJKcHJOMWxPNi1tNzF3NV9vZlJNZ0JMSEx4cHpPRVFrOVBxeEJoTXpyNl92VE5GYlllUjEyQjVJUEZYb3c0TzN0QlFma1M3ZmRnSHgwc09p?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] La Generalitat y Telefónica blindan la red pública catalana con tecnología de ciberseguridad cuántica (CatalunyaPress)
+https://news.google.com/rss/articles/CBMi6AFBVV95cUxOUmhzQ1lzVERjZF9qeE1hWFU5eUo1dk5RSWIyenhycFcxVWFCUVR0WXBpUHgxNzJEd0xRTEYwazl5ejRmR0ZGX1RaX2l2cUNLcnN6SVFWR2VqZW9OWkdEX1htX1B3RW5CU1BPZThYN19JbWdhVFNmVndOSXBtdlhFTmU2VUNCVVlUUXd2NHZJQm5UM3JzdGx3V3pYWUItS3VWTmRJNndrTGNXdmxzQW04VVl1SWozMDRPVXY5LUtIdjBhSE1wTWtBNGlRbHhmUHo4eHA4a2lZalJqaVlMZXpDcjNtbDBaVUJn?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] Fallas críticas en PHP ponen bajo alerta a empresas chilenas por riesgos en sistemas desactualizados (Tour Innovación)
+https://news.google.com/rss/articles/CBMipAFBVV95cUxOdWV5cUdPYjhObGVyNk16X0V2MFZpMnl6Sk5tUmZhZ0NyWVVOTjF0Rm5MVjhoMEVzM2xVcTJueFo2M1pUS0ROZGx3OURmV1oyc0gyWHlMMk42cHA0RkkyV1o5Uk1mcmxYNl9TWGRfakEyZkdxelF6cGtiNjE5LWs2YUEzRnFNOGlVZFBnSnc2MUhkMFgySnFQWXdyUlhGSzBpYVZXVA?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] Hackers atacan sistemas de frío de supermercados y provocan pérdidas millonarias de alimentos (El Nacional - El diario de los lectores influyentes)
+https://news.google.com/rss/articles/CBMivwFBVV95cUxQVDNZemhGNnVXV3gzaVZKbnVFcDBEMXhIeF9BQ29idWlGSW04cHljYzQ2YzlUMW1vTjNIYnpiel9vajgxY214WV9HODRzYzlCNWo3YTJmaXZJR21PVUxBeGpRSmM4ZUdSbld3cTFncmdlbVBmWkZyZ2FYTVJ2cE4xVjNrQnNDdktaSl9OTXlOaFZBOEdyMTItQmVhVnZ5MnRmTVNDc1YzWEJFSnhCMlI0WVU4dG1kTUdiTW94aHNCONIBxAFBVV95cUxNYmNPMWZxZnU5YXNOMWt2RGdqQnhMM2w0eVh3U0tlNll5QXpZdXNzQnhqOUVoZlVYOGIweWxmek9fRzhsa0laaHQ3cUI3Q2dXM21fbGRYR1ExRkpKNHhCWHQydWc0ODJaN2R2M3ZjWFpHMzIteGtXT25ucmVYU2oyUkVSRnc2ajZTeDA3X2RKdzVFSnN3YWFuZ0xYQVM2RnUzNTBwRThucVFpeE04SkxfRnZxVURuMFdTaEUydG51YUgyeWsy?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] La CNBV en el Foro sobre Ciberseguridad: “Fortaleciendo la ciberseguridad para la estabilidad del sistema financiero mexicano (Gob MX)
+https://news.google.com/rss/articles/CBMi6gFBVV95cUxPaWMtYWxSTmlKRk9JQWVhcnhPSDB0RVpZSTdsVUVlR0NrRTVwMWpVSjBSdnZFeV9CRmFZSTd1WkRkUDFwV243RDEwZEVEUnVNSGFZSk5aRG1kcFFEZmpJY2h5Y3BHY1hSSTFiMW5LLUxvZ1Nrc2JNaUFYNWZ6YUtCSG9aeEplUGxZUHpzVDRlSVBjSkw3a1kwUVJ4aFg0bEJRRnRqdFJGNzFwNkpfMlUwTmRXajNqZW9KSWl0X082YzByUWZwRV9xSnE0RENVZk94WkRzWGRBclZnX21GQmwtQ1ZYSzgxS2ZzVUE?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] Oleada de ciberataques en Europa contra los sistemas de refrigeración de 90 supermercados (Libertad Digital)
+https://news.google.com/rss/articles/CBMi6gFBVV95cUxPN3AyMVl5UGVYREl3SnFSMmhScm11dzYtZ0hUeHBOM3JfLXAwd0Z1ckZfMUlFRWtFVHRYM1daNHI2RjJjaHZQOGR4VmNvVUtIZjVJMnZ5enJFdVJZUG5mNnZtRWNVa1BOX2w0TUFRWFhKZGFVNVZ5QzZxaGFWWGJVLVJvdWo5ano0X2NVcVYtcWQyMnF3YkhJTkh3Q2ZFdnpWajc3U1oyZEhiN1cxc0JnWGViaVp0cnlsa3Zta2lWT2NvZGp3VUFSNDNqMHphaU5vNENRS1djd0xwelRQTV8xTmdpVF81S1JwZ2c?oc=5
+
+[2026-11-09 11:22:38] [Ciberseguridad] La matriz de MITRE: tácticas y técnicas en entornos industriales (INCIBE)
+https://news.google.com/rss/articles/CBMimAFBVV95cUxNaWo0dERRZXEyOXRVdXlENmhXakJfSkx2aWNsOS1XeDZiVTBhY1p5S2NHMWhZd3dXYU9Gci1MaC1ScXJteEIwQ01odm05ZC13cjhwcFhfZkszN3hZYWdfUVBjVjdSMGNUTWlfNVozUDFlOWtHLWVKbmlVRDZDd0UwaFlNMkVTMkkxOGtPQlRjeUxrYmZmSHROdg?oc=5
+
+[2026-11-09 11:22:38] [IoT] Intel Chips Speed Up Post-quantum Encryption For IoT Devices (Quantum Zeitgeist)
+https://news.google.com/rss/articles/CBMickFVX3lxTE9GR01oeTZJWkkxYU5GdGF4bDBfV0E3MmlJMEpRWDQ4bV9LTnVBSXcteGVCdXYyR21WbllvZ3J3d1BhVGszUUtYSFNveERQcHFvQ2JYUUNNbk82YkpsRFFlRmJvR3V4Y29yV0pRMUZMOFBWZw?oc=5
+
+[2026-11-09 11:22:38] [IoT] AI models may be capable of self-replicating without access to a datacenter (Anthropic)
+https://news.google.com/rss/articles/CBMiZEFVX3lxTFBRTnpIbVhZdVJZa2ZyVy1Namo1b3Qxcm5IVEVJcmllZ0tITVJkd1FKTjBJazBDU3JRX055UHdkTUxtM0hQbG1aSmpKaFZxMFRTU1YzUzNtWi1jU2hiUjR6c3E5VWk?oc=5
+
+[2026-11-09 11:22:38] [IoT] Supermarket Freezer Cyberattacks Spread Across Europe as Experts Warn of Wider IoT Risks (IT Security Guru)
+https://news.google.com/rss/articles/CBMiigFBVV95cUxPYVNQSkk3OGdaZ2ROQlVOMktqZWw2ZU96a0NURmIyTmFBT2tTd2VPbW1qbERDN1liR01lZ1FQSnlqUS1FV1hTdENMOEhNVGJLVDF2WXIzZkZpcVhrWGI4NHRuMzdnbVhxSXp4b2JmNHluTkRFQnNuRnZKMUdNMDdpM18wWnRNblN1WVE?oc=5
+
+[2026-11-09 11:22:38] [IoT] 28 IoT Devices Connecting the World (Built In)
+https://news.google.com/rss/articles/CBMiUkFVX3lxTE9INWN2SVRKLUlHSHdpNDg5bml4aWRObmZHWGl3djZKWFdUcVhudU1pYlBYNGY1VU1raEt2TGtMTDF4clhjTXIyMzktRU1KZWF5V2c?oc=5
+
+[2026-11-09 11:22:38] [IoT] Cellular IoT market update 2026: Connections grew 13% in 2025, slowest since 2020 (IoT Analytics)
+https://news.google.com/rss/articles/CBMic0FVX3lxTE55RGRmT2xEeGZmVFFlRUZ3SUhqdDU3cU1aTlFFeDdJQkJvYXJVMTNKMjEwQ2l4TUpQZlhzalN4b3dsbDdMMkpzR0pwQ3dNeDNzVFFubUllSG5ya25rYURTd3RWamZubmduWU4weW1NTHhFVjQ?oc=5
+
+[2026-11-09 11:22:38] [IoT] Fibocom modules connect to Starlink Direct to Cell in New Zealand (TNGlobal)
+https://news.google.com/rss/articles/CBMihgFBVV95cUxQUTJUZkpwcmxEY1hfdm5rM3dIdEFuYUdUS1B3VUZBcGhfWWtUNGhPMExpd0ZTNVdRcmdSb0JTNlgybVRsNFdDWWNuSm1TczJZR3FNck52VVdRMVZhdi1tY29TeTBrUU5ES0MwSFB3Q1ZYSlVld0doUGFyQ3BmR0xKMGhGNjF6Zw?oc=5
+
+[2026-11-09 11:22:38] [IoT] Telenor Connexion strengthens leadership team with appointment of Thomas Bergström as CFO (Mynewsdesk)
+https://news.google.com/rss/articles/CBMi0AJBVV95cUxPWGFRQlVEbG5VVDVvLXZnN3pUVjFpZkNkd3JiOWZaUVNGVklIYy00LWRNS0NwWktNTzFpZDFYekxneUxRS0V5Uml3WTRlSmo1QVJHLVZsMTNPV2MxMWFJbHZINmV1WkxvS1hhTjcxc0FRaGlOZ1VjdmE1dHFoLUUxTzR6YW56SWtrZm4tdG9iTUhhZE5hWXlWYU1QazVORGF6V1VwXzNLNEFSeVEyUUs0OEFDQXpSeEw1S3c2Tjl2WjRnSHhuc0FjUkJKWVN6WW1hSGctMENnRlhhVUZvLVFMTlJaS2JZRnp2bGd6ay1TU1hIcEtZYWRfaUt6MWtRLXM5NW1XcUwxdzJ5S3pFMTlCbEFyeXNZRDVkUUJsMEJKcU1jZnZpWXdqb1Z4R0RfQy1TQ3B6WE5iRUExRzFxZVc2cUxIanhkY09vZmlxdVFnMGQ?oc=5
+
+[2026-11-09 11:22:38] [IoT] Wi-Fi HaLow in Europe: Edge AI growth and real-world deployments point to new IoT opportunities (Wi-Fi NOW Global)
+https://news.google.com/rss/articles/CBMiywFBVV95cUxQMEtKTVNQRzl1ekl1M3ZJczNBYjhuOTlsb1FQNXNkaWp5M0ZjM2U5STFKbHRQb3lOeEJQZDRuc2VBdVNoUlEzSWd3d2tuTmxyeXVucGxwdGtQZTZHRGJTdFRuS0tmMTcwWDhGT0Z6YWF3Tk5VcTZfb2ZrWjE5UjQ5dXhUZzJaY09KTVZBemJnQkw2M2NRcEI1T21kTGoxWV9QY3kzcHl6R18tbS1KWUkxLXVzTUxtYWVNZldCN3JsNlhzSUlCZHRQZjFDRQ?oc=5
+
+[2026-11-09 11:22:38] [IoT] State of enterprise IoT 2026: The shift from IoT to autonomous connected operations (IoT Analytics)
+https://news.google.com/rss/articles/CBMilgFBVV95cUxNSlgtT3RTYnE5NFlKQ0haZmhydHl0aHZTNkE4R1dqVHlfbWYwUjBlSzFkNVlUcnpLb0VHbWdpLUFWcDVReVBSZDA3cVdlci1NMk1uakxQa1BGYjU4SGMzQnA2MUYtdVpYNUZDQTBiM0VKRzBsZTA1VGVZXzVHS2NwSTNSNXppZUstamttSmdDMURLVWEtbFE?oc=5
+
+[2026-11-09 11:22:38] [IoT] Internet of Things Market Size & Share Report [2034] (Fortune Business Insights)
+https://news.google.com/rss/articles/CBMimAFBVV95cUxQQ3l5R1poVUtlS1o3VkF6OUlsZHJ3UHpsQnZQS0FMTjVXX2FxWTFNbHZwRUZBSVd2cF9EbkY3NGtfMmhRMVh1UGNodWdNYVJoOXFucDlwRVpnLWZsSzdFMF82YXBQYkhtUWw1VTUzWTA2QkRLdFFMMTh3VzBJc2lDc011ajRGdE5tWEJLXzBfWlBWazAyblRETA?oc=5
+
+[2026-11-09 11:22:38] [IoT] When an AI accelerator slows your intrusion detector: Raspberry Pi 5 and Hailo-8 put to the test (Bioengineer.org)
+https://news.google.com/rss/articles/CBMivAFBVV95cUxPbW96clozcTV6eW1lUW1OTjFWNlMzb29Hb1lOd2tCWUN1TWhTYldvODFZb2haZm85OUJMTTc4b1pLZi1WbGZvN0lrcHBGUjU2R0QyQ1hHZTBzampfUVBSSG1pa09nRERPMmJrcUxFaUt1bGwyNFZNVEZnaThjcFRmZjV4WDFEUXg1bWUyaF8wTkdWaS1sQnBjSld1dGQtWFVwTzg2YURYdWVqNkZmXzdGV3BxeGVKcWhSNDY0WQ?oc=5
+
+[2026-11-09 11:22:38] [IoT] Malicious Software Planted at Manufacturing Stage in Home IoT Devices by Chinese Contractor Without Authorization; Japan's National Police Agency and Google Neutralize Over 1.3 Million Devices (BigGo Finance)
+https://news.google.com/rss/articles/CBMidkFVX3lxTE5ObUZELUttenVmU2dLaUt0LTJUSGpFZ09TelpGWEd0a2Y2VlJLWlNJM0dMQkZfZDhmdW1ORzEzMWJ4Y2x0TlE3Mkg0TU9mSzh0UE1GRlZ3VE1pQWdDdUo1eWtESE1aX3NHUDBRQ1hJSm1PUlYyT2c?oc=5
+
+[2026-11-09 11:22:38] [IoT] Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet (Dark Reading)
+https://news.google.com/rss/articles/CBMikwFBVV95cUxNZldKT3RHVTNYcnJTVklleUQ1RWI4X21XMVZfUjlrUlM1blJ5Y1VMck1lOG5hMGQ5NkY2Q3JfSHZodnRwUWFoQkVOaTliUGktNjNsY25EOVRDSUtEUHZmcUE3UHAza2dmRGg0dERkMFJxQ3hPN2RSUEtmMzJpSkZmWGtlNml6OFc3SEw5S2R2bTR4ek0?oc=5
+
+[2026-11-09 11:22:38] [IoT] IOT Data Hackathon 2027 Now Open for Applications -- Calling Innovators to Turn Data into Real-World Impact (PR Newswire)
+https://news.google.com/rss/articles/CBMi-gFBVV95cUxOVUVLdDNqbW9zS1FTd3VsbWcwZUZEdXF1OWVST3cxbmk5TXh5SVVHNm9DdmxfQXo1aFZvTDNtYURWTEsxcmJUY0duRncydlljMDlneUF6VjgyZXgtTGNvZzNHdkVyNW1LblJJc2ZKTHUxOW1FSS1SYmtzNVZORXMtWnNVNHpGN0JET3dvZkF2UUcxSVJMLUhuY3BtbDQ2c281T1FIdmdabEJqczFJNktYX0lvRzYzVmRuZU1sMXV3b1hyX1pEUHU3alNpQWRraXQ3RHJDc2dqNnVsMGRlZ0VzRnZMZEZ4Zkd4ci1ndHVSem1vSFZkVmNiRlNB?oc=5
+
+[2026-11-09 11:22:38] [IoT] QCOM Q4 Earnings Beat Estimates on Robust Automotive Growth (TradingView)
+https://news.google.com/rss/articles/CBMitgFBVV95cUxQa2hFSGtuVTI4VzB6MVpSd05pVVMyelNIV2VFaTBYaEQ2eEl2MWwyT0Q2QXdoc2pVM0taNDVSSmowMWtqZ3R2TF8zRjlseFlHdVRFZk1OSUN3NXVHaHNYUzN3Z1RLMk5nR19SQTVLbkNNZGtJUXg2Uk4wOHBzTXdWdmNRbGxubXE3NVNuVWFGS2hmc3hwckxOLVp5aGduVjNXclVja21KcF95ZnJZWWxSWHRtdFRHQQ?oc=5
+
+[2026-11-09 11:22:38] [IoT] Max-severity bug in widely used OT programming tool exploited to deliver Linux malware (The Register)
+https://news.google.com/rss/articles/CBMi2gFBVV95cUxPREp5NmpEcTFrQk0tS1dqUmRqZHk2YkM3dzlPMEQxT3FxU2pIaFlzSjcwWXAzSU1oYXJ1anMwbmREQmNqcDZiWmVrSEhncUxvZVpSdUlWT1p0aTNCN2lNNkNibkg2Y29uYUJBVjNRQl9JQUF6TlEzcTN2aVVyeGdwSmpmUjFEYzBfTkp4NkxJRXdjaHBjRVg4UUdpX01JYXBJdlhSeWgxVHR2LUJUWWNfR1ZzQnV5bzZnWGRpdVBfZXJ6ZGFLTlJ5MTBHUm5VUzRsRUFLcXh2ejBmQQ?oc=5
+
+[2026-11-09 11:22:38] [IoT] Texas Instruments chip runs three Ethernet protocols (IoT News)
+https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ3ZkV1BZTUZEam9MYkFFTEYtLU1fUm43OGZLOE9FMUxRZFkwUWt3LTBFQ3JIRjMtSTE1cmNURS1kLUpfbjZiSmpIZkRBT3UyR0xodVNMbUF2a3gyeFkzS1ZXeUxGSWpHd0pKUFJnSUFrRFhKRGtVcXBoVlpOZ3RWeDV6SksxYkROUkE?oc=5
+
+[2026-11-09 11:22:38] [IoT] IoT Hack Disrupts Supermarket Freezers Across Europe, Sparks Crypto Security Warnings (KuCoin)
+https://news.google.com/rss/articles/CBMiugFBVV95cUxNbURiREFuc0JRRHFOMXlvZVZ2UjhpUGdtSGpraFRJOFhpbkNtUXZUVlhDX2ttWEsySjRYT3pVY1BEU1RuUm1sZUgyUUpqOVFjbkEtdzE4Y0RWVzdLZzFyUTBTUFhnalo4SEthVWg0UWs4ZGNjdmMtTUtZNjRwalFEdjBGdWNKM2RDS0xUVUtEVEdzamdUWFBFWU9pLURyZHFvTEsxWlVwRkRhNWU4dGNBdjJ6NUdFSnBMOWc?oc=5
+
+[2026-11-09 11:22:38] [IoT] World IoT Expo opens in Wuxi, highlighting convergence of artificial intelligence and industry (vietnamnews.vn)
+https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMktLTlkxUDVwdWcxTE9kRjFlQUUwWDFCTXk0bFFtRUR1OGhPekQ2MXdMZGIyR1V5MlBfajVCZ0xoNmd1eEJ4Y3cwbnhuUlRVdGVUOUZIaURXTHNHcU1BMk9GWTZBRVhEZ1BUeGMwOVlCY0J3MDRzM0JiOTJCU29BQ0huS0xvaVdRVGlaRW56blBZQ2d0Mlh6ZV9mSHN2bF85YXdtUzd1V2RYMEc2S3hlT2JRX1Q5TndXTDVRZjFwMGU2SjIyQUZjNU1sRjVrV0NGVkJYUmpnX1NXaWdv?oc=5
+
+[2026-11-09 11:22:38] [IoT] Sungai Sebiew Precision Farming Park to bring IoT, modern farming to Bintulu upon completion next year (DayakDaily)
+https://news.google.com/rss/articles/CBMiwwFBVV95cUxPN2phMUNweWFUbGItMXNmQm1hRV9oQ05iOEg5UnJYYkQyWm00R28tTy1GZmRGd3otYlpSdnc4YWRVRXI5emZQaEduV3JodTQzdGVmdFBMMjcyeUFEZGZCNTRJbTk3Rmc1WGRORGJjNDJvMEJXREhZSmt0RkNfSEJEZ0EyRHJ5ZGhKTlpCOHY5Vk13MDlGekI2R0ZrRmI2eHVvdWo5MlFOc1Y0LTAtMUQ4WEstMWJCMDNLcGE3em5QY2NydTQ?oc=5
+
+[2026-11-09 11:22:38] [Sensores Industriales] electronica 2026 in Munich: AI, Edge Computing, and Sensor Technology (industrial-production.de)
+https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdXlKbjdRZXlLb2xnNnZpQTZqRnM5Q1RSVmtQSzBzMjA4NlpnWmdGVEVuSnlUN0pOdUtfQlN0MjItNkdjZVVMdkdnb2JMRGoxcEUySlN1UUhnbjgxdzB3eldWakNvQm9nWWVzUzJ2NGh2U1JsOE9Ua1NzckVBRnZCRFFBMFJBbndxWTZUcmFhb1ZZdDlFSXFlRUE2RDRRb1l0d3c5ODFtaHBTbEJ6aUg2Y0dwUjlmSXgtMmo2U3VZUUZVcWUtYUg2dQ?oc=5
+
+[2026-11-09 11:22:38] [Sensores Industriales] Image Sensor Market Size, Share & Growth Forecast, 2026-2035 (Global Market Insights Inc.)
+https://news.google.com/rss/articles/CBMickFVX3lxTFAtelNNeDRsYnJ5OGdfMlc5S2s5RE5FVzVES0RhZkR5Y05oaWxyTkgwZF9IVHFnbHlrVGMxam8xWVUxT0UybGl3cmhHVjV2WVoyY244LS1xSGNMS1pwYjRFa2tfNFY4enFRaEZ0eGJjaWh4QQ?oc=5
+
+[2026-11-09 11:22:38] [Sensores Industriales] Industrial Sensors Market Size, Share & Manufacturers, Report, 2034 (Fortune Business Insights)
+https://news.google.com/rss/articles/CBMikwFBVV95cUxNVERabjlzZzh6dXcxMFcxMHhDVF9PWXoyeFRROGd1UlplZXh6ZWhFdE0za2d4d2NQanJFNHFOUjk5dWdSeEZ3SVo1azE2dG5ESHhKZEtWNm5ldVo1d0hpb1dkUmRqSFdKTWpaS25yU0FWMURxZmxqMXY4aTVTV3k5ODZ5UTgyRmF1YXl1bU8tc1pSSm8?oc=5
+
