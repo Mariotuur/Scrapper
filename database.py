@@ -1,6 +1,6 @@
 """
 database.py - SQLite storage engine for News Monitor
-Manages keywords, discovered articles, user preferences, scan history,
+Manages keywords, target website filters, discovered articles, user preferences, scan history,
 and instantly outputs detected links to news_links.txt.
 """
 
@@ -8,6 +8,7 @@ import sqlite3
 import os
 import json
 import hashlib
+import re
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 
@@ -112,6 +113,17 @@ def init_db():
             )
         """)
 
+        # Target Websites / Sources table
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS websites (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL UNIQUE,
+                is_active INTEGER NOT NULL DEFAULT 1,
+                created_at TEXT NOT NULL
+            )
+        """)
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_websites_name ON websites(name)")
+
         # Articles table
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS articles (
@@ -130,9 +142,10 @@ def init_db():
             )
         """)
 
-        # Index for fast filtering and deduplication
+        # Indexes for fast filtering and deduplication
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_articles_guid ON articles(guid_hash)")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_articles_keyword ON articles(keyword_matched)")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_articles_source ON articles(source)")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_articles_discovered ON articles(discovered_at DESC)")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_articles_read ON articles(is_read)")
 
@@ -150,12 +163,19 @@ def init_db():
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 timestamp TEXT NOT NULL,
                 keywords_scanned TEXT NOT NULL,
+                websites_scanned TEXT NOT NULL DEFAULT '',
                 articles_found INTEGER NOT NULL,
                 new_articles_count INTEGER NOT NULL,
                 status TEXT NOT NULL,
                 message TEXT
             )
         """)
+
+        # Migration: ensure websites_scanned column exists in existing scan_logs
+        try:
+            cursor.execute("ALTER TABLE scan_logs ADD COLUMN websites_scanned TEXT NOT NULL DEFAULT ''")
+        except sqlite3.OperationalError:
+            pass
 
         # Default settings if not already set
         default_settings = {
@@ -235,7 +255,7 @@ def get_keywords(active_only: bool = False) -> List[Dict[str, Any]]:
 
 
 def delete_keyword(keyword_id: int):
-    """Deletes a keyword and optionally its untagged references."""
+    """Deletes a keyword."""
     with get_db_connection() as conn:
         cursor = conn.cursor()
         cursor.execute("DELETE FROM keywords WHERE id = ?", (keyword_id,))
@@ -251,6 +271,93 @@ def toggle_keyword(keyword_id: int) -> bool:
             return False
         new_state = 0 if row["is_active"] else 1
         cursor.execute("UPDATE keywords SET is_active = ? WHERE id = ?", (new_state, keyword_id))
+        conn.commit()
+        return bool(new_state)
+
+
+# ==================== WEBSITE FILTER OPERATIONS ====================
+
+def clean_website_input(web: str) -> str:
+    """Normalizes website input for database storage."""
+    if not web:
+        return ""
+    w = web.strip()
+    w = re.sub(r"^https?://", "", w, flags=re.IGNORECASE)
+    w = re.sub(r"^www\.", "", w, flags=re.IGNORECASE)
+    w = w.rstrip("/")
+    return w
+
+
+def add_website(website_name: str) -> Optional[int]:
+    """Adds a new target website/domain to filter news searches."""
+    cleaned = clean_website_input(website_name)
+    if not cleaned:
+        return None
+    with get_db_connection() as conn:
+        cursor = conn.cursor()
+        try:
+            now = datetime.now().isoformat()
+            cursor.execute(
+                "INSERT INTO websites (name, is_active, created_at) VALUES (?, 1, ?)",
+                (cleaned, now)
+            )
+            conn.commit()
+            return cursor.lastrowid
+        except sqlite3.IntegrityError:
+            # Website filter already exists, ensure it is active
+            cursor.execute(
+                "UPDATE websites SET is_active = 1 WHERE LOWER(name) = LOWER(?)",
+                (cleaned,)
+            )
+            conn.commit()
+            return None
+
+
+def get_websites(active_only: bool = False) -> List[Dict[str, Any]]:
+    """Retrieves all tracked websites with matching article counts."""
+    with get_db_connection() as conn:
+        cursor = conn.cursor()
+        query = "SELECT id, name, is_active, created_at FROM websites"
+        if active_only:
+            query += " WHERE is_active = 1"
+        query += " ORDER BY created_at ASC"
+
+        rows = cursor.execute(query).fetchall()
+        result = []
+        for r in rows:
+            w_name = r["name"].lower()
+            # Match domain or source title
+            count_row = cursor.execute("""
+                SELECT COUNT(*) FROM articles
+                WHERE LOWER(source) LIKE ? OR LOWER(source_url) LIKE ? OR LOWER(link) LIKE ?
+            """, (f"%{w_name}%", f"%{w_name}%", f"%{w_name}%")).fetchone()
+            result.append({
+                "id": r["id"],
+                "name": r["name"],
+                "is_active": bool(r["is_active"]),
+                "created_at": r["created_at"],
+                "article_count": count_row[0] if count_row else 0
+            })
+        return result
+
+
+def delete_website(website_id: int):
+    """Deletes a website filter."""
+    with get_db_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM websites WHERE id = ?", (website_id,))
+        conn.commit()
+
+
+def toggle_website(website_id: int) -> bool:
+    """Toggles active/paused state of a website filter."""
+    with get_db_connection() as conn:
+        cursor = conn.cursor()
+        row = cursor.execute("SELECT is_active FROM websites WHERE id = ?", (website_id,)).fetchone()
+        if not row:
+            return False
+        new_state = 0 if row["is_active"] else 1
+        cursor.execute("UPDATE websites SET is_active = ? WHERE id = ?", (new_state, website_id))
         conn.commit()
         return bool(new_state)
 
@@ -317,6 +424,7 @@ def save_articles(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 def get_articles(
     keyword: Optional[str] = None,
+    website: Optional[str] = None,
     filter_type: str = "all",  # "all", "unread", "bookmarked"
     search_query: Optional[str] = None,
     limit: int = 100,
@@ -332,6 +440,11 @@ def get_articles(
         if keyword and keyword.lower() != "all":
             where_clauses.append("LOWER(keyword_matched) = LOWER(?)")
             params.append(keyword)
+
+        if website and website.lower() != "all":
+            w = f"%{website.strip().lower()}%"
+            where_clauses.append("(LOWER(source) LIKE ? OR LOWER(source_url) LIKE ? OR LOWER(link) LIKE ?)")
+            params.extend([w, w, w])
 
         if filter_type == "unread":
             where_clauses.append("is_read = 0")
@@ -430,6 +543,8 @@ def get_dashboard_stats() -> Dict[str, Any]:
         bookmarked_articles = cursor.execute("SELECT COUNT(*) FROM articles WHERE is_bookmarked = 1").fetchone()[0]
         active_keywords = cursor.execute("SELECT COUNT(*) FROM keywords WHERE is_active = 1").fetchone()[0]
         total_keywords = cursor.execute("SELECT COUNT(*) FROM keywords").fetchone()[0]
+        active_websites = cursor.execute("SELECT COUNT(*) FROM websites WHERE is_active = 1").fetchone()[0]
+        total_websites = cursor.execute("SELECT COUNT(*) FROM websites").fetchone()[0]
 
         last_scan = cursor.execute(
             "SELECT timestamp, status, new_articles_count FROM scan_logs ORDER BY id DESC LIMIT 1"
@@ -441,6 +556,8 @@ def get_dashboard_stats() -> Dict[str, Any]:
             "bookmarked_articles": bookmarked_articles,
             "active_keywords": active_keywords,
             "total_keywords": total_keywords,
+            "active_websites": active_websites,
+            "total_websites": total_websites,
             "last_scan_time": last_scan["timestamp"] if last_scan else None,
             "last_scan_status": last_scan["status"] if last_scan else "Never",
             "last_scan_new_count": last_scan["new_articles_count"] if last_scan else 0
@@ -479,15 +596,23 @@ def update_settings(settings_dict: Dict[str, Any]):
 
 # ==================== SCAN LOGS OPERATIONS ====================
 
-def log_scan_event(keywords: List[str], found: int, new_count: int, status: str = "success", message: str = ""):
+def log_scan_event(
+    keywords: List[str],
+    found: int,
+    new_count: int,
+    websites: Optional[List[str]] = None,
+    status: str = "success",
+    message: str = ""
+):
     """Logs a scan execution event."""
     with get_db_connection() as conn:
         cursor = conn.cursor()
         now = datetime.now().isoformat()
+        webs_str = ", ".join(websites) if websites else "All"
         cursor.execute("""
-            INSERT INTO scan_logs (timestamp, keywords_scanned, articles_found, new_articles_count, status, message)
-            VALUES (?, ?, ?, ?, ?, ?)
-        """, (now, ", ".join(keywords), found, new_count, status, message))
+            INSERT INTO scan_logs (timestamp, keywords_scanned, websites_scanned, articles_found, new_articles_count, status, message)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        """, (now, ", ".join(keywords), webs_str, found, new_count, status, message))
         conn.commit()
 
 

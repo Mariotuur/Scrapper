@@ -1,8 +1,9 @@
 """
 cli.py - Standalone Command-Line News Monitor
-Run directly in your terminal to monitor keywords with a live countdown and desktop alerts.
+Run directly in your terminal to monitor keywords with a live countdown and desktop alerts,
+with support for filtering specific websites and sources.
 Usage:
-    python cli.py --keywords "OpenAI, SpaceX, Quantum Computing" --interval 5
+    python cli.py --keywords "OpenAI, SpaceX" --websites "theverge.com, techcrunch.com" --interval 5
 """
 
 import argparse
@@ -24,15 +25,27 @@ def format_time(seconds: int) -> str:
     return f"{mins:02d}:{secs:02d}"
 
 
-def run_cli_scanner(keywords_arg: str, interval_minutes: int, region: str = "en-US", enable_notif: bool = True):
+def run_cli_scanner(
+    keywords_arg: str,
+    websites_arg: str = "",
+    interval_minutes: int = 5,
+    region: str = "en-US",
+    enable_notif: bool = True
+):
     database.init_db()
-    
+
     # Process keywords
     if keywords_arg:
         kws = [k.strip() for k in keywords_arg.split(",") if k.strip()]
         for kw in kws:
             database.add_keyword(kw)
-    
+
+    # Process website filters
+    if websites_arg:
+        webs = [w.strip() for w in websites_arg.split(",") if w.strip()]
+        for w in webs:
+            database.add_website(w)
+
     active_keywords = database.get_keywords(active_only=True)
     if not active_keywords:
         print(Fore.RED + "\n[!] No active keywords specified. Provide keywords via --keywords 'word1, word2'")
@@ -40,36 +53,54 @@ def run_cli_scanner(keywords_arg: str, interval_minutes: int, region: str = "en-
 
     kw_names = [k["keyword"] for k in active_keywords]
 
+    active_websites = database.get_websites(active_only=True)
+    web_names = [w["name"] for w in active_websites]
+
     print(Style.BRIGHT + Fore.CYAN + "\n" + "=" * 65)
     print(Style.BRIGHT + Fore.CYAN + "   🌐 LOCAL INTERNET NEWS MONITOR (CLI MODE)")
     print(Style.BRIGHT + Fore.CYAN + "=" * 65)
     print(Fore.YELLOW + f"  Tracking Keywords : {', '.join(kw_names)}")
+    if web_names:
+        print(Fore.GREEN + f"  Website Filters   : {', '.join(web_names)} (Filtering Enabled)")
+    else:
+        print(Fore.YELLOW + f"  Website Filters   : All Websites (Unfiltered internet search)")
     print(Fore.YELLOW + f"  Refresh Timer     : Every {interval_minutes} minute(s)")
     print(Fore.YELLOW + f"  Region / Language : {region}")
     print(Fore.YELLOW + f"  Desktop Alerts    : {'Enabled' if enable_notif else 'Disabled'}")
     print(Style.BRIGHT + Fore.CYAN + "=" * 65 + "\n")
 
-    scanner = NewsScanner(region_language=region)
+    scanner = NewsScanner(region_language=region, websites=web_names)
 
     try:
         while True:
-            # Refresh active keywords
+            # Refresh active keywords and websites each cycle
             active_keywords = database.get_keywords(active_only=True)
             kw_names = [k["keyword"] for k in active_keywords]
-            
-            print(Fore.BLUE + f"[{datetime.now().strftime('%H:%M:%S')}] Checking news across the internet...")
-            
+
+            active_websites = database.get_websites(active_only=True)
+            web_names = [w["name"] for w in active_websites]
+
+            timestamp = datetime.now().strftime('%H:%M:%S')
+            if web_names:
+                print(Fore.BLUE + f"[{timestamp}] Checking news across: {', '.join(web_names)}...")
+            else:
+                print(Fore.BLUE + f"[{timestamp}] Checking news across the internet...")
+
             total_found = 0
             all_new = []
 
             for kw in kw_names:
-                sys.stdout.write(f"  Searching for '{kw}'... ")
+                search_label = f"'{kw}'"
+                if web_names:
+                    search_label += f" on [{', '.join(web_names)}]"
+                sys.stdout.write(f"  Searching for {search_label}... ")
                 sys.stdout.flush()
-                articles = scanner.fetch_google_news(kw, max_results=30)
+
+                articles = scanner.fetch_google_news(kw, websites=web_names, max_results=30)
                 new_saved = database.save_articles(articles)
                 total_found += len(articles)
                 all_new.extend(new_saved)
-                
+
                 if new_saved:
                     sys.stdout.write(Fore.GREEN + f"Found {len(new_saved)} NEW articles!\n")
                     for art in new_saved[:3]:
@@ -87,6 +118,7 @@ def run_cli_scanner(keywords_arg: str, interval_minutes: int, region: str = "en-
                 keywords=kw_names,
                 found=total_found,
                 new_count=len(all_new),
+                websites=web_names,
                 status="success",
                 message=f"CLI scan found {len(all_new)} new items."
             )
@@ -106,8 +138,9 @@ def run_cli_scanner(keywords_arg: str, interval_minutes: int, region: str = "en-
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Monitor the internet for news matching specific words.")
+    parser = argparse.ArgumentParser(description="Monitor the internet for news matching specific words and websites.")
     parser.add_argument("-k", "--keywords", type=str, default="", help="Comma-separated keywords to monitor, e.g., 'OpenAI, SpaceX'")
+    parser.add_argument("-w", "--websites", type=str, default="", help="Comma-separated website domains or names to filter, e.g., 'elpais.com, bbc.com' or 'BBC, Reuters'")
     parser.add_argument("-i", "--interval", type=int, default=5, help="Refresh interval in minutes (default: 5)")
     parser.add_argument("-r", "--region", type=str, default="en-US", help="Region and language code, e.g. en-US, es-ES")
     parser.add_argument("--no-notifications", action="store_true", help="Disable Windows desktop notifications")
@@ -115,6 +148,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     run_cli_scanner(
         keywords_arg=args.keywords,
+        websites_arg=args.websites,
         interval_minutes=args.interval,
         region=args.region,
         enable_notif=not args.no_notifications

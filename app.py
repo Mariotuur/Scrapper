@@ -1,6 +1,6 @@
 """
 app.py - Main Web Application and REST API for News Monitor
-Runs locally and serves a modern reactive dashboard.
+Runs locally and serves a modern reactive dashboard with keyword & website filtering.
 """
 
 import os
@@ -91,12 +91,60 @@ def toggle_keyword(keyword_id):
     return jsonify({"status": "ok", "is_active": new_state})
 
 
+# ==================== WEBSITE FILTER ENDPOINTS ====================
+
+@app.route("/api/websites", methods=["GET"])
+def get_websites():
+    """Retrieves all target websites/sources configured for filtering."""
+    websites = database.get_websites()
+    return jsonify({"websites": websites})
+
+
+@app.route("/api/websites", methods=["POST"])
+def add_website():
+    """Adds a new website or multiple comma-separated website domains/names."""
+    data = request.get_json() or {}
+    raw_web = data.get("website", "").strip()
+
+    if not raw_web:
+        return jsonify({"error": "Website cannot be empty"}), 400
+
+    # Support multiple websites separated by commas if entered together
+    webs = [w.strip() for w in raw_web.split(",") if w.strip()]
+    added = []
+    for w in webs:
+        web_id = database.add_website(w)
+        added.append({"website": w, "id": web_id})
+
+    # Trigger scan immediately to reflect the new website filter
+    scheduler.trigger_immediate_scan()
+
+    return jsonify({"status": "ok", "added": added})
+
+
+@app.route("/api/websites/<int:website_id>", methods=["DELETE"])
+def delete_website(website_id):
+    """Deletes a website filter."""
+    database.delete_website(website_id)
+    scheduler.trigger_immediate_scan()
+    return jsonify({"status": "ok", "message": "Website filter deleted"})
+
+
+@app.route("/api/websites/<int:website_id>/toggle", methods=["PUT"])
+def toggle_website(website_id):
+    """Pauses or resumes a website filter."""
+    new_state = database.toggle_website(website_id)
+    scheduler.trigger_immediate_scan()
+    return jsonify({"status": "ok", "is_active": new_state})
+
+
 # ==================== ARTICLE ENDPOINTS ====================
 
 @app.route("/api/articles", methods=["GET"])
 def get_articles():
-    """Retrieves articles with filtering and search."""
+    """Retrieves articles with keyword, website, status filtering and search."""
     keyword = request.args.get("keyword", "all")
+    website = request.args.get("website", "all")
     filter_type = request.args.get("filter", "all")  # all, unread, bookmarked
     search = request.args.get("search", "")
     limit = int(request.args.get("limit", 100))
@@ -104,6 +152,7 @@ def get_articles():
 
     result = database.get_articles(
         keyword=keyword,
+        website=website,
         filter_type=filter_type,
         search_query=search,
         limit=limit,
@@ -173,9 +222,10 @@ def export_articles():
     """Exports articles to CSV or JSON format."""
     format_type = request.args.get("format", "csv").lower()
     keyword = request.args.get("keyword", "all")
+    website = request.args.get("website", "all")
     filter_type = request.args.get("filter", "all")
 
-    data = database.get_articles(keyword=keyword, filter_type=filter_type, limit=5000)
+    data = database.get_articles(keyword=keyword, website=website, filter_type=filter_type, limit=5000)
     articles = data.get("articles", [])
 
     if format_type == "json":
@@ -187,7 +237,7 @@ def export_articles():
     output = io.StringIO()
     writer = csv.writer(output)
     writer.writerow([
-        "ID", "Keyword", "Title", "Source", "Link", "Published At",
+        "ID", "Keyword", "Title", "Source", "Source URL", "Link", "Published At",
         "Discovered At", "Is Read", "Is Bookmarked"
     ])
     for a in articles:
@@ -196,6 +246,7 @@ def export_articles():
             a.get("keyword_matched"),
             a.get("title"),
             a.get("source"),
+            a.get("source_url"),
             a.get("link"),
             a.get("published_at"),
             a.get("discovered_at"),
