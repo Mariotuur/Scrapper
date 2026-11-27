@@ -8,6 +8,7 @@ const state = {
   keywords: [],
   websites: [],
   articles: [],
+  selectedArticleIds: new Set(),
   activeTab: 'all',          // 'all', 'unread', 'bookmarked'
   selectedKeyword: 'all',
   selectedWebsite: 'all',
@@ -328,6 +329,38 @@ function updateWebsiteFilterBanner() {
   }
 }
 
+function updateSelectionUI() {
+  const count = state.selectedArticleIds.size;
+  const countSpan = document.getElementById('selected-count');
+  if (countSpan) countSpan.textContent = count;
+
+  const btnDeleteSelected = document.getElementById('btn-delete-selected');
+  if (btnDeleteSelected) {
+    btnDeleteSelected.style.display = count > 0 ? 'inline-flex' : 'none';
+  }
+
+  const selectAllCheck = document.getElementById('check-select-all');
+  if (selectAllCheck) {
+    const totalVisible = state.articles.length;
+    if (totalVisible === 0) {
+      selectAllCheck.checked = false;
+      selectAllCheck.indeterminate = false;
+    } else {
+      const selectedVisibleCount = state.articles.filter(a => state.selectedArticleIds.has(a.id)).length;
+      if (selectedVisibleCount === 0) {
+        selectAllCheck.checked = false;
+        selectAllCheck.indeterminate = false;
+      } else if (selectedVisibleCount === totalVisible) {
+        selectAllCheck.checked = true;
+        selectAllCheck.indeterminate = false;
+      } else {
+        selectAllCheck.checked = false;
+        selectAllCheck.indeterminate = true;
+      }
+    }
+  }
+}
+
 function renderArticles() {
   const container = document.getElementById('articles-feed');
   if (state.articles.length === 0) {
@@ -339,6 +372,7 @@ function renderArticles() {
         </p>
       </div>
     `;
+    updateSelectionUI();
     return;
   }
 
@@ -347,11 +381,13 @@ function renderArticles() {
     const highlightedSnippet = highlightText(art.snippet, art.keyword_matched);
     const isRead = art.is_read === 1;
     const isBookmarked = art.is_bookmarked === 1;
+    const isSelected = state.selectedArticleIds.has(art.id);
     const timeAgo = formatRelativeTime(art.published_at || art.discovered_at);
 
     return `
-      <article class="article-card ${isRead ? 'read' : ''}" data-id="${art.id}">
+      <article class="article-card ${isRead ? 'read' : ''} ${isSelected ? 'selected' : ''}" data-id="${art.id}">
         <div class="article-meta">
+          <input type="checkbox" class="article-checkbox" data-id="${art.id}" ${isSelected ? 'checked' : ''} title="Select this article">
           <a class="meta-source" href="${escapeHtml(art.source_url || art.link)}" target="_blank" rel="noopener noreferrer">
             ${escapeHtml(art.source || 'Web')}
           </a>
@@ -376,14 +412,15 @@ function renderArticles() {
             <button class="btn-act read-toggle ${isRead ? 'is-read' : ''}" title="${isRead ? 'Mark as unread' : 'Mark as read'}">
               ${isRead ? '✓ Read' : '○ Mark read'}
             </button>
-            <button class="btn-act delete-article" title="Delete article from history">
-              ✕
+            <button class="btn-act btn-delete-single delete-article" title="Delete this article">
+              🗑 Delete
             </button>
           </div>
         </div>
       </article>
     `;
   }).join('');
+  updateSelectionUI();
 }
 
 // ==================== EVENT HANDLERS ====================
@@ -580,12 +617,130 @@ function initEventHandlers() {
 
     // Delete single article
     if (e.target.closest('.delete-article')) {
-      await fetch(`/api/articles/${id}`, { method: 'DELETE' });
-      card.remove();
-      fetchStatus();
+      const numId = parseInt(id, 10);
+      card.classList.add('deleting');
+      state.selectedArticleIds.delete(numId);
+      updateSelectionUI();
+      try {
+        await fetch(`/api/articles/${id}`, { method: 'DELETE' });
+        setTimeout(() => {
+          card.remove();
+          fetchStatus();
+        }, 220);
+      } catch (err) {
+        card.classList.remove('deleting');
+        console.error('Error deleting article:', err);
+      }
       return;
     }
   });
+
+  // Handle article checkbox change
+  document.getElementById('articles-feed').addEventListener('change', (e) => {
+    if (e.target.classList.contains('article-checkbox')) {
+      const card = e.target.closest('.article-card');
+      const id = parseInt(e.target.dataset.id, 10);
+      if (e.target.checked) {
+        state.selectedArticleIds.add(id);
+        if (card) card.classList.add('selected');
+      } else {
+        state.selectedArticleIds.delete(id);
+        if (card) card.classList.remove('selected');
+      }
+      updateSelectionUI();
+    }
+  });
+
+  // Select / Deselect All visible articles
+  const checkSelectAll = document.getElementById('check-select-all');
+  if (checkSelectAll) {
+    checkSelectAll.addEventListener('change', (e) => {
+      const checked = e.target.checked;
+      state.articles.forEach(art => {
+        if (checked) {
+          state.selectedArticleIds.add(art.id);
+        } else {
+          state.selectedArticleIds.delete(art.id);
+        }
+      });
+      document.querySelectorAll('.article-card').forEach(card => {
+        const id = parseInt(card.dataset.id, 10);
+        const isSel = state.selectedArticleIds.has(id);
+        card.classList.toggle('selected', isSel);
+        const cb = card.querySelector('.article-checkbox');
+        if (cb) cb.checked = isSel;
+      });
+      updateSelectionUI();
+    });
+  }
+
+  // Delete Selected Articles
+  const btnDeleteSelected = document.getElementById('btn-delete-selected');
+  if (btnDeleteSelected) {
+    btnDeleteSelected.addEventListener('click', async () => {
+      const count = state.selectedArticleIds.size;
+      if (count === 0) return;
+      if (!confirm(`Are you sure you want to delete ${count} selected article(s)?`)) return;
+
+      const ids = Array.from(state.selectedArticleIds);
+      btnDeleteSelected.disabled = true;
+      try {
+        await fetch('/api/articles/delete-batch', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ids })
+        });
+        state.selectedArticleIds.clear();
+        await fetchArticles();
+        await fetchStatus();
+      } catch (err) {
+        console.error('Error batch deleting articles:', err);
+      } finally {
+        btnDeleteSelected.disabled = false;
+      }
+    });
+  }
+
+  // Delete All News Modal Open/Close & Actions
+  const deleteAllModal = document.getElementById('modal-delete-all');
+  const btnDeleteAll = document.getElementById('btn-delete-all-news');
+  const btnCloseDeleteAll = document.getElementById('btn-close-delete-all');
+  const btnCancelDeleteAll = document.getElementById('btn-cancel-delete-all');
+  const btnConfirmDeleteAll = document.getElementById('btn-confirm-delete-all');
+  const checkPreserve = document.getElementById('check-preserve-bookmarks');
+
+  if (btnDeleteAll && deleteAllModal) {
+    btnDeleteAll.addEventListener('click', () => {
+      deleteAllModal.classList.add('open');
+    });
+  }
+
+  const closeDeleteAllModal = () => {
+    if (deleteAllModal) deleteAllModal.classList.remove('open');
+  };
+
+  if (btnCloseDeleteAll) btnCloseDeleteAll.addEventListener('click', closeDeleteAllModal);
+  if (btnCancelDeleteAll) btnCancelDeleteAll.addEventListener('click', closeDeleteAllModal);
+
+  if (btnConfirmDeleteAll) {
+    btnConfirmDeleteAll.addEventListener('click', async () => {
+      const preserve = checkPreserve ? checkPreserve.checked : false;
+      btnConfirmDeleteAll.disabled = true;
+      btnConfirmDeleteAll.textContent = 'Deleting...';
+      try {
+        await fetch(`/api/articles/clear?preserve_bookmarks=${preserve}`, { method: 'DELETE' });
+        closeDeleteAllModal();
+        state.selectedArticleIds.clear();
+        await fetchArticles();
+        await fetchStatus();
+      } catch (err) {
+        console.error('Error clearing articles:', err);
+      } finally {
+        btnConfirmDeleteAll.disabled = false;
+        btnConfirmDeleteAll.textContent = 'Delete All News';
+      }
+    });
+  }
 
   // Mark all read
   document.getElementById('btn-mark-all-read').addEventListener('click', async () => {
@@ -596,15 +751,6 @@ function initEventHandlers() {
     });
     await fetchArticles();
     await fetchStatus();
-  });
-
-  // Clear history
-  document.getElementById('btn-clear-history').addEventListener('click', async () => {
-    if (confirm('Clear article history? (Bookmarked articles will be saved)')) {
-      await fetch('/api/articles/clear?preserve_bookmarks=true', { method: 'DELETE' });
-      await fetchArticles();
-      await fetchStatus();
-    }
   });
 
   // Export dropdown
@@ -686,10 +832,12 @@ function initEventHandlers() {
   });
 
   // Close modals when clicking backdrop
-  [settingsModal, linksModal].forEach(modal => {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) modal.classList.remove('open');
-    });
+  [settingsModal, linksModal, deleteAllModal].forEach(modal => {
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('open');
+      });
+    }
   });
 }
 

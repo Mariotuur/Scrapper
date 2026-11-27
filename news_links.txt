@@ -2511,3 +2511,483 @@ https://news.google.com/rss/articles/CBMivwFBVV95cUxNNnlUanhGS0ZsMHRwVmpYbGxJNDd
 [2026-11-27 12:10:45] [Sensores Industriales] El inventor de productos del futuro que enseñó a un río a escribir poesía (EL PAÍS)
 https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUWVudWhheC1mYWdFdnZwTXdMSTg2N0pWT1E5MDc5aElzeVZhQ1hoRnV0LTFwa2JZSGxKTllfSzduOXgtdzFaWV9fQTlGcDZUM0twbDNLYWVRaGVRQlZVRkRKNkhQV0hNX2pwSm9QT21wcE1XMGNMSF9vMEhUUndKZHhkeGh6WUlWdHU0T09GbjNnc1h5VXM3NldtamZ5WF8zUUZsNmxuTmJQX1VRc2l0ZklGMnRwNV9lSzRJ0gHPAUFVX3lxTE1QZmpYM21aQ2hGZ19wb2M2RzdqbEtCNllmZFdQZGtxbV84aUE2WE1oTXBraXlIZU11ZFdOSU52eG5ZMmJxcERPRVYxU1phWS1PM01HSzdjRHVMWUZaS01XcXdwNlJTTU9qMVFYMDF0OEhjbXM3aFk0VnJUQlNLTkhVcVhBV3F5NF9PZGdadnBncHFmVkhCZG9qV1VuX3BkY3RFNlNpSUkyUVNBQTBtYS14UjFFamZGTEFKcGd2QUdlcXZ2X1cxSm5OZlhKLTYxdw?oc=5
 
+[2026-11-27 13:28:02] [test] Batch 1 (Test)
+https://example.com/batch1
+
+[2026-11-27 13:28:02] [test] Batch 2 (Test)
+https://example.com/batch2
+
+[2026-11-27 13:28:02] [test] Batch 3 (Keep) (Test)
+https://example.com/batch3
+
+[2026-11-27 13:28:02] [test] Regular Article (Test)
+https://example.com/regular
+
+[2026-11-27 13:28:02] [test] Bookmarked Article (Test)
+https://example.com/bookmarked
+
+[2026-11-27 13:28:02] [test] Article To Delete (Test)
+https://example.com/delete-me
+
+[2026-11-27 13:28:42] [test] Batch 1 (Test)
+https://example.com/batch1
+
+[2026-11-27 13:28:42] [test] Batch 2 (Test)
+https://example.com/batch2
+
+[2026-11-27 13:28:42] [test] Batch 3 (Keep) (Test)
+https://example.com/batch3
+
+[2026-11-27 13:28:42] [test] Regular Article (Test)
+https://example.com/regular
+
+[2026-11-27 13:28:42] [test] Bookmarked Article (Test)
+https://example.com/bookmarked
+
+[2026-11-27 13:28:42] [test] Article To Delete (Test)
+https://example.com/delete-me
+
+[2026-11-27 13:29:55] [Ciberseguridad] Home Page | CISA (CISA (.gov))
+https://news.google.com/rss/articles/CBMiOEFVX3lxTFA3ajI0MkFMSVpueTZ5TGVzdWFNYXA2RVNhb29UdjN4eUJ1b1ZjOXU1dTgyZy1OUzg5?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Critical Java Vulnerability Requires Immediate Patching (CISA (.gov))
+https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSnhzMDJsaEJLZktDemFQaF9nY3g5UTlzTVBGZVMwc1lDUWROa3ZOdFFKQ2x2eVpoRGpEWEhpd0I2akpRR1JzM1RWemx1bjhUaTFtNHFpNWtTTlVtYTY1NklvVmthSEwxSlFQYWh4OWtYeHNYQzJvMTFCY1Jfal82NUt0Z3lTam9sbmRRWDUyWkFaZ3VTLVdERU51ZjFZd1pkYWhINGt5WDEyUQ?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Critical Vulnerabilities in PHP Require Immediate Patching (CISA (.gov))
+https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMUJ4V1E1SkNOU2lsa2xkZUtxcm1oMzFQYWRkR2FJVGtpYzVvVFpmdDduU0FBZ3AxNUpYU3dQd2ZKQmhYdmhaVXI3QmZONHFQWnhxNWFua05KcWl2RUtlX0NMQUVqSm50akVOMDRaSktZbmZNbFZlMmpZYVpHTU45LUVHZnh5NXZUb3UxSURWbUZJdkU1VGxZWUhwTm9fWllraHFtWmJ2XzdyZw?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Known Exploited Vulnerabilities Catalog (CISA (.gov))
+https://news.google.com/rss/articles/CBMibEFVX3lxTFBxZVFVRElXanhfd29DaXJyWkRmeFd3U2tPOVd3UnRsbmoySWx4Q1VyS0tBZWhqTGh0ZU9EdVhnTkNFMEN5c0ROQzhUTkZSVVBhWndSbVJ1VHVXX1l2bXRwNTFyRWdjQ0JEUmdIdQ?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CISA Adds Two Known Exploited Vulnerabilities to Catalog (CISA (.gov))
+https://news.google.com/rss/articles/CBMipwFBVV95cUxNdXNCbkFRTlEwUFdlWnIySEZ4cEFuQWxuNk5HNUk1cDRQRVZQTTlhZ3ZWUFlyN3FVbUpVR1JFdzV3Y3NTaFprQ19hMXNXQmxtV01iZlpsME55NExoSEg0SDVoRnRHS1M5QjV6RTNSYl9uNHJRakx5MHNSUDV3VVpqNmlCeEZvaTQ1SFU3djcyYzZTU09Kb3NEdWYyeWgwXzBualctWXplaw?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Últimas noticias: la última hora de hoy en EL PAÍS (EL PAÍS)
+https://news.google.com/rss/articles/CBMiTEFVX3lxTE5GNUlmTHVNdlBaelRQdXdoUXMwVllHd2w0X0Nva2NXd3VYcU9hcnhic2RXWFA1WnZXamxXWHpuNWNYQ3dOb1JsQkZhVHQ?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] ICS Advisories (CISA (.gov))
+https://news.google.com/rss/articles/CBMiW0FVX3lxTE5UMXE0dnlZNFhXczFoZDNKUl91WkNwVWtUdmVYbXlIREtmeEVYMHF0OGFxbmxEZVRWQWNwcnJ4OGExZGZyYmFkTzZpN05GM1lLY21EMXI1VU5GazA?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CISA Adds Four Known Exploited Vulnerabilities to Catalog (CISA (.gov))
+https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZjE2dVdlUlVPU1lpNHNMRHZxWl8wcjRsazR1b0ZIbHJQVFoxSjBYaGRMb0xmZTJfMEZxWkxQLXJjalRWNVBOZG5pTFJvUWRIZzREWnZrcmQtazh0TV9yeE9LUl84SGw4Ny05QjBTYmRxME9ZQXJyVW5GRFF6c1FRY1VjRnB5ZGVnemlrSHRiZGZ2SjduYlI1MGZxUUxxVHRKeUlmZ3lzNzk?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CISA Learning (NICCS (.gov))
+https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ZWWozc0dRcGwyU0VTTE14VWxXVjJfeW9ud1FCVDJuUXdGb3M3TkVvNE9QSGxfVzVyQWd1X0NIdkIyNjN2VFVmMzJuX0plRGhQZXE4SlFmcG0?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2025-62841 (INCIBE)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxQangtc21Ecm9rV3FXdm9wM2hUNXJkMXNyeThVdTNTbUJMSjIxS1gwTVkxaE9fMmFKX3FuNEJ3V2FQb2tlbERpSFNwbF9BSGowVTBldUMxNFNENERkTlRVQ1lOQ2tveU1fbWlzd0xjOEZYeWNLMWtuSW9XdlVMOVgwVUNPOG5xN1Uw?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Condición de carrera en la gestión de sesiones PHP en productos de Cisco (INCIBE)
+https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbm9xcXFTdEdJdVRRUjlkUGZOOFhWalFQWmY1clFiR0RjVmw2aHA4OTk0aHI4VEx6WFpqa050T1d3MERKZERTYUhPUGtqbzlGMGZhN3JfS19KemNEUVlBU2E2Y0l2aEFKdUZHVEIzejJiQUZrMjUwNnlOM2o4SUU4TUJFLUtQX2hSMUZpNnEycm1DVmY0SXo2Q1dTaFRHN2g1MElqVWhzZ3luamEteEFFSURRZHdLY0wwNnhWOE4wVHQyNGlsZjkzMw?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-27872 (INCIBE)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSFNuaGJkTDVIM3lMT0hhY2gzaXVIQ1NfaGk5YUV6NkRqRl9idkF0RTBOMUoyWkJoelZIOGxfcUdxRGdldVNoMkRGX05HWjF0MHdMZVZDbGVhQ1RKdW94RVRpbTZiRG5iVXZITVZPOG16LWdIREpWMG9ScXpUbUd4TFlUa0hZR3Z4?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Múltiples vulnerabilidades en productos de Palo Alto Networks (INCIBE)
+https://news.google.com/rss/articles/CBMiugFBVV95cUxQbnF4RldIMHlibUFsUWNBa2M0SGtocWJndTNqLTdKcnBzYzNBT29HV1JMWDNPbXJWMkw4eFNfU1dya0V5cEVIWXl6LXFBcnpDSms3UnJYTnpVSnBBaExFMktpODU3TEVWZFVYdkNadTIzNXNaY1lnU3oycUt3QUNMay1YQ1RXR2hOT2YtcHBTNTBHRjNJVjJUMHBDOVRFVzZMVHVHaVdlMlZiM2FxSUVkN1VuMk44RUdrVkE?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-72895 (INCIBE)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaGpKeXhCdVFKdlBTa1gyb2xfQUNtR1E5MkRBVW1RNVhyZWl0RjU3MWYyYmU2cHJ4OEhQYWxEWDcxTUQyN0IwOTVKTmk2bXZDUG0wckZLUlgwaWhEN2NhTTA4X1pZZ1ZVV0Q2UzBmcHlNZHVQQU5IbHZibWh2OU92cE90c2VKWWlF?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Privilege escalation in Enter’s Iperius Backup (INCIBE)
+https://news.google.com/rss/articles/CBMimAFBVV95cUxQNEgwdm1DYzVHV2lqOEpVbi1lcTJCOHlySVRjSjVSTUEtNF8wSnVWQlJkaUpaWlNFZnBnWjZJaGVueXhfa08tMnhIcnlodGwtOVJRaFV4OXdESzVhWUp5c1Q2ZWU2Y1lieHRPVURzWGJSMjRXei1KRllkZXliNUV4NzBnZlhWa29fdWZKMXkyZjBOWjh4d1Jmdg?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-132774 (INCIBE)
+https://news.google.com/rss/articles/CBMiigFBVV95cUxPNHc5S0NMbkJuODl1aGIzUmJJUjJGYktobXZoVFN3REV3SFlUVzFadVJfRHpqbS1ObW9XMzdhVGpvU2dZWVE2ZFQ2RnZHSHpaSlVXOUlFNEV2UHMxVHlZczJKRXl0dWJEUmpBVk9hVmVIQlJNRVpUQkVkRVgzbUJwc3dqUEJqWGE4cVE?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-93958 (INCIBE)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxPT3FQWkdNdUh1VUwzN2tnUS1HeGFXcldfc01DN2JNRXJfNk44eHEzeDgycFNHaVZvdmJaU3BtdzNsOC1iRUxHcS1yU25hdkZEQ2hndVJ0ZllFcGtlWDBMaHBRZksyU0txMVJjYnNFUnNYNzQ3WnAwenFkU2xIenNydjl4ZjFYOThu?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Omisión del control de acceso en Drupal (INCIBE)
+https://news.google.com/rss/articles/CBMinAFBVV95cUxOcmJLb2FWNTR0MHlFUkdreWxDVlYxelJOV2ZtV3YtQ2MwZVYzZTlCMlFDVHdaQjhuWW9LQnJuUFZXSkRHR25QaFM4V1NGaHlxa3hiRFBDNkRScHRtUkp2TEhyODk3Ri16X2tQY3NRNnhpV2ZvOVdrbjRGTHpQTGx4YTluRW1CaG11R3BTR2ZBem4zYmRYSjBEVTlwc1E?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Múltiples vulnerabilidades en productos de Broadcom (INCIBE)
+https://news.google.com/rss/articles/CBMivAFBVV95cUxQTm41SUM1RkN0dXh3N0xYSmhaZ3VhUEd1eDF6cC13VE5VNHRaR2FQVkZoMGVRSy15QkdaVUFaZXRHbmpxbWgtSHhuNk9PaHpLWEFEam5ybjV4a3lxMkxnNUc4el83bjJJdHBVZklsRHJsVDhNbmlmRXhPclVjZDh3QWZpUnZqbWZTQkluZFd2Tks1T2g5bGV2dVAtckE5VHV4M3RBVnN0WTQ4OHJXdEEwWkVqWE1wd2pTQ1llcg?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-116841 (INCIBE)
+https://news.google.com/rss/articles/CBMiigFBVV95cUxQSXlsa2h1V25IN3pJNGcyWlhjVk9oRXNHXzVKeWRqc2lvOG04Skpfa0lLRG9NLTJUM2lQc2dpcVVfZjROX1I4eEZZVUVYU3hITnJSLXd3bkNWbzhBZHVRQXBnWmRPX0otRi1ocEVOQ1BRRzR4MkRQU2NtNnVGVE1BbHFvVEpqd3Uzc1E?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Múltiples vulnerabilidades en Fireware OS de WatchGuard (INCIBE)
+https://news.google.com/rss/articles/CBMivwFBVV95cUxPSEpkY29ORWVBeENEZmRVN2JLV0dNR2dQYkFUUk1kUTFGUUtLZ3pwMnFoMUIxdjRycG5IdmxESklWLVJsSldRdFFkaVRvVlNBY1ZqOWZJQUt3c2dTOEt2Tzc2TTVYcC02UnpDbERxekVydEtlQ2t0bjNaS1VseTFTRjF5SjdDZ28zM2R1M2lvdVRRRnlOUkdlSFRnOVN6YW5MUTRCMDVaWVdmQWtEaVY0MUlmU1BYNFdGRzFqcmNwZw?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Recognize and Report Phishing (CISA (.gov))
+https://news.google.com/rss/articles/CBMidkFVX3lxTFBDYnJqTkswbnB3ZUstZ1NIUjd3cV9GaENFWGl3amZMWVUtSllkQWptZFNRMEdRM01UNE1iYWhEVDBGOURVQjVtR3BsSlRWdVJiU3M0bHJfend0Ul9sRXBLWGl6RWw1R2ZRYjFkbzFqOGFrUS0xMlE?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-88989 (INCIBE)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeGdhX18wVmI1bFJxcVl0MTZTd3JsMDVxc3M5bTdpOFRzMm5ublBONDJBd0ZXaG5BOE12T0JQMnBxY05HOXd5NGQ3ZVk5TUY1S1pxWG1GSGpJVGxoNFNRR0k0Ui02akQ3dF9hWFBhZmtITWt3c1hYell6Sk1MUmJ1QXhaaEJHN3ZV?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-99558 (INCIBE)
+https://news.google.com/rss/articles/CBMioAFBVV95cUxQOS1UUmYtT2txcFBXVXdWQWF0VEtoNVZUS0h4WjRXUlByY3NSMWJ2d042U2R2TUx3R2pXTFlJRWx0TFZBNG9zS1NSUWx3MHVhQVpHc2xFU3Q2Mkp6QlVLcVJDREFDQVBEYnJSRDhndHd1QjVqUkFvSzMzUktKc3k4a3hSa0lyemRYX3lxYXk5dHAyR0lzenpuZk1ZR2dJT05K?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Escalada de privilegios en Iperius Backup de Enter (INCIBE)
+https://news.google.com/rss/articles/CBMiqwFBVV95cUxQOGZHNVYxS0FtZkpXLWtsaEdfeFRsa052ZF82NHV1MVA1VnBmYTJudUZWTFpib3JJSjlnd0N2dkRmUHRpT1BuR1pDZmtFQnd3aFFoS2xHMU1CcmRpRTlNT25sbTA4N2dtVy1wRHEtaTAzWU9DczhHX1JVOVplR19iVE1ibDl2QUxRVFRaTjVYd3NzSGZCcTNxNTgwbk54endPV2VmMTMwTklEZ28?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Múltiples vulnerabilidades en Coupa Total Spend Management Platform de Coupa (INCIBE)
+https://news.google.com/rss/articles/CBMizgFBVV95cUxOLW5rM1NQZGxVWjBtajNwVnlheWRDRm5Rczk1WXdVcUlnU1RnOFp1QTdFWmd6THpzaERlU2gxNHNiRmMzUHF1OWtRRHlOVjNXSzNWV1J6eXNjMU01LWZEcDFXVkZMMFFJYkFUOWtaMlZsZmtZQlVaaG9EM2F3MHJHajI0VnE1OXZiLWExXzB3YUg3X1VEcmQ0RnRTTVlRR0tmbHpPeGpEMWtIRHhhWUp5SFFiTWRqWkZnbG5CZDhOQTEteTg1RmVUVXNkdVVndw?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Press Room (INCIBE)
+https://news.google.com/rss/articles/CBMiVEFVX3lxTE9BUFlOaDJ4N1VwRmlJdTEyTmFqTHp2U0hUX1VEY3lrcV9NZ3A4RFVTOFpuTEpSOWpiSUE4MlFnbnN2aEFHeDluUUE2US1HdkFqRXdhVA?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] La matriz de MITRE: tácticas y técnicas en entornos industriales (INCIBE)
+https://news.google.com/rss/articles/CBMimAFBVV95cUxNaWo0dERRZXEyOXRVdXlENmhXakJfSkx2aWNsOS1XeDZiVTBhY1p5S2NHMWhZd3dXYU9Gci1MaC1ScXJteEIwQ01odm05ZC13cjhwcFhfZkszN3hZYWdfUVBjVjdSMGNUTWlfNVozUDFlOWtHLWVKbmlVRDZDd0UwaFlNMkVTMkkxOGtPQlRjeUxrYmZmSHROdg?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] [Actualización 26/10/2026] Múltiples vulnerabilidades en FacturaScripts (INCIBE)
+https://news.google.com/rss/articles/CBMiowFBVV95cUxQYUo2WDJGMDNpRGd6a3FsREl0c3pCemxHLXZNb195Y0V0T3I5NmVLY3RCMk5CMWVMWUhmcTROSTJ4bWRlZ0FEOVhIOFkxRlNIQm1nX2FSdWR2Njlmb2hGdV8teGNaNk9HbHRncmZfbFdhVU1ZWEo3WjA4NHJMdnFMMm1fWnNFcUFLVGxjZzAtalBHOHhUdV9tZlIxMk8ySHdIZm9n?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] INCIBE-CERT (INCIBE)
+https://news.google.com/rss/articles/CBMiTEFVX3lxTE5UMm4yT1dPZTJUbWdCWF9VRGRCMDl3dHF4MFdLNm1WeXBNTzNNODNHWlo0OXZoRnhxNURZMmYwdEZxdWZQdXlnSEZuRHo?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-91403 (INCIBE)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdDBQcDJSN1MxWVBxTHJPU0FJTWNEWjlEU1NCVmFLZ0g2ZjlGdjhLM08yVnlWNUZfYzRMTWt3eXNYcTFaZDAtNVVCdWluM3RjVS1BWHcxaG91LUFIMnFIQnp1SHYwVGVTQjYyU2VfcVRROE9MWXJrWDU5cEtPTGV5VGt5T1lMbW1t?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Cibercooperantes (INCIBE)
+https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mbXdxRk9oemZnWXowTTRjRGpMWWlydC1GcGpiV19xRjVSQlpCWGhTeDhvVERHUDN3OF9mNTZ3bUlhMHJ2WkZVbXUyN1ZzUnE3SW5oX2hoUUs4MDFl?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-72778 (INCIBE)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZVF3S3Y0M3hyUlkwX1hDeXhHUFBLTVpxbDlCWHVtLXhBWURtY2piV1BsWG5HNjA4YU50T1NnTmR5cG4wM0gzNTRFRzVvRU9fS2ZVdkVmU1B3eS01eWxXNHMyWlFQeDBRNGZkcGU3b3cxWFdUZEVsLU1sZWhtQWhBbEV6S0NHZTBX?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] INCIBE - Spanish National Cybersecurity Institute (INCIBE)
+https://news.google.com/rss/articles/CBMiS0FVX3lxTFBkSkV1T0ZrNjlMczZXVlZHekdNWTBnQTZQZVVMVzNmOGgxZXBVWWxhM3Nyb2Q1b0dkaWdZT19sRXdfNXJiZmV0azc5WQ?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Aviso de seguridad de F5 de octubre 2025 [Actualización 30/03/2026] (INCIBE)
+https://news.google.com/rss/articles/CBMingFBVV95cUxNdEdETnlOakp0V09GSnBwRDZjRGNuaGlScnVtQlZzczVKeHlZU05nVGZUMjJjWHpSX1h2dG9XSjVBQjRFeHdNUkJvTWhKbHhpd0UzdlYyaFFPY0hkaEliTHRKTVkxc0hFdDEzdmFtZXI1aTktTVJSd0xpd2t2UmMwOUpOSmJrMXBaby1WZEdMRkluTTlwYWNIWEF2SFV0Zw?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Ciberdelincuentes comprometen una potabilizadora de agua de Florida (INCIBE)
+https://news.google.com/rss/articles/CBMixgFBVV95cUxPTkRCWFVSMnRLTG1HRVBrWG5jMWppYTNka2JPM1I0RmpDckpIVXJ0c0RNWGtzRDU3WFJneURQN1d3RnpfdHh6NnlfbzJFVGJNZFJ4dVEwa1hZamppZVIyTF9NMC12cmR2TXlKbXdJNVplb1NHTk5SWElZUDlNcjNVN1N5OXJrcHJNa0lSSjZiNS1HNl9WYWVRbU90VXZDZ2tCeWkwYWkzUEtXQWxxdWpfRFhxWEVRX1ZoM1BZMmIzbXp3MU0zQlE?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Best Practices to Protect You, Your Network, and Your Information (CISA (.gov))
+https://news.google.com/rss/articles/CBMisAFBVV95cUxQWlI1b3R4bTdwam1LWXMxWTdCYUN0TExkeEFMZmJWakFYZURxZUlaRHB5dm1pMXAxWXlONXBRMFR1SG5Kd0NHdjdPdUthX200WE1yWkpxbVR1b0x5MFJRdjVHNUptZXBoU1d3MUhOVlNfSVVXYUFBczRYdzVKVTBMOXJPZjltTVExY0VMRkxpNW9fOFU0R0RtZExrTnM2WFV1Q3NzMTBPbXRNeXlEX1BaYQ?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Inditex sufre un ataque informático con acceso a bases de datos internas (EL PAÍS)
+https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUnZlQnVvZ3NJTVRObFNON01MTkhTbk5wVjQ5LS1zWktzSHJYdjE2QU5CNDJwRzd5ZGJHNEJMSU8zUlp6bmxBWXd0Zm1tNGxJaW5CekpkUFcxa1ljNU5RYW1HNDFkM1NPdlY3TDVpSEVGcVR5TGZFZDNDRVNxY3FWSVV1MkdOc3hHaXRUZmVacENJazc3TU1kdmVYYm5wbnNLaWtsa3VFbXdZYnJ0N2xaZnRLNlphQk5icVp4Wmp5QTPSAdQBQVVfeXFMTUViNXZMbkE1RVNleDNmVF96aTZ5Q25ZY3VtRTdOaW50SGtpSDA0OUFHVWJwdHJuQ3BkX0Q1OE93QllUQlZtNmozdUVnQ2JfUDZ6dEhMZFkwclFvWV9TTW5ROHlhejJNOEwxOGM5QXI2OEk5RVNfUmhnQ3RBWDMwTlBpaEZ4TjFMa1hYYk8xLThLVVZBWmJIMzdJOXloNFhLODhsaF95dzRYUkYtZHZ0M2ZYRzY1ZDlGQkVMRzZSWEtYMWd6Rk9FY2lVOFhjVXpCY2tmdUg?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2015-1503 (INCIBE)
+https://news.google.com/rss/articles/CBMihwFBVV95cUxNcVpha1Rpb0JaaDFaZ3lqXzhnRE1aMU9LcldYQm8yV3ZaalRpMXRNUHVPbk1mZTM3VTg1RFpqQTE1elR5OVRKX1dyeTlaLWJRRU9pSUpmcWRaTy1sQlg2eDBrc3pJRUc0eHNSMm9TZFl2QUhhWmwxVUJIY3JZYnlmV09Vd1c4M0k?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] EVENTS (INCIBE)
+https://news.google.com/rss/articles/CBMiRkFVX3lxTE1yVm5zcF95b2VmaF9sajdVempvMVFzaVRXYkdPdHpOaXNiOHVZNDdJYmtwQUtLQ1ZvdWhMVER0ZmtTZGZfNXc?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Internet Segura for Kids (IS4K) (INCIBE)
+https://news.google.com/rss/articles/CBMimAFBVV95cUxOOC1rbGd4TTNsaVIyNDVwaHg3SGE3TWZ4WVZCaG9xd3g1aENWX2JEZjZNSDZUc0UxOXBMeVk4WDBHdVQ0dlpTRkNiYUZiWS0ycS1TQVlnNjVOR0dPcUF3MmxFdTcwSHBlNjViaTItd2FIQ01Lcng4VG1mNm1xdGFOSnBGWFZpY2VheHNkRW82dF9CeGxuNlVZVQ?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] 20ENISE (INCIBE)
+https://news.google.com/rss/articles/CBMiTkFVX3lxTFBZeEVLVWhETFgxRW1MNDZXYnNBaGlzNWg5S1hoWjkzMmUtNFVtYWpRZ2hWc2FtVExNWkdoRWpRUUppUkdzeTc1MFVHVm5tQQ?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-30227 (INCIBE)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxPamJqYUdCaEpucDZJT2p2YzljQU9DeVlmRGJjWGFaTXBNU3lEWHRCVXZaTnpXcVZjemxTQm4ybFdUaUtld2VhYmZQTlRwbFZFWDdZZ2oycllRNDNNcWdZMnhmNTRIS2RaMHc3b2RVa3h5NkRwMXBCaWVUa1RJNjE3Q3ZKamhpLWIw?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-15759 (INCIBE)
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWi16ZGwtR25qamJLaW1Zd0dnNE5RdmNHYm9ZYTZNVHVwY09oZTdJQ181cUZiVUUzYkFmYXgyd2ZPXzBnZHVhYzA3WTJlQmpCdE9ENkpZZl9uS2t4Zm1oTWt5SGxpbEZoVmhIYndubzdRdkVNakhYSGZiVFZvX2M2WXVrdmFNSDE3?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Guía de defensa de endpoints en sistemas de control industrial (INCIBE)
+https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVklRVWhsVnFaX3dkVVN0UDlHaF9GbDFsaWxaenlxVjRHbWRpVnVDd3ZpVnlWVG9QQWxNd0FiMGgxNV9HS1MtQS1KMXNWNkF0aDZWUEJjY2dieGJXUW1SNHFNay1DbEdjZDdoREJ1XzBNRE9OSldqRngySUpkMXpZUEFYSGlIazZYekY4T05NR2taWmI3MkNNWmxnQ05QOXBxV21UMllKZC1LVkVfZmdLNFZ1dTNPclI2Y2Nz?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Who we work with (INCIBE)
+https://news.google.com/rss/articles/CBMiekFVX3lxTE9RZHlPbWpRQ0lJTzJCN2JCUnBoNERoV0lnaHF6bE52SVN2Y1dtVkFzLTVKX1dfM0k5bGlvRGtocDB4NVRFMHFMNXNmYTdXRzRrenFsTFh1R3hQbWNrREptS0tha211UGJOdjVCQ3VNeG5pQmUyUmxKTjBB?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE-2026-59234 (INCIBE)
+https://news.google.com/rss/articles/CBMioAFBVV95cUxQd21PbUE5ZFIzVW5MSWhibmJEOVNSTUNxQmtzdk9aclgtcDFPdndXMmlmMGYwUkprLXdCSVExdXlLbzFKeFJtWm9tajBZM3Z6UEhvRElwNFJ2ZEw2QllNQ3RoR3UtR3NlaWlVdWNTZUtDRkZkbDIzSlYwanByczJRN0NMYTh3a0xEbHpXS2hsSGI3eUF0eUR6RHZyOEoyWEI2?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] No, INCIBE no ha sido víctima de un ciberataque. ¿Qué es el doxing y cómo INCIBE se ha visto afectado por esta práctica? | Ciudadanía (INCIBE)
+https://news.google.com/rss/articles/CBMivgFBVV95cUxObFMwUXNQOFpXaDNWUHdxckxDUE9jdXVmNmk5enlKX0NuU2t1S2JhRzVPRTFxMXhDanE5SVp2WXNLSEw4dFFKTjlFMG5CZ2N6RlJ3QmU0Q2tzUGNMOFJEQ0tqcVNhTHVUbnBqYlZmLWJNUzVHaHRQa3hXY21QQmdOcmp6azhnM2IxRUZYUkNBNVRsNGpITFM2eTk4ZXk2SnNvMmYzUkxvUlZhNjFrcFY2U1R0R3l1dWhtXzJoQlhn?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] Internal regulations (INCIBE)
+https://news.google.com/rss/articles/CBMikwFBVV95cUxPZnltWS1sVHlmYTR4Sml4bGNNUkNFaGdvTjhNX0tBNlRZbXR2QmFkMjNPUjktbGlLT3pUNWdkWVZtRUFxVXlOZW1ZOEJZVzQ3RDZNYy1CMWxjbzV4WXAwemY0Y0ZmcUNVS2xkQ2RneHdsZ2RoakxMTF9BZmZrRmZ0OEJtMkJvdGJRdV9zZThnd0hJdjg?oc=5
+
+[2026-11-27 13:29:55] [Ciberseguridad] CVE Assignment and publication (INCIBE)
+https://news.google.com/rss/articles/CBMimAFBVV95cUxOX25fRXV5Mm1mRXJZM1lfcDhFbkNrZUxDVTJNdFFUdk5ONnJ3VVF0SktmOGRGNV9kbldGeXlXRjZWQnFrYXFoZzJUUy1ZYmE4OExCRjVMZUVlVnRKekUyd3BjeVYweE02R0dDR2l6YzR3Umg5amI2X0hRMDJKZ3hGVlhJSnlvazFuOWt0cnVMQzd3R1ZjWTlUcg?oc=5
+
+[2026-11-27 13:29:55] [IoT] Open Worldwide Application Security Project (OWASP) Internet of Things (IoT)5: Mitigating Use of Insecure or Outdated Components (NICCS (.gov))
+https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdXFpbmI0RmZCaVdHX1VWczVHYUlYV3JsQ3FOLWQ2WHkzT1F4NXk3alRWbmlaWDlQdThiX1ZTWldOTTE1SGQ5bzFpX0JCaHprSi1tRXdJS1BhT2lUYmhhbm5hMkNkb29sX19LNXp5dnk3bHlCekxwX0xfS193TVZkRjgzYVpqRmJ0b09QMlFYUFY2TWdtVmVPOF9WMGNNZ3BHNWNYQVdjSjd6VjN1Znk4VWRSUHFBVGp0ZDlNdTlrVEdYZHg3OVd1OGJJZVhNTXFBbzU3U0lwMnpFWW8xWHc?oc=5
+
+[2026-11-27 13:29:55] [IoT] US FCC proposes three-year Cyber Trust Mark renewal cycle, seeks stronger oversight of certified IoT products (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZnNiRm5VVG1Wdm04Vnh5cTlXbGJsYWp2N1hidEdabk9IeTNxNzZrbHlSN3QxMEw3b3hMU2JyQWR2S3JvTzIzRzdSLThlc19RS1pIWVpqVW5CMGxmYkRCZmphREhaQXRZWUJKV0xZN3NoOUdham5OTnU1Y3h2MzdSc2FscmJhczI3NklxeUFsTkFLTDdLMFFqcnNXMl9HZ2Q4OEhodjF3b2p3VnZqY0FRZWxnTHFHTENQbXJpMVdqZTFnRWtRMVc4SFhNdDY5UVktMHBZSGtsX2gxRnlGRXRYclg4LVhOaTE1?oc=5
+
+[2026-11-27 13:29:55] [IoT] Axonius expands asset intelligence platform to IoT and OT devices, addressing cyber-physical security visibility gaps (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi4wFBVV95cUxOY09JZ0RGVXJyTmMtUjgySDNhWndnM0JvTW16QWQtelFTcmhieUh2d1ltUGFUZ1RZa1ZiRHhzRXBubmM4OFZ6NFVVTDduOVR4ZGFUTGxWM1dIbjlvaUlCX0NBVHpyeTlEb1IxRGIyN0ZuUUh5UTdEMmx4OW5KQ3B6eGI3SE5MZERuZnEwazZxS2dTSXgzeFBMUHpNSmlGMjF1QkN4NmRMZTQ0Y3dtVTV4SUNPYVgzdDJ5eXJ1Q3M2R2J6bVVLNnhrM3NRWlU3RXlIYmRCZFlmcEZOSEVQRHhtVXV6Yw?oc=5
+
+[2026-11-27 13:29:55] [IoT] EnOcean SmartServer IoT (CISA (.gov))
+https://news.google.com/rss/articles/CBMib0FVX3lxTE51VnRZMTNHUVRTMXRMX3k2ektlRTc3Y2xTQXoyMHV4dGZhTXV2eU13UEVMQ3pySlpfQ3pLc2cwVUk1cXlSemFMdTRBNkpCNHRMU0xONzZERUkwRWpUWWZJVFQ2TzZldnFfaTBnRXR4RQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] Securing the Internet of Things (IoT) (CISA (.gov))
+https://news.google.com/rss/articles/CBMidEFVX3lxTFBsczhoZm1VRWI2bkxJaXFNX1lnaGhPSVVtcTlGVXgtMnJQcHFOQlhka0dRVlNDNXp3MHg4QTNwY3JxNnMtMHlBdjVGZGhfM3R0M3ZUWWs2YnpWQmVjNU1ycnZxX01XdVgyZGc2SlhQWDhwN21C?oc=5
+
+[2026-11-27 13:29:55] [IoT] NIST flags rising cybersecurity challenges as IT and OT systems increasingly converge through IoT integration (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYzBQVl9sYlluZjBjZmNpbVF2MnZGUkFmZjlMTm10TEVQcDI3ZlFLVWg2MmljNUZqODYzV2F0LWh5Z0FKc0ZXTGtmSURkcTF3OEVGWDhEMEtkdWJFNEVGMEV1djFUUTg1WEs5Z2F6SXcyOXJzQ2pHVDVjWXhQOV8yVUZrUWNJcEZmREJVdXRnMnV0S0hTWG5CUnlqMWZSdWtjUzBnVkZOOWNROTVpRlppV3BtSFQ4LXVDaXJFWkdvR21zQ3VQbFVWZ05xYkhwTlFlNnYtU2Rxb2RrQQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] Nozomi, Nokia unify OT, IoT security for industries powered by private 5G (Industrial Cyber)
+https://news.google.com/rss/articles/CBMipwFBVV95cUxNZDF3M0s3MkItRXYwYWVMQXJzRUFEM3FIYnBiNTBmUFo3eFhmRU1naUJXVGJKRGZNMlVYMEpHNGJfaXB6N3JnWmpLMkZYRENTNU5tWDJSYzlUY01ZSHBiQ2hPdHpaaExfbWtWWF9zYnYtMGNTamxpVmVJS3BCbGNhU3pkWGpjR3V0VDNjTHYxQllRRk5BVDlKbEpzVWo3cWhwbVAtX1J1aw?oc=5
+
+[2026-11-27 13:29:55] [IoT] NIST FY2025 report highlights cybersecurity and privacy initiatives spanning AI, 5G, IoT, critical infrastructure resilience (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNUhaMlFWb0xLUEZ1VzQwLUZvT2RaUHJBMVRrQ3plNVZGSjVrLTY2SjZad0pLa21WU1pObWZWTmRDR0otcHRJZV83bzhXY1JXRHdjMUI5YktVUy1MQV9JZHVZSGhKUEZzQ0o5bjVxdVY3WHFob1ZuZWNPXzRVUENoVmZ1QmNjNVUyT3B5WDg3TDhGZ25Zd2lGX2FVcEdyZmZtUGk2WVcxZ1hvUmlKZk9kR0hhbFotRy1qeURSbDd3emk5THZudl9XNGNrM3FYS2trNi1GQXNXdndMWm9uUWlRMk1XWjZSZGVURHc?oc=5
+
+[2026-11-27 13:29:55] [IoT] ST Engineering delivers cyber resilience to OT, IoT, IT environments with its NetCrypt Mini, other products (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTnpObzJyT2RkQTVXaUhLbC1KMFNtaThRdjFaOFQ4ZGt3QW90LVV1SUZJSWFGYVc0QmJHZlphdzIyeld2ZHdtV3o1cTdWY21BczJfWDRPZ1pjWEotN3hkOHJBZy1yQ24yRXJjdTFfeWExYlBxc0U1RU8zdmdWQ2V1MGhLcnVMaXpoTlJEcWxXa19fZ3pqb1BTRUtYZUthYzh4ZzAxRUQ1M3Y4Q19JWGg3Q0ZsbUpZTXFwUzdxNUVKWDlzU19pdGoxRFVwT1BndmNkRW1v?oc=5
+
+[2026-11-27 13:29:55] [IoT] Internet of Things Acquisition Guidance (CISA (.gov))
+https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZkNNdWFtMUlNZDYxWExvRVo0aG9iOUxTc2dzcVphR1JVOWNfdkc1cGRNMWtpbFBUbFRpbGxURkFlRWZ5WTAtRmpYT1pYR3lVMzlmYzB0OVNDUjdrWW5KMWVTTzNYT3JkODZIZlpFT1N3WDl6c01rRXpaUUU3N0N1V2dSVkRFeEEwMTJydUR4OEZVS2NDbGEzd1dSVnFqTXcxQzZnc3plWEQ1Ykllend5dmUyMnNsNF9ZUVVvVGhTOWE3QQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] CISA Announces Impact of the Internet of Things on Public Safety Communications (CISA (.gov))
+https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUmN4WTNHYllZU3V2UmRaXzdHQ0doaXZKRDNJaXpyNHNLcUhIYU9TWGgya0U5SVkxLWdZY3NObldCR2lzbDgwNXZZYkx2a0UzVFVZNXpDS2p2ODdnR0tnenRJWURNRTRiN3VkQmJTUTFveEZ3RjdvVk5uUUVET2h0Tlp5NWdRczhuQ1phaHZ6bzM4WWdaRHVTcXMtaTZ1U1hGRzNad19RT3I5QQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] iOT365, Civitas Group partner to deliver advanced OT, IoT cybersecurity solutions across Romania, Eastern Europe (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNDhPeGxCS1dhSlh0X25vNWlmRnc2bm9DWDJuZGx3Zmgwd3RlMndnQkF5aGU2SVJMamJHalpXUEFFNUFBbS1rNTJGbXFXR3cyd2tjcWZqQWZObHdubXM1SDlKbFRSbVg0VjhaZmR0N19wRVNGeW1KSjd3TmJQMkxZVzhiMlg0SVAtUWJNZ2xIMDVubURKMktnWmREMzlYSnBEbnBOdXRFRW5nOTF4UDJkRmtNc0VuSG5DcnktaW9CNHNDRjEzbkt1QTN6SUJPc05GNWhVRVNpQWpoQQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter (CISA (.gov))
+https://news.google.com/rss/articles/CBMib0FVX3lxTE5sTHNEVUhtSzdObW9SQlUyeFl1UFl2eHZSbzFLdkRTdTdTNjh4UEJSTFU0cGI3N3l0UFdhbUZHWUY3QmR1dl9KSDBCX0ZzeGZzWE5IWjMtN25qVUJrZUNJODU1d3hPSFZHdWZWWTNqbw?oc=5
+
+[2026-11-27 13:29:55] [IoT] NSA, FBI warn of PRC-linked cyber hackers compromising routers, IoT devices for botnet operations (Industrial Cyber)
+https://news.google.com/rss/articles/CBMizwFBVV95cUxPT0NNT1FVc2p4MmJSUExmNUp6U3lBR3ZjcUdzUUZ2SWZ5OUZPcEstN25ZTzJSQXI2YWVRczVGaTRVaV9HLWQ2d2l5aUpHUVV4a0lBODdMZjcxemVna1loQlVobVd6SGc0TWczR1dQSGYzX09YTEpuY193TmI0YzBmb1Ixb1dzVTItaVFkYnZqRHpzeURLQ2lSb2hfX2ViaDZqS1NWdHVURVdDWmpKd3RhZmIwZ2ZnTnp2MWtqNjZOZXBIYUlweS1NLTd4OFZoWjg?oc=5
+
+[2026-11-27 13:29:55] [IoT] Nozomi Networks launches New Vantage IQ, a private AI assistant for OT and IoT security teams (Industrial Cyber)
+https://news.google.com/rss/articles/CBMivgFBVV95cUxPSzFUeV9WUEtaQlpyd3BpNWk2WTJNZDRLQk11TlVlMlUzcXFkMWVGQndtS05ZOGJ6UWJuRGU4UDNIekhUYVVBeDFlZDZBalZTeVVlV3hhSXp4S3FEWTRXUE01MUd5TVFsQmh1b2tCVkxYTmtsUjgzWF9NQnVsSzllZTgyQlpFQXVxVmJrUHBEREJGQ2lmSnBhZEpRaHJVNU5RaGhZQ25QOVloZFBmS1JPbGNPWkc3dGliRUhucmZn?oc=5
+
+[2026-11-27 13:29:55] [IoT] Satellite communications growth expands cybersecurity attack surface across IoT, utilities, critical infrastructure (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi-gFBVV95cUxPTkNrcWphOG83Q2ViWmU1eGhBNWYwYkxfcHRweUN6NjJRSC1VT1E3RXJOOGJETmd4bWdfSTNkZ1Bjb0g5dGVQSkFiTEo3ZEQ4LVVaQ0V3SDVEMHlfcDZrYUdWZW9vR0xMS0U3ZTc4RmVHaVlqWVRYYmRBakFrdlpDYXRPdllPcHA1STNjQXVicEQ5WHU5ZjVtalJYcmVtMEtWV0g0VjBhQjdJV0Rqai1KR2xXc1Y5eHNZcFlHVWNBdlc2UUxwNUJBbzdIVmZheUNZUEpvUnVtYjJDTFFGa281eXNGZDI0SXh4a2VVR29BeUhXWnNIa1BHY1lB?oc=5
+
+[2026-11-27 13:29:55] [IoT] Connected Communities Initiative IoT Device Risk and Mitigation Infographic (CISA (.gov))
+https://news.google.com/rss/articles/CBMivwFBVV95cUxORURtRGtKZkdmaXY2YmQ3NUw2b01hcXJ0TUdjSHl3aHFTOVNIQkdtZjYwa2dfWkVDcW91LVlBTUZrX0NXQUcyT1VUUHMzam90REU3V0hVb08tT1hTUU8xLV95MlVwMzhlN0JtNm1PRkMwMFRQbC1scnh3V1B2aVo2Y2VuUHVER05qaWEwcy1iUmtldDdSdEFiTFNpVzhTRktvWU9ZaHRVempfLUpRQUVNOHpGcWFPRmlieWdNSmJQTQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] Ontinue expands AI-powered MXDR services to protect IoT, OT environments with ION for IoT Security (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiygFBVV95cUxOVjIxWWI4THlIMzR5RkNyWHlLUnFUMFNvYjBLQ0dRMm1fUTVySkFQZHhsNXBObFlFdjZFQVlzS1hkb1R0cDV1dVhsblJ1TDNFSTRobzdxejRGdGFITWx6VzFCWlJOaVV0blNmY2FFMEFzcnZlY1RoOTVpVVI3c1ZZclZxeXVOSS16ZnYxR0tjOUxTZHZULW9NcW4zcnQtMW8tLURtYnBXQXhKMDdOcGFhS2tYdmpHZ3gycll1S0tIRTlQcEQtT3gwNGVn?oc=5
+
+[2026-11-27 13:29:55] [IoT] IoT: The Rise of the Machines (Guest Diary) (SANS Internet Storm Center)
+https://news.google.com/rss/articles/CBMiR0FVX3lxTE1LWTFCNmFiNlpQcVlzUmZLNXdVdDFrLXRJXzYzSkV4c0NJb0JIU1E5dFp3c2xHM0ZfOUhLWlpuVVh6eEJWU0lZ?oc=5
+
+[2026-11-27 13:29:55] [IoT] Internet of Things (IoT) (CISA (.gov))
+https://news.google.com/rss/articles/CBMidEFVX3lxTE9yNmlWUDJhNmdPX1h0VEgwWS1YYTNhSDYzbHI3MjVRZmp6QWtlbHJOZDhjMkFWN2hYVDV1MHZIRFhFWXVDaGNOb3lqOFZDak9vS0lndldwNG90Q0FKWmlndlBSbnRsaVhtaXpLS1oyWUluRUFT?oc=5
+
+[2026-11-27 13:29:55] [IoT] Heightened DDoS Threat Posed by Mirai and Other Botnets (CISA (.gov))
+https://news.google.com/rss/articles/CBMipgFBVV95cUxNOGhSc3lJMTZUbFlMT05TNEc4LW8yM25IbzZnWWR1UFc4d21mbE9sNkh0MURnaEp2dFpVVE5fdXg5RmFsSVhXeHlBSHZFM1o2bThtNmxRczBPeG5mODlOaFV2eXNXUFItU1pMZTZRU2RNQnM4eHR4Vi1Va0piVmxtbzR0R1M1aWZuN1dhRGlZaGY2RHd5V3VNb0pNcFVZVTFkUWhMa2Zn?oc=5
+
+[2026-11-27 13:29:55] [IoT] Data diodes are expected to reach tipping point for OT, IoT applications (Industrial Cyber)
+https://news.google.com/rss/articles/CBMipwFBVV95cUxQaklkTFA0dGJKZG9ZYmk4eVR1eVltV2NiRkFfeXU0dk14NkJkejdpUm5pdjBvX2I0R1FxVnBmSHFSXy1NZWtBbXU5VVpFdWJ4YXRXR1E4dktDak5MdHluNlZBS1FkdmJTcFlLTVZkYVl2QWxMLWZ6ZnNfRXFhaTB2WjdDQzM2Ujg2WmVhdTd5YTR6d1BxUXBCaEhzTXduSVBNdlYtQS00bw?oc=5
+
+[2026-11-27 13:29:55] [IoT] Meari IoT Cloud Platform OpenAPI Service (Update A) (CISA (.gov))
+https://news.google.com/rss/articles/CBMib0FVX3lxTE1NeDJ5ZEN5eWFNdzN2YllNcGNwaGZJSnQ0Wm9mbzh2MHFxYnRpVGdlZVhnUUU1TDRhUlJUcUNoZGUxcWszUGtLOXpMaV9XRW5tWWduVzBUcVduOW9XeTA0TE9TUUdEY0ttYlB4WENBMA?oc=5
+
+[2026-11-27 13:29:55] [IoT] Iran-linked IOCONTROL malware targets critical IoT/OT infrastructure in Israel, US (Industrial Cyber)
+https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkd6Q3l3VjZEdXJWT3YyTkN2QUNPaEw5TG9Ic3M5eUhycm9rWlhoX2JJNk5IbXJqdVE2NTZrYWxHTVlBOElmdGluVTNwY0J5dkVLaFBwb3hQcWM5T3k1LWVsYVpaV3NPZGdFUVNBOFQ1R2dYeXdMVUpDMWVxcXd2OVM2RGpKV2hVOWh2SEhGSGFWbW12SFFpZF8zQkdPbUFxX0pqd1F1ZGdVdDA0SFgwdEJaSzQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] Axonius brings AI-driven exposure management to OT, IoT environments, as persistent asset visibility gaps hinder security operations (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi9gFBVV95cUxOQXZyc2VGa1o5b2huQU1NUjRMbEdDSGtYMm5DbmNuNzJTWjd4TEFFakV3ZVlMY1daYVdLNElITTF4VjFDZlpRUVpqTFFuR2xiRFJPQlhBODFaUUUyamo0a19LNHFPWmFBbDhGZG5FTmtzdWxuZ01LNlUxMEx5MWpLVlRIS1VpZm5ZcjI2enEtbWN2RFFMUEYtWTQzNkh1N1UySnRpVjFQcXRoa1FYY3p1Z04yZEV0cW9RMnUybkJUVHNYb2hfU3pYcjhIWXhhdjJMbjV5aVVLejB6ZlgybHNqZXF5bTNMbnNjQXBiS0sxcGRyVnk0TFE?oc=5
+
+[2026-11-27 13:29:55] [IoT] Haiwell IoT Cloud HMI Gateway (CISA (.gov))
+https://news.google.com/rss/articles/CBMib0FVX3lxTE82NTdOQnFYWENJSFdrSGw4X0Q3NFVVQzZLMUhvYnY5Y0JBSjRxcU9NYzhlVDlJeEZFX2hERTIyTXlPM1VtVHVTTGgyQTdtR01SZzhaZ3pYNEhZeDNFeWktaFY4X1ZmRjZZcVRfbDhhcw?oc=5
+
+[2026-11-27 13:29:55] [IoT] Zscaler warns industrial operations face mounting risk as IoT, OT attacks surge across energy, manufacturing sectors (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVDdDbk5TV0ZMRzE2QmVWOENfOXpybmNLWEJ2YjNXUklMTTBFZzRncTZkZTBBSTF5Nm5lNGtuLXRlRjd4ZTZoQlFFZldTX0pWTjN5czJKeUZpb2tYYU1GN2VVMm1jTlhwajh6X3NwV3R2cnRJY2psS1lxU2d1ODZCZkJLWXJvd1VOdk80RHI3MkNicURDUng2N243Q3E3dnpXOUM0Q3NqR1B6Y1cwMjlBWDdTVUFxemw2S1RJOTNIT1h3YlRrUWUxRkNNUDA0VHNrQW52UGlGZUY2b2lWUjJKRWNtQkQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] Nozomi detects 13 BMC firmware vulnerabilities on Lanner hardware exposing OT, IoT devices to RCE attacks (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZ2NzTEtyZFJMX3FpQkx3NzIxMWtmVFFZWk1WT0psaGtGLUMxeHlsZWVWNWR2STY1ak5jOGtycFJydmVMM2NWdUdRTkx5eGRwS25Cc0oxeS14ZENWYl93X3JNSGFzNHVEcjNWNEJUbWdXU3hNcTNwZnEzc25rUGFIbGw4UndOeXA0NklMbXAzTm1WbmJRNmpIR1doTFpJeXZ0aWg2ZDNZNzVJa2hRaHhmYVZMZlVhcmN0R3dHZW9HME0wSGUwSFBaZWtCZktZUmdDM2hV?oc=5
+
+[2026-11-27 13:29:55] [IoT] IoT | INCIBE-CERT (INCIBE)
+https://news.google.com/rss/articles/CBMiWEFVX3lxTFBsM0pvX0tkQTlDWUVyVm5KcGxreXJwZ0ItYjVWVnJ3SWFiVmxYTUFSMFVsYjJaVWF0ODR5MEItNFc4Sk44QlNHSlpMRGxILWxyQWZCSkZzWkk?oc=5
+
+[2026-11-27 13:29:55] [IoT] Annke N48PBB NVR contains RCE vulnerability exposing IoT security camera systems (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiswFBVV95cUxNZTdPRmQ5ZkY5TzFSam9XVlAxcXhpZS0wa3NiUmhJNVB3UUN5M2hZMG1XWDBPZGx4VXFZX3pqd2FwekpRZVZCdF8xMlZ2UEFiQjhmR2VLOE45U0pDR0VMV096SmtuZ0Z1OWc0UXVvR3JMWm4yOWFoWE9YOWhWWHRmQW9BNF9iNVJnbHZvWDE0RVFMOGtCbExkZ0NPVWNUU0pKWHFkLVI4WDVhaFhQaUFMbWRkTQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] Nozomi identifies Apex2 and c2c Golang malware driving faster IoT botnet attacks, raising risks for OT environments (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi6AFBVV95cUxNZWxaWnlXVVJJOXFwdEFfWDduYjQ5azUySzJJRG5GNFVIZ0dBaVBPYTdsZUxNU0YzWlM5M0k1TzhCWjBRTkNSSEdnS2JXYl95V044Y3FFSGdZMnJ0TlNSMkRPTGN0WndrQzRhNlZIdmV6VnVaNWc3WS1qVTJwRzd5ZHlPYVYxUVN5TW9xQXFib2QyV0lZSHpUY3RXcE1iQ3hGMzFobktWSWh6eHlZVlZINGNSSW9HcXQ0alhjc25BOFJDbW1wWXV4QVUzOGs2M2Yyb1FsZTJhYnBWc2VvcGd5WkNLQ2dHclZh?oc=5
+
+[2026-11-27 13:29:55] [IoT] Why is My Cat Using Baidu? And Other IoT DNS Oddities (SANS Internet Storm Center)
+https://news.google.com/rss/articles/CBMiR0FVX3lxTE43S1RvaFNtdUpKSURxOGR0bmkxb3VoRU5uUjVSRmJBQTJBbjZmMzJNUExDaHc2WS05TGt1YnUxM1drTWk2c1p3?oc=5
+
+[2026-11-27 13:29:55] [IoT] Cling botnet uses STUN traffic to conceal command-and-control activity and attacks against vulnerable IoT devices (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi5wFBVV95cUxOM1NvVG9Vb2I4T2ZheUdZaVNGU0cwcUtsclh4ZWllQ2dpQW8wekNrejhIOEVyVjgwVEpmWlI1dkFYZUhxUkJCZS1LRWtNaGE5M1p4cE5kVzE4T1htaU9ycFBYdE9ka2FqLXJlMjZIMEVjWHo2a3QzZHpidDdFMnpaa1d2aS1OTU0zUkFYTFZDYjA3eEhHR2Nzb2dNR1d0UFRnV2cxVU5TNzdIeG5Jc3dRd1pBcUtPR05fSXlPSkN1QUROWW9QbF9OZWRMblFDU3V3OWY1TVQwRm9FSWhMd0ozQlZpVWVqeXc?oc=5
+
+[2026-11-27 13:29:55] [IoT] Guangzhou Juan IoT Technology EseeCloud (CISA (.gov))
+https://news.google.com/rss/articles/CBMib0FVX3lxTE1xa1pXODBJU1RudHFTdzNidF82ZFg5ck1xSWt0ZUpOWkk1MEZDWk1jMHZ6MVdyV3dkeFJIcndlcEhJeURSUHRkZGFINVB1R2Y1WVZueENtVXpScm9rN2Zad09GdmFDZEMxNWZubU83TQ?oc=5
+
+[2026-11-27 13:29:55] [IoT] Nozomi’s Vantage platform enhances OT/IoT network monitoring and visibility (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiqwFBVV95cUxQOXpmakMtelpDWTduQklVaHhRLXM2TXZsbHZpMk1iSzl1YldqQ2NqdmVpYVZBWGFBbG1xVnN4R0Rub3hKLXhtRVdNLTlINV9YU3I2ZW5tUkEtX0hRZ0FHako2a2daQUJHVU4yQkJ0bkVRdWcwSU5jVU82eTJJbklvWXcxU3hKTXB0Y0tXd2kxRklkT1lDNFl2M2hWcmVja3IxZUVMZE10MDA4Wk0?oc=5
+
+[2026-11-27 13:29:55] [IoT] Forescout finds network convergence across IT, OT, IoT and IoMT could increase lateral movement and cyberattack impact (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi_AFBVV95cUxPcE1SUHdBSlNtcmxxUXN0R2tvdDRkNWZIc0F1eTRpd1lRdHR0MU9LMjhncVpMLVdBVWF6YXhUeVFvRWNXNWt3Xy12eTF0Vk42bTJtN25iTjRsMkxyOVg3TzYxVnZja041d2FCU2ZBcTJFM1NGOW0ydlNRa19OVW9pM2lMYVBmNEx1SFNJYTgyeVlsU3BhWlNvc2ZkUldDeGoxWEE2UWNEOUl2aHZfZTZPZV9OSzdjZWIwRExtdno4d0tCWjhXeml0b2VVZ24yaWJ2cnlQMmZNbXVkSEhFR2lTRHB5R053Sm12alNrUllyQzZ5UUJjVktpcWczMHc?oc=5
+
+[2026-11-27 13:29:55] [IoT] Critical security flaws found in GoAhead web server deployed across IoT, embedded, ICS devices (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi3AFBVV95cUxQcHNxaGw1N2hVb3k5NTJERGY2Wl8zSHlnVHZ4Z2lJS2ZQaHBpVEhjV1RLbDRwVGdSRDlrNDY0SllycExJZkhHdjRUUDdGZmVDd2RlMFVSbEYzUzdULVJvSGZEcHVMc0dmZjhndVkzOHJHWkJTR3BSd2xFQU0yTjB2SGRyOUN0YXVVWUxoTXpqeHE2VXdTVGJmdG5OeXE1YWQ5NnpiMk41TENKcEwzTVRCNS1JOVZFWG0xcEtjWTNCb0FkUmktck13aDJEa1lESEJkTXVUN21MaGhvUzVn?oc=5
+
+[2026-11-27 13:29:55] [IoT] Jinan USR IOT Technology Limited (PUSR) USR-W610 (CISA (.gov))
+https://news.google.com/rss/articles/CBMib0FVX3lxTE4tcHFRT1J3a2RwYzRsbWppQ3QzaTM3cENXaDFUZzZUTUtDMklHa3FZSVdsQWJEcmtOcUJIRExVS0k0a0VEaWdsZVZvZjdrM3NMZl9yb2lseVZSTHRlRHVqWGlZUlk2bmRKQXB6ZkMwMA?oc=5
+
+[2026-11-27 13:29:55] [IoT] Naxclow IoT Platform (CISA (.gov))
+https://news.google.com/rss/articles/CBMib0FVX3lxTE56RWVDb2M4U1dTd0YwRkFTN0tVeGowSU9KVzNIQWZkLWpPLVF5YmJweEF0M193NFd4cnRBN25qWlRkR01oTzFNSmJGYm1wUWwwV3VPVmdsV2ZIR0pOSDBwLVJtLWpJaUlYR3FLUXFwdw?oc=5
+
+[2026-11-27 13:29:55] [IoT] Netcontrol, Nozomi team to deliver advanced cybersecurity services for OT, IoT environments (Industrial Cyber)
+https://news.google.com/rss/articles/CBMivwFBVV95cUxQd3FKc2Y4eEMzOHUwbmNTeTJaU0xrd1FaaE9ZNnpnbW1rWkZrMkFJRnJ3eGR5R2ItNDcxd083bGM3WHVmMktNYWNSV241emxDMU1FcXB5MEthcG5GMUM0VTRJX1FuZG1pSUM4NG83ZmxyYVJoejNYNllMTGhubUlaWmhoZGFKRlFzTmVzMFdOM2lReTJuMXZTTXA0MXV4Z1ZHMGRvT2NqUDA2Y2VZUVZGNjJzckp4XzFIZ240SnhjZw?oc=5
+
+[2026-11-27 13:29:55] [IoT] BadAlloc vulnerability infecting BlackBerry QNX RTOS detected; affects OT, ICS, IoT devices (Industrial Cyber)
+https://news.google.com/rss/articles/CBMivgFBVV95cUxQT1N2aDVGQzBJWlExeXNva09Dd3FRWEZ4eWJaNHFubVlrZUFJWk5MaTBpY3ZybEJ1X05sRjdxU0Fjclo5UjdGaHdrWFFveHVnS2RkbHFlVWdKQTc0TEJkaHVkdlRtTjV2cjZYN1diZmloSW1rTlAwc19VN2lTdFc4Y1UxbmotWlRQQU8za0lVT1JlTm1HVHZiUzZaeFA4S1JBVUltZl81b2pGeEp6TWpZMGpjdmxjM3FoSGVuUGlR?oc=5
+
+[2026-11-27 13:29:55] [IoT] IoT in Connected Communities Risk and Mitigation Measures (CISA (.gov))
+https://news.google.com/rss/articles/CBMiugFBVV95cUxNX0JHYVFQSFVHQkdsTkNfQ0k4cDFZRzdsUDU5ZzNwdFptdXBhOHZaWkl2RDV0Z0NVU3k1WklGVHJXdW55MTF5MWtXdVJTc0ZPUXY0RzVrMDAwZ3BtS1VLMTJ5U3BjMmFnTGE0RThvRnJVMXVKdWhabE5nSEV4c2FtNUJBSUVsWm9RLUp5S0x3VW5CT1R3RUNrQlZNN2R3V0x4WHFnMTRHWW1ZQVktZ1hWeG9Id3F1Rm90Z1E?oc=5
+
+[2026-11-27 13:29:55] [IoT] Nozomi debuts Guardian Air wireless spectrum sensor for enhanced OT and IoT security (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiuAFBVV95cUxOc01iOXJZUTRpQlZBdnVzTlRkVWVlS0lmRjk4WkVkTnI5OW1qSmd3NDhBN3gxVDVaRVg5Wjhtb3lMS0VKSktxZTdMdkpDcm40WnhlcnNiMGhvMHlBbnhTbi1zdzgtc3FLSF9ySUQwTFRiZ0xxeFhFMFVQaFRfZXNHR205OXpJVUlzV3o2RGV4a2lPNVVMblp6cy1DYTJZanlVbk05dUxzSmI5cm1JYktYZGd0Zjhfa05B?oc=5
+
+[2026-11-27 13:29:55] [IoT] Forescout’s 2025 report reveals surge in device vulnerabilities across IT, IoT, OT, and IoMT (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcm5rNjFldEZOdE5yYXhnNHFVLUJlNHVIZHdUejczSWFtQ3RYOEVHRk9NOGlqWEl1bGRQak1QN2EtOUZmQVV4RnlvRXpZd2szY3hsdVN1V3RSSTRfUVRwS0xxRnB6eGZvcmczMDZ2WDZ5ZUFBSHpUV3JfdE5LdUVyVXdZQnJCeURmWGpPbXJJS0ZBend6R0RCaW5sblBuRjdFcDd4dHpRa25sMnN4V2ZTWHZ3eWNLZEs5UWxYSUhCZGNqZw?oc=5
+
+[2026-11-27 13:29:55] [IoT] Tenable debuts visibility across IT, OT, IoT domains to illuminate attack vectors and risks (Industrial Cyber)
+https://news.google.com/rss/articles/CBMivwFBVV95cUxQVnNwd19UVFRkaE5UTTd6VExTcWpPb1RIZHNXNnBUOWVxY0xtU0d6S3lseUpZY3VpVWw3aG0xTzBIR1ZJbkJuamdrZWdLTUoxdVMyNldMNElmeGJwbnFKXzdDWklMd1BmelprdHdxanJsb3NKWXJqc0JiekNtRlU3LXppUkhnSzl2aG82R2pMMnFTbkZvX3NhenBQWnRLazc3dHVGRS1fbkx2MTFXdzBIajdmb19hamVvdV9YTktDYw?oc=5
+
+[2026-11-27 13:29:55] [IoT] Integrity360 acquires Holiseum to strengthen OT, IoT cybersecurity services in Europe (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiuAFBVV95cUxOalg3ZzFZa3lrRjlMQVYydXcxLThaaTlTbTFpOWVmakZaQS1jWEgwMENDVEg0SHJGcUdENFNkWjkzU0JEbnNIWTFGU2xzeG5XcVBacF9yblBaX0FSbFdZRmJqRFZ5dlg1Wk8wMmpyOTVPdWZfdWNKVGpkTDRBY2lGMXNiQjJZbFNKdVhUQkZEaFpkT2R0X0NROVQ2a3JnSmJOTGVRVE1lWHQ4REtsZE54V3lONGt5Q09Z?oc=5
+
+[2026-11-27 13:29:55] [IoT] NetFoundry raises $12 million to scale secure networking across IT, IoT, OT; replace legacy WAN and SASE architectures (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi4AFBVV95cUxNdkMtamI5MXZJVmk3ZWNqbllNR19tSmxsdVQtLVNsRjN2UWNJRjIxZmhSQk5fX252VlNrUWVVdkh0TE5Qa2J0MTFueThIYjhNMmY4X2F4ZHNLWlc1Z0kzTFgzS3pveGVzVkd4WjV3VUNkSnVnc1h6b0ZqbGV1dzNTbFV6UFhOV0ZDcXE0SG83eXRnZ1BtWjhqQWNDNGIwakVfX29QdnVOR09BZXRlaWJ4TkdyMDNDSThGSTN1WUFvbFJRTEFaRnNOTFoxMXEzYXR1TDU1ZHVvYi1mS0JHRUVDbg?oc=5
+
+[2026-11-27 13:29:55] [IoT] iOT365, Check Point Software partner to offer threat intelligence for OT, IoT devices and networks (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNzFDNGR4SlFoTmVCN3hEVnVnMGNNNGVuTzRhelVVR0t4cHlrX3BCdVVDdjgwXy1IVVNMbEZNR0xlRXNwblFxME1KWEN1SG5XLWpSa21hQ0dPNTFlczVYVXIxb1U4bGM5VXpjZjlkRnJrSlFxWXdMNEFwdl9PTlE1OFZvbWxLX0FiOExBMWJFMG9odFVvQW1fY09mMmNsZ2pLaUR3bGh6UlhiWGJPTEd2cDA1MklEOVhCTUVlSkp0WVZPU3Jac3BneA?oc=5
+
+[2026-11-27 13:29:55] [IoT] Nozomi Networks, Yokogawa extend alliance to deliver OT and IoT security services globally (Industrial Cyber)
+https://news.google.com/rss/articles/CBMivwFBVV95cUxNNnlUanhGS0ZsMHRwVmpYbGxJNDd4Qmotd2hsTDdhWmQ5YndHU28xYVJKMHVSbW11RU5OQXVxYXBPMGU0OTRoekh1SE1ZMklCNVFpX0FPdl9zakxhWWhOWXU5VXA1UDVfbDJab05hbkh6b1pRS2hLT2dYNVRleUlMcW1zcnlRQTlJZWtjTUFMUld4bS1FcjNYUWxzYWJQUXdhOElFeVNZVm5ab01WdXVXOFhLQXlnOUhBNGI3OWF6aw?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Nozomi Networks debuts initial security sensor embedded in industrial control systems (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiugFBVV95cUxOenR1Nm1YbTlRU3l0bVAtbF9NM0UwZnBBeDJ2eWNnZ0VQT2JScWlFYXgwc0ZjaXI0U3dWcXNDZnByN0VkU3BnaWVlaHgzZkkwM1VrU3AxX0dGbGxDTVFWWlczLXNmOGlRRW5VWGVFbVRmZzg5OU11MlBoaGNlWlpmR013MHpuM0VSUWE4TG5wVDg2TXJJUHFJN2RqUjhPdldVQUZGd0c1ckNwdk82ZjdhTDU5MDFtVVJEakE?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Nozomi Networks and Schneider Electric launch embedded OT security sensor for smart RTUs (Industrial Cyber)
+https://news.google.com/rss/articles/CBMivgFBVV95cUxNcEp2MER1NkRMMWhiMHlsQ2JZXy1oc2R3N1V1TVVSd0tUY0dfZWpfeHNPa3FzY0Z1Rlk1X0x6d0lDTWxnM0ZpNXp4VzFhckRmWDRuVDI1b2w0YXBEMEJRdWxuZWNnQjJMM1RfNU5BUnBQVWNBYmNyOUVjWmhNMVgySW1VbGx2NGUxdEtZWnBaVmprQVptRXp6ZFdJMjJBZVlJRkltQXlLcTFmQ1VOdU8wLV9oMkVBVElVWDVRSDZB?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Nozomi Networks (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiXkFVX3lxTE81OWJfb0ZWdEpXOHQ0M2VpSDlWMHNxQVdjQkV2dko0R2haQzBXRlhmRmU3NWJsWERScGNYeTJRcmN0VDdqeVJnWk5RNlBiZ2hsMHNWNVBoR0hseDl1Qmc?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Security Considerations for Field Equipment in Industrial Systems – Continued (Industrial Cyber)
+https://news.google.com/rss/articles/CBMirwFBVV95cUxPUWRiZjVtTWowcEZ3MlpiMERQa0VRX29DQ1N1SHFnOTNjSFJtMERUdWVkUXJGaXFZeHZ6WTlMMnFIZ1ljLTBSZ3JtNjl4cWJiU09OYU1TbW1ORjE0dDJXOHlUbW1oSlNMbzBXS1k2SUxlaHctMTdjZXVSM0xOVTU5Ri1hemx4ZXd4NVBjTTV6U1hLTS1sN3BBa3EtQnlfVlI1bFZBNk9aWVl2ZzJ2X1Zj?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Industrial AI adoption outpaces security readiness, leaving OT environments exposed to emerging threats (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi1gFBVV95cUxONU1rU1gwa2Rrb3NoQVprVlF5S0xZVlRWci1uMjdDMTZiSDB3MGZGWkRfZl9fLWNCLVN2U1NfakNVWEhjTWVUbFhBbUl3V2xBTzZIeTFDLVJRelJha1ZxaXctSVIza2NjWEtvdjZybXEyR1pqeGZ1cGF4SHZvM2JDR3NZcUtQcHJYTUh0bEs0Tnh5Y1NjQWdlMUl5QlBaUWNwdGtWZzBiWEJDNzhGVzdmekpVLW4xRGI2bm9ZZVZpWmFXMktzdFdITDdVSWtmdVJ0QzMxM2dR?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] The Essential Guide to the IEC 62443 industrial cybersecurity standards (Industrial Cyber)
+https://news.google.com/rss/articles/CBMirAFBVV95cUxNZHdDSjY5T2VCZ2JOQjNPa0hleGNRcnhSc250aWVORkFSa2xUZWs3TnZiVkJ5LXVmbmxMRXI4dmNYTjlYWE5ob2tGLTZUVVo3djRXa2JaR25mVVhibjVoY0VVSVZFdFc2VWpTYUNYbWs5NTM3eWFxc3VMMXdHSm1PZ0dkci1ZWDBoQXY0Zk1RWHpfWERkYmNTYkdMS0hBTFNmQTdRdWd0dnhlU0tW?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Hall of Fame – Industrial Cybersecurity Grandmaster Joe Weiss (Industrial Cyber)
+https://news.google.com/rss/articles/CBMingFBVV95cUxOWHNlakJLQVR4Z1AyNDR5cGtHdm9nM1U5OUE5VXc0NTYzSVc3NjhtWFJBU1ZCRF9vWDlTOHA1QXROX0M5cDJmdzZBVEpRZVQ5eTFMek9GVWpvY2d1ZUtuM0xHOWRxTURiVlZHOV9NSDQxRHNIbmc4a2tLRmVBX0c3OVRlQ3hEYnBxdnBZcTgyYXpkdjk0SjAxWVFkaU8tZw?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Internet-exposed ICS devices running insecure Modbus leave critical infrastructure open to disruption, Comparitech finds (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiggJBVV95cUxQN0w4OUdWUnBKOF9tV2tyNlFBMno5SmNNMG9YRVZzZmQ1dUJTd1dvejJydzV4dEtmV0xwUmc0dlN1V2FsOGJaekFzSGxfc3dxTFI2SWxNeDNlakd3V1NiYmctckFNUExYTFZrN1pwYUtuOV9qUjhJNjJnOGNUVnRpeWxwR055Tmtub0NEUnI2UEcwWDZUd2d5Y0xPNzQ1clpjQmF4U1hSaW1wWUtJOEV2RUZFM241V00yNDk1bTl2Smw3RnREdE1adExraXdyM0oteGZQWFg0Q2JCOU0tXzNJaVBjZUl5NUdSZGl3Rmt3TDdnbnhNNmNuc2gzOXRJZUJMLXc?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Increasing attacks on field-level ICS devices highlight need for deeper visibility and granular OT security controls (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi6AFBVV95cUxNeGRFWEVBanJ4S1hvWmNvZWtsQWJFVmVmWWhfV00waE10TlZlZnAyS1haa1JxOXBtQWJjejlUVHlsMFVPUkp2Rm1qY09yaTE3a000Ukp3dEo1aElKSEZ4d1F0c3dwMFA3am1YM0ZFT3JZWUZleFRLUXg3Q2pMRjFERnFkVnFVVjdNWnpMNlNONkVrSFJmQ3VXUDM0RFZiNklNazk3WEJ3SHN4aXFOdFA3U1k0c1Q0VFZ5MTZKRDh3clNGOHE2ZVBPSm1QU1hJbzZYRUdJZ1RWWV94UlNsQkdOTjR4YWs2NlRK?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Cynalytica (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IcFFPbzA2Y0k4Ml83SEFXdlJmb0JpWEJ3bG9Xa29WZXNjaTNPOHlWSTVFaHRFYzFTbTRuYjMwRlBGRnkwN0Z0NnZ4cmxqMHhxWGlQNkpNTQ?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] OT Security Is Moving to the Endpoint – Where Humans Interact (Industrial Cyber)
+https://news.google.com/rss/articles/CBMimgFBVV95cUxOVDM1bVY4NUtFaGlFRUsxclkweFRsMmhzZ00xS0pmOTR5azF1SFNyUFhaRlByZ1NpZmtGNVp6TlJTMWZHNUtjMGlBelNUN0NDRURQdU93d2xuS25GdnZCc1ZWbWNzOHgyZXlDRElJREZlZlJtajI1U3dDcm1zbmJCM3lISGpTS3FRdnF3QmZ1RVB2ZnA4WmF1MnV3?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Tenable OT Security works on asset discovery and visibility, offers vulnerability, threat detection (Industrial Cyber)
+https://news.google.com/rss/articles/CBMiygFBVV95cUxNYU9VWmNXc3VCN3NpNHg4SkRWWnBqMWRyV3piWTVfR1ZBNEIwUVJ1Qkhxak90U0R1SzNacG1MV0MyemdJNHBQMFJ1QXExSWNpZ0pTVWFjellsdk9rM3V6NURpTEpwMVNJQkhibWdSbjUwTndFVDNJNmdNcFhoYnQxMDhidnVxMUNKZmVZaE1IWGFGcVRtYm1UWVQ4N1VBeUxuR0UzUkpQeWxfTTNoTy1zbk5tWHJTdmtsa0NBc0EzNnJDWHAxSlhHOTFn?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] How AI is quietly rewiring Purdue Model, forcing industrial defenders to rethink trust across operational environments (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi6gFBVV95cUxOaXRvU1F5OFJkV1JMa2ZSWUQwNGlLVmdkWTlsRG9GMURCQnZiQlZOMHZORlVEM28xbUk0RTFOdk94cEduZzhqc1RUNF9PdG51ODR2elpaYlAyTUtJMTVENFExOXQ0d1BFb21HcWpjeDdoZ00zUldRTFNqOHhRTDZaRFduUExnUWpHcnBldkJEOF83OUVLUGJmc21Jei02d1Y3eUN2dEJiM1cxcXFobU9KbG1hYkJLaTlUYlc4UFJ1aXRLZGtnNHRISEN1U2NYUy1qLXZJZlVFZkNMMWczT1BtY1BkU0d4WkhqWEE?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] VAPOR PANDA hackers use multi-agent AI to target government, pharmaceutical, semiconductor, defense organizations (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi4wFBVV95cUxNb2lldTdab2lKRmhHdUxJV2pSQzF3TFFxZ1BuVmlYcE81SVJwMk91amlOMUpPMW9JZXRDdzQySHp5bTFLSWtGTHVoYVUtRUtsUDY5cTJVOTFxUHFMQ2pHMXVWVUx0dzFwdUJPWWNJZ3FNbmdXVE1EX2pTSVoxd1dsa1gzbmN6QU1JZEktSm5nT2dlN2xhQ1NYMlVrWWZpQzhGZlloejVlcXh0MnJZbVN0X3I1cGlIRmlXbmRVNmhNdERiV29US0ZMYTViU1dkVzdKM3RFVWlPMThlLVJmd3ZGd0lidw?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Resilience report finds manufacturing leads global cyberattack targets, with ransomware dominating losses (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi3wFBVV95cUxORUpveGQ1QWRyNzFSMUxrd01ORjZld1E3Z1ZmN1p4Tk5uS3R1Z1Nxc1lRS2pOejNaSWZYZ0d6a0ZTbVludVJCODJsbzBsT0lHSG5YT2V1eUVlS2hxazdKNGJhMzZ4cFNRZXRlRi1SaGhmMkdjUGdsZHg1TjdnRzZyN0s5TFU5SUdzd2dxUFN1eDhqZ2ltZ0tWQjNvWVNSQ0pwclRhdW9SUlpJNGd6ZlFvaFFoU2NTUEg4aXlnaGFUWkN3UEdXb3UtZ0dIbDc3cEtneGtIczZ5WVVIbFhIY3hB?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Why industrial cybersecurity must evolve as climate disruption and digitalization reshape critical infrastructure (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUXF1ak9EVHRraWlGS3Y3a0UweE1ZZ0QzUDJTS004dUh5ZnlObUZRSWRqUkZSc1Yxb01VZFNCbHIxa1I3TWJheE9GYmhTYlhUelpCMUo3Zl8yOVpGWW1yOU5najI3YV8zajAweFc3MVFycXpEZm9jczNlNGF5MDZNamxYY2tOOF9MMmZnNkJjalhveDh4MlJHY1BueGpxcmtsbHRDTWxXZkhGNjlWY2RUYkRoZFd5cDZjU29GMmNTcVJBNEpZQmVqbzZDOHQ5ZmctUFlYR1FCQXl1RktXSXd2dEZHVi0?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Dispel and ABB partner to enhance secure remote access for industrial customers under ABB Care (Industrial Cyber)
+https://news.google.com/rss/articles/CBMixgFBVV95cUxNby0wdS1lZmVyNEtOZ1hfa3lHQURZb3pNeWZJRlhqNllGLXFQVDJhQXA0eTNYNjExWFB5RFpiTGdmUDdVQm5EY01tV2YwTHFWVU9FbVphamFVc05FYWt6TDg0RTVndkJoWWJHeHg5R2d3SHM5QUt1RTF2c2psQ09uc3hiTkhCT0NqWmctdGgxeVVwOGxCUHRvSG5vT0xCOWNRTTdqSXMzSjJuVTBIdE1oc3o5RTFVYWtxWlZvUmo4b0syVC1zOXc?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Zero trust in OT moves beyond identity as industrial operators prioritize visibility, segmentation, operational resilience (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi7gFBVV95cUxPNlUzckJLOHYybmViUDFpS29TYnNiNjUycVNMUU4xWTNUV21mSkJjUXhEQVhicXFtc1M5MU54WGMybTBFUjlYQ1d6Y3k3bE1CaVpiX2RIN2tFUmItQllOZzRvSG9wXzF3MjVURk9uNU13QVl6VlRZU2ZYU3ZyaEx0RkZveTJ4UW05UmUxLVdIYkN6RFlxT2VpWGxsamlsSEhaQlJveHNMRFdnOWRpYThFM0pTcHZjdU00NlN6cGZ0Z0VsREpkbXpUNmlIcXRJQWJoUWZRUzVVa3NvUkVFZWxnQmY4Tk5FaHdrSWdVOWNB?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Hexagon debuts cloud-native SaaS solution HxGN SDx2 to transform industrial facilities with connected insights (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi2wFBVV95cUxPbGczbFZraDdDdFdMQ3lUWThVZ3hHU1dDUWZ0NXJZRW9XaEUyMGgzMTEtVHE4SzZwOEFqaXBhOVhwSTlOX2hpWlJZVy1tVHRTWFcyRlpRVTVFejRCVG1vT0NQRWR2QjVsZ19RSF9nLXNDVThHMHdrWUluSmwtbkZPcVY0X2JKQlhFNnU4dzd2VmRsT0tpNk5VNGREdzBqNTJVdXd1T3Vlc21uNzZBNWI0RmNQam5DMl9tOFZYQkpFLVh0ZXFTdVByNXRpbTJrTDBkYkh5WEszNzhkZnM?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Fuxnet: the malware that paralyzed ICS systems (INCIBE)
+https://news.google.com/rss/articles/CBMihAFBVV95cUxOeXNHa3hCcmlfWEl5SEhqbE0xaE5RZHlGQzBta1liSlBqdkYwanhjY085VnJWeFhTRGZzOTZpNjJPVjRQVEtCZ2t2My02TTMtdEVzZ0RTTkpCREZHdUFHRTBSNVJydHBzVWowRXJJZkhUZXdlNXhhVHVXeU9OdHQ2ZGU2Smo?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Addressing AI in Industrial Cybersecurity: A Strategic Imperative (Industrial Cyber)
+https://news.google.com/rss/articles/CBMioAFBVV95cUxQeTY1TXlOakNsMG1wRC1nVW1BMVRiTGJITC13aUozSnNWYmthQWRoc2ozemY0QnFqRG10Nm1ZWHBpdEQ5U2xqeE5wRlV5U24yX200QzNWMWZyWVBxaVlOTFMxMlFaTlR3YmltbGk3b2x6eHd2Ni1IcG95ZG9wSThscUYtSFdXTUpET3FqcG5KY3Q3bFpMRDlYdm1MZkc1bUVR?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Dragos tracks three new OT threat groups as industrial adversaries move toward real-world disruption (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi0gFBVV95cUxPY3ZmdHdxSDI1LUhMSkNIbjNncmlYNHZJbmI3Z3NUNnY5MUZvckhHMG4tQTNmOV96bFpENjNfN2FlMWZYd2VGOXRvcm5fQW5EcE53UDdILXIwZ1JtakVyLUppZzNMNEdSQ3VTX1FleFI1a0JtcDd1NFoxQTZuM0wxamtxRTZ2RV9COVdrMVhVLXBaV0Niak9uSGU0WEtNdjZrb0JGdjktczV6bFlOY2tmN2doVUZiODVLWTI0Sk5WVjNBeXJXLW9PQkVOZ3A2b0ZraVE?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Security Considerations for Field Devices in Industrial Systems (Industrial Cyber)
+https://news.google.com/rss/articles/CBMinwFBVV95cUxObWdleElEMGpsTkVsT05HWF9IZE5kNm14Rk1OMm94eXhBYjE0TFFyRU4zaWF1OEZzTk9PN0ZwS2RUZ2dBRXU5a21LV0FuSlAtSFlQWXNQcHc5ckVlcGZaMWlUdHJFaVBTOGhNODluQjRack5SZnFxUmRfcVJnVEhlQUkwb29TWDBpcmgwdmZvMzdzT1c4YUZzWGFpbzhxVjA?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Tactien Group launches CAST platform for independent counter-drone system testing at critical infrastructure sites (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi4AFBVV95cUxQREFHOUU2R1NLbGE0VHBhd1hNekdma21RTzdZWnZaWFMyMDlkUFdUMTg0WWJkeGRsTjdKRmtIR1RIQ2ZSUWwycUJoaUt1VGNHS0NiRXlPbTlFcUtIZDM4YUNiOUZtUlJRaDFxT2lyMktBNXpDZGVsYmpXTmZJaVU3VXVxN1FFSjh4YUlUcFFwNGlyLUxjbVZ6eDh0MHB6VzNVY0Z2dHZNMi15eXpHRlJVV3pWWXU0S2ZkeUVqaFQwNnVvRjZEVjdTWTJTbzNnQTdPcTVkbEsxaEc3WFIya3AyNA?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Google Cloud unveils secure agentic AI blueprint for manufacturing amid push to scale industrial AI (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSEhKeHlNN3k3QXhqN0V5U2J4MC00bXg4Wl9zTmZBYmRmd21Jbkxabld1WjNTcE1CeF9zN0RwR1RRN2c3cVl0ai1qejJqV2dqM3oxWFJjZmo3OFFjLTNsNmJ3VzRVNEtNd3RhRWdaZDZQaGF6YjZfdV81MWtSX3l5M3RmN2daWnJWMlVQZFdZVS1PcmJ3eVNiUEF2RnhJQ1lmWXN2Wjl2cUcwUjI5aWVBZ19FTWdxVkpRQ0F3dmRISHJNZ2xCWF84c1UtU0p2VU5kWEFoZmRoWHE?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Mitsubishi Electric to acquire Nozomi Networks to boost industrial cybersecurity, operational resilience (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi4AFBVV95cUxPOXlpNnFkMl9iMDBCTzhCdmFFY2k3eklWLTlZT2g5NGg3dHNxZzZDZHFMalh1NDA3YjQzZGw4em5QanRQTldqbEI4RER1ZVMwcWhrY0VOaEgxSW1vdHcwbkhxN2hHQTFnZGZxZ3kydmhjZ0hmUWt5bjhHNXdrLWE3U2ZneFZHbFBUTGhpZk9YdjlDRjdNb1dKMXJxMmd5ZGNJXzFxeVFWdHBpMXBhenpZMXYtS3JvWTVTWFFzTXZud1k2UGE5ZXJCVnJWNjQ5ZW8zWHp1OEtwdENRaUVVejgtMQ?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Chained vulnerabilities in CODESYS runtime could allow root-level control of industrial devices, Nozomi warns (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi8wFBVV95cUxPM3ZPVVNRaHVYXzYxRWEwWVFUa0JVM0wyWFZsdkFTNTF2UHplTVBFMUpRRGNLc3dwV1ZVUWJFMk5oT1NKRWozYXRWYVJtR3RNa0pUV1Z4VGRRRDZTMERpUThvTkRDQVhLVGFpd3hJQU50YTJBZE94cUVLVXJvNmxSSi1EVUFyZWJLckE4eGFZZFloQXFoQ3FZV0RrQnpTTWUxMnFUVzVaUEk3X2o0d01FMV9hWmVqRVBWYTYyX19NZjNfMXN1ODZla0lxaktzbkVnT0NmWDc1NVpEZVctdUstWkluWEpaQ094Rm1jallvZG1vQWc?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Recommended Practice: Defense in Depth (CISA (.gov))
+https://news.google.com/rss/articles/CBMirgFBVV95cUxOcVdhQWNSMjFjakRQcUJaaU1sUThwb0kwZVhxRXJyTFNRUzViNkhEeE1sZ09CVDhRQVFUWElEVE9lM2dqT0d3dXlZcHIteVA0NUJBTFU1V1QtMF84QjZIZC0xWEl4LVlVdjZGTDVxbFh6YkJoUWEwWWJQVHpXR3dmaHpZbndhbWNlaVZBS050aE8ycTRtUlRUSWtUc3lsdjhWcURUVl9JcGpFbGp5VFE?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Attacks on analog sensors in OT (INCIBE)
+https://news.google.com/rss/articles/CBMidkFVX3lxTE1nd19iVGxkSzBHOUVXaFBnQXRNOTJ3ZEIyWE1WYUZReHdEQ0lYYkJlVE1KblU1c0JkejBtVnAyS005UkVlbVBjV1lIMWUzazIxZ0dVRGVkOEk3bS1Zakt1WE1hWEtIZzVxRDJUZWJuSEtqYmVEYkE?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Common Cybersecurity Vulnerabilities in Industrial Control Systems (CISA (.gov))
+https://news.google.com/rss/articles/CBMitwFBVV95cUxQNHJpaE9YYlhWcnN0VkJ1MmxjeHFPam53dzJpb2ROU3JKdGdpQWRLTjJHbEpZWHRpM2c3VHFIaUVfN2FnOEtuRVJyOTFIQUJsOE1Mbm84R3hhUmtURjVhSU9kLWxEOFIyQU9TaEptUnM0YmI1aXNGRUJKYkNwWU0tWFEtUUZVeVhhMklKVENOeTE3UWcyb2UxVGZoZHFueEVYSnpvM3lpV045OTBGbkZxbHRjNmRvaE0?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Implementing intrusion detection in industrial systems requires visibility, resilience, and regulatory compliance (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi4gFBVV95cUxPamRVTHNrYmpjV05JWWVzZDFJTTI3bDJNbmFpdmhyVndTWnFXQk5hU3JGQTB5ZFo5eEp6cTVIcVhsa1IxWlpJbXFpWGJnZHc1QmdDQkdWZklqSFpMb1ZhbXA3aUtGcXRpTTI1TnZleG1Ec0VmZkxBY21RcU8tc2FXdkRBWUNDVW1ZVTZkcWNGQnJjMDN2U2JIMmc0VnEyeHFaRVBObzlGYjZzd1RwVnpxMVRaRGd4a3BfUHltS2tkZlFyUl96OTN4RU0yVEp1N0JnaVlpbEtoejdsclJxVF9nYzZR?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] BESS cyber physical risk (Industrial Cyber)
+https://news.google.com/rss/articles/CBMia0FVX3lxTE5qVzA0bGw1aS1rNWI0UlVMWmQ3eWJNQW1jMnQ3b2JiZ3EtNmRHZUlUTEJIaWNhdTNIeVhSR05KWERXdE1Oall2ZjAweHk5M0xxMlZ1WTNMTGRVNjFpMlBXMXhqV1RKbXUzVjJv?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Tollgrade SmartGrid Sensor Management System Software Vulnerabilities (CISA (.gov))
+https://news.google.com/rss/articles/CBMib0FVX3lxTFBPUlNJcXhtRnM5WF9iNUpueHBkWDZyM2t6ZHJBTlRBREQyRmEwTVpOdlBqRS1XVEh3MkpTcmREbjFhWHRpZzJXUjhWVEpuYVRsYkpDZmF2RjdVRl9MY3NmZ1lMSDNhYVF5d0YtY00tMA?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Comprehensive Guide to Integrated Operations (Part 2) (Industrial Cyber)
+https://news.google.com/rss/articles/CBMijwFBVV95cUxNNHcxT3FFUVl6UkVTY3Q3a0p3bnRWY0VQZXo1Vk9pRGZFTDhfRTZoX0g4a3NtRWx2UmtGclltQk5yTkV3YW8tMEFPNzJabnc3V2thUjFmNks0RjAxYVNpNzhhSDMyY1FqVEdvaW9Gc19FdmZhSGZjSnVwRkdUOUVsdmJ5b3VXdXZnd1pBR0hoYw?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Airbus Cybersecurity strengthens its SOC with OT capabilities (Industrial Cyber)
+https://news.google.com/rss/articles/CBMimgFBVV95cUxPbHpRUmY3TVhyM2UtZHhqXzJwQ190T1VyUEdwQ1BXQ041WVdyR0VIVDFLbkJTVXNYZk5MN2xqaENfZHlRQ2hPazNNSXNab2o2NmE3anN3aTdVdmJZem16UVBqd0V3djRaMjZhRTJfVjR3anBycW5RblJzT25COVVVbFFNaVMyd2R0TXFNYmJUTERaQ1pUcXdJMk13?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] As industrial systems modernize, adaptive OT cybersecurity replaces patchwork defense (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNDhEOUF1dkJBZGxLNFF0NVVOZkdjZlNiVGJpN1VtNzE3MlJHQndIZjQydi1OT291Vk9LWHdQMWx5Q2Nvbkg2Q1VrcUgxSEd5WmQ4TGhORUpIa3RnUXl6ZHo3b05GOEN0MWdMZngtalc3VUQzNXdHS0s3SVoyVXA0X19pS0JHQWNjRDlXQjA0S1ZjQm1qZDkzYkRSWEk3MWttVVU5ZjV0eHpfM2Yxc1NrczR1ZTExeE1uNWhVb1lXS1VlaFh2U0wzNmhXTFBCUEVvbFlkQnZOdEFqemhXSmdJY1dB?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Copper Mountain Mining resumes operational production, following ransomware attack (Industrial Cyber)
+https://news.google.com/rss/articles/CBMizgFBVV95cUxNd0ZjdDBhVGMyN012d1BxcGlaZFdnbFNFMm44MkhTWEtuWXdXeGx0RXZZNHdOSWtUZFJpNjAydlA5VURGSndVY1ZwUzNySkJweG9ya0JJWWE1RUU2WmV2a01yTndXcEFZMHREQTNuZ3FvNmdfMDNrUUFfRmZicWNFUzFMU3V2M1VEOElpYTZIR1JrTm1oSEZNVUVRaFF3YUVBS3NIU0VQWkR0S0lDLWNaOF9lZ2hSX19lUjc1TG9XRlY2YzRudVczdkdQNFR2QQ?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] AI adoption in OT security accelerates as legacy infrastructure and poor data expose readiness gaps (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMnJrNjZhQTNiSDNGbGZkenVQSE9vZUYtNDkxX2RVR0ZEMlJlYlIxQlpuVUFpTjFWN0F5NE9HYzctVUtDVm1qLVh0akZGcjMzNmcxLUQ4blhtQWxIQ1o4MzV4LXlwbldYaEhFX3YwNlpsSWJGQUliTUNoWHRUSFd3YnZ5dVhOYnIxLXFCdmZvOThTZnRWSHRXOGRON3pkZVA4RVJMQ25nTks2UDBCeHpGekdMQjFwaFgxc0dqR1Jac05iRkhldTdvMENoVXZLcjczM2c?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Nozomi uncovers multiple vulnerabilities in CLICK Plus PLCs, affecting wireless protocols, workstation software (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi6AFBVV95cUxPMG9tcHVCU2dTQ00tTDdTNkRBaXlIN2l2bTNXZ2Z3Q2JDeUNHNlF0WDZrMktoZEx6WHpXTnd2Q1NOYVI0WjlnZm41bVJmb0VSTF9QN0NyeDZiLXRLa2UwSVlldFg0ZmU0QzVQQUFkVHNYRnE5bXBES1BfSjAtdTZNSjRLRUt2WGlBSnNCVGVIZjZrRUM2LUJSYkNGSHQzcEstYjY1TGdTREp3Qk5zYjRpVndiWnkyeXFJUXZhQ09lQlpKNkVGdTFDdkZSc0VRWWNMV0s2eTMzaklia0FMM0R0TENyUGdKSHY0?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Team Cymru warns exposed ICS and OT devices targeted by nation-state actors raise industrial, critical infrastructure risks (Industrial Cyber)
+https://news.google.com/rss/articles/CBMihgJBVV95cUxPX196UlRCSERwX3RXbGtySDNRd1pKMkJTczgwaDl4TkpFUEdzNk1VeWNTWTJaWGdsNDhLM1ZYOWtRb0RCRWF3NDgzX0owajg5V1RtakVzUmlXbmdnUGhNTWJOY1dJbGV4c1VfWEtMRko1SzgtTXpnTUozYWtiWmQyOHluTjhab2J6Ukd0VkZldzdXUDFaSzB0cGdKb0FWcXZpNFp3Sld1SUE3cW5jTzRKTW5Eb09QMUdOTzdxVGwyY29RZ3dyaVdSekpjckdxaDdWMXg2SWwwZVRVQmlUYkZ2T0txQ1RSNVdRZXk4cjEwSmJjSm5ZbUx1Q0t4SlB0TV9YMXRrbVhR?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] New research paper explores post-quantum cryptography for critical infrastructure cybersecurity (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMEg3WkY0Z2h6T2JuMzhuWkFwWlFlbHB6ckhIVGVreEpieFA3N1V0NHBMNWs1VlY5bnJCWTlSMkx4WThQMzZMdlJ5TmxJQWdLMXoxTVA5cTY3Rzg3TVI4Nmhva0I2MVR2Z0RuR1JrWVdwc1pKWVVUbjJCdjRBdHRBWjY1RFdFQkkwZUtTY0wzNlFjZUViRHhhU1hGR21KUjlnRktRaDhBMlloOVVIOFdGekp4VUY3WVZ2Mm5kdEIzZTMySUlKbW1XcEhoLWtEbW9aNkJ2VE4zekh1TGxnVWd6QQ?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Dangers of drones in industrial settings (INCIBE)
+https://news.google.com/rss/articles/CBMiggFBVV95cUxNZDlOU3duQlFUQWhFVkRjYTJvTjI5WW05YWpHRUI0NmhfQ1FjR3NnU281amh3NjBiWnhiMUJNcXBySHNCei1Uc1pSNU00a0hrd2NId2NUQjFQckJoWkJBLVhFdTBzNXNSdDRFX0M1T1FqYWstOWZPVThaVS1hT0VhY2pR?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Make The Big Decisions With Cyber Decision Diagrams (Industrial Cyber)
+https://news.google.com/rss/articles/CBMijwFBVV95cUxQVUQyYjFyNTN3VEJ0RVNIVmlhd192YVpQMkRWVF9EM091ZzRIQkNETnpMajBuUk80dUZBSGpWajJoamFubzgwRVViYm52TTV6Sjd4X1lIYTVSYmtwdDFocGF1VVZzeG04TC1Ea01oMEpPLTM3RFFXZHpIY181UzBTaGRvWGJrcUR4dTVRQWlEaw?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] BRIDGE:BREAK reveals 22 vulnerabilities in serial-to-IP converters enabling disruption and lateral movement across OT (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUzUxRnY5RXR6Q3pLOXJmbDBqMEE3RzJVRVRYeE54QWpsWGtpcXRwQzVyOHJOM1JQcDFYdDllUldnTkJCRjhGVkRqQnd6Um5mTXVlSVlPS1pGbmpQQWNSb3laWVR5QS1yRmZTYlEzN2VfY21kcHJVa3VteExJN3YxeHJrNXR4RnRyRVgwVzFEY3VUVUZhVk1PZ0xwYlVNdHYweU5qM3J2ZVVoZFdRQmhyNUZmYUF1amVaR0xISG8xSXZRRHRibFV4akJ2UXhKRHRPdU5BdnJIQ2dYaTF1VzIxa25uajJScEE?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Foundations for OT Cybersecurity: Asset Inventory Guidance for Owners and Operators (CISA (.gov))
+https://news.google.com/rss/articles/CBMivgFBVV95cUxQdWxvWTB2RGotT0ZsVFNHcFZyWkhySnp0RTljTTlGb0lwcEluQXVuRW0zTzhvWkhlT1BDOGdvdV9JYUZHTjNlSll1bDZjSkIxTnhjcVNlMl9ZZzVoNkJNdTJmSEZtSVFBQjc2TExyQ1cyZ3BQMzFrbkwxcnIwOGFGSUE3NHZ2UjB3WXcwODZmZzdpcTBBNVRFbS01amkzT2JwMWpKam02ZHlEQWVKZzBlRGlFNjFLRWxpX293dDF3?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] ICS risk analysis (INCIBE)
+https://news.google.com/rss/articles/CBMia0FVX3lxTFBUTDBaRGYwNW9JX0pVeGFjbXJNVmtrSG1xRjJ3d01INVFPVE5Dcm5DZ0VKRzlWeC1xczZVWDUtMUkteEJ6cnNlSXlDMFRIbVViZmo2Yk1GUE1hT0FXV2JkN2d2d2dBYUdrTHI0?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] Design and Configuration of IPS, IDS and SIEM in Industrial Control Systems (INCIBE)
+https://news.google.com/rss/articles/CBMitAFBVV95cUxNN2EzR010eksyWm43VjRySC1veHZoMzZIZUtYOW8yankxOGhQTmFFa19MZE5BQU16WkgtZ3RfbXd6OGZoUWJZaW95d1UyR1Y4bEc4UkhTZkI5OUFFb2QzNmphc0pISWttNFZxVTgtaHRfZE1qdjJDU3I5QnlaMjROd2d3R0NPbzV2Z3VYNlpuRVRVcFhYaFEyNTk3N2VXbzAwSDEwM3VPdW16NHRiYm1KSUNNVks?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] CrowdStrike to acquire Zscaler in $43.9 billion all-stock deal to expand Zero Trust security and AI protection (Industrial Cyber)
+https://news.google.com/rss/articles/CBMi2gFBVV95cUxNX3EtcEoyT0ZPOFlTRV8tWlJDRjJGZ3VHQ0RQUlFSVjBIUVJUdUxIaDFWQy12YlpZaG1tcUo5X3djaFNQVjZMQmNhMktsbENlbmJQckJiWlplTTA4TGdVOE5jaHhnelpCaThlbVlFMWY3TXVpVVBRQnRwN1daU1BFTDdJOG1PcHlqNVR0dVJsYkFQaVBuRTVQbDJHY216Tmt0djV4Q0N6MExwWm1INDF3ZlI5cFNaSVgtckRpb3BnRkRMdGdMbC1aQ2ZzOXYwYTBxU0I2c0duS0FCdw?oc=5
+
+[2026-11-27 13:29:56] [Sensores Industriales] PLCs security risks (INCIBE)
+https://news.google.com/rss/articles/CBMibkFVX3lxTE4zRFk4bmlxX25NckxHZVVaWEptNmRmTE9NUURzYW9Rb3A3TnhNd21CYWhIWjJnVHozMkdVS0pndFFleHFFNHJ3ZUhCSlhQS0NPeUlWcmpxekNleENhTjJMYUpTRllDUFgyemZ6Z3RB?oc=5
+

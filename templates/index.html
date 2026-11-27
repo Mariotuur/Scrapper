@@ -193,6 +193,17 @@
           </div>
 
           <div class="toolbar-actions">
+            <!-- Select All Checkbox -->
+            <label class="select-all-box" title="Select or deselect all visible news">
+              <input type="checkbox" id="check-select-all">
+              <span>Select All</span>
+            </label>
+
+            <!-- Delete Selected Batch Button -->
+            <button id="btn-delete-selected" class="btn btn-danger" style="display: none;" title="Delete selected news articles">
+              🗑 Delete Selected (<span id="selected-count">0</span>)
+            </button>
+
             <button id="btn-mark-all-read" class="btn btn-subtle" title="Mark all displayed articles as read">
               ✓ Mark All Read
             </button>
@@ -205,8 +216,8 @@
                 <a href="#" id="export-json">Export as JSON</a>
               </div>
             </div>
-            <button id="btn-clear-history" class="btn btn-subtle btn-danger-hover" title="Clear articles history">
-              Clear History
+            <button id="btn-delete-all-news" class="btn btn-subtle btn-danger-hover" title="Delete all stored news">
+              🗑 Delete All News
             </button>
           </div>
         </div>
@@ -339,6 +350,32 @@
         <button id="btn-refresh-links" class="btn btn-primary">
           Refresh View
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete All Confirmation Modal -->
+  <div class="modal-backdrop" id="modal-delete-all">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>🗑 Delete All Stored News</h3>
+        <button class="btn-close-modal" id="btn-close-delete-all">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.92rem; color: var(--text-primary); margin-bottom: 12px;">
+          Are you sure you want to delete all news articles stored in the database?
+        </p>
+        <label class="checkbox-option">
+          <input type="checkbox" id="check-preserve-bookmarks" checked>
+          <span>Keep my bookmarked articles (⭐ Saved)</span>
+        </label>
+        <p style="font-size: 0.76rem; color: var(--text-muted); margin-top: 8px;">
+          Uncheck the box above if you want to permanently delete absolutely all articles.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btn-cancel-delete-all">Cancel</button>
+        <button class="btn btn-danger" id="btn-confirm-delete-all">Delete All News</button>
       </div>
     </div>
   </div>

@@ -195,12 +195,26 @@ def delete_article(article_id):
     return jsonify({"status": "ok", "message": "Article deleted"})
 
 
+@app.route("/api/articles/delete-batch", methods=["POST"])
+def delete_articles_batch():
+    """Deletes multiple selected articles by ID."""
+    data = request.get_json() or {}
+    ids = data.get("ids", [])
+    if not isinstance(ids, list):
+        return jsonify({"error": "ids must be a list"}), 400
+
+    clean_ids = [int(i) for i in ids if str(i).isdigit()]
+    deleted_count = database.delete_articles_batch(clean_ids)
+    return jsonify({"status": "ok", "deleted_count": deleted_count})
+
+
 @app.route("/api/articles/clear", methods=["DELETE"])
 def clear_articles():
-    """Clears article history (retaining bookmarks by default)."""
-    only_unbookmarked = request.args.get("preserve_bookmarks", "true").lower() == "true"
-    database.clear_articles(only_unbookmarked=only_unbookmarked)
-    return jsonify({"status": "ok", "message": "History cleared"})
+    """Clears stored articles (optionally preserving bookmarks)."""
+    preserve = request.args.get("preserve_bookmarks", "false").lower() == "true"
+    keyword = request.args.get("keyword")
+    deleted_count = database.clear_articles(only_unbookmarked=preserve, keyword=keyword)
+    return jsonify({"status": "ok", "deleted_count": deleted_count, "message": "Articles cleared"})
 
 
 # ==================== SETTINGS & EXPORT ====================

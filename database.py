@@ -523,15 +523,34 @@ def delete_article(article_id: int):
         conn.commit()
 
 
-def clear_articles(only_unbookmarked: bool = True):
-    """Clears article history. Preserves bookmarked articles by default."""
+def delete_articles_batch(article_ids: List[int]) -> int:
+    """Deletes a list of articles by their IDs. Returns number of rows deleted."""
+    if not article_ids:
+        return 0
     with get_db_connection() as conn:
         cursor = conn.cursor()
-        if only_unbookmarked:
-            cursor.execute("DELETE FROM articles WHERE is_bookmarked = 0")
-        else:
-            cursor.execute("DELETE FROM articles")
+        placeholders = ",".join("?" for _ in article_ids)
+        cursor.execute(f"DELETE FROM articles WHERE id IN ({placeholders})", article_ids)
         conn.commit()
+        return cursor.rowcount
+
+
+def clear_articles(only_unbookmarked: bool = False, keyword: Optional[str] = None) -> int:
+    """Clears all stored articles (or preserves bookmarked ones if requested)."""
+    with get_db_connection() as conn:
+        cursor = conn.cursor()
+        clauses = []
+        params = []
+        if only_unbookmarked:
+            clauses.append("is_bookmarked = 0")
+        if keyword and keyword.lower() != "all":
+            clauses.append("LOWER(keyword_matched) = LOWER(?)")
+            params.append(keyword)
+
+        where_sql = ("WHERE " + " AND ".join(clauses)) if clauses else ""
+        cursor.execute(f"DELETE FROM articles {where_sql}", params)
+        conn.commit()
+        return cursor.rowcount
 
 
 def get_dashboard_stats() -> Dict[str, Any]:
