@@ -833,12 +833,278 @@ function initEventHandlers() {
     }
   });
 
+  // Topic Trends & Analytics Modal Open/Close & Actions
+  const analyticsModal = document.getElementById('modal-analytics');
+  const btnOpenAnalytics = document.getElementById('btn-open-analytics');
+  const btnCloseAnalytics = document.getElementById('btn-close-analytics');
+  const btnPrintReport = document.getElementById('btn-print-report');
+  const selAnalyticsTopic = document.getElementById('analytics-topic-select');
+  const selAnalyticsDays = document.getElementById('analytics-days-select');
+  const selAnalyticsTheme = document.getElementById('analytics-theme-select');
+
+  if (btnOpenAnalytics && analyticsModal) {
+    btnOpenAnalytics.addEventListener('click', async () => {
+      populateAnalyticsTopicDropdown();
+      analyticsModal.classList.add('open');
+      await refreshAnalytics();
+    });
+  }
+
+  if (btnCloseAnalytics && analyticsModal) {
+    btnCloseAnalytics.addEventListener('click', () => {
+      analyticsModal.classList.remove('open');
+    });
+  }
+
+  if (selAnalyticsTopic) selAnalyticsTopic.addEventListener('change', refreshAnalytics);
+  if (selAnalyticsDays) selAnalyticsDays.addEventListener('change', refreshAnalytics);
+  if (selAnalyticsTheme) selAnalyticsTheme.addEventListener('change', refreshAnalytics);
+
+  if (btnPrintReport) {
+    btnPrintReport.addEventListener('click', () => {
+      window.print();
+    });
+  }
+
   // Close modals when clicking backdrop
-  [settingsModal, linksModal, deleteAllModal].forEach(modal => {
+  [settingsModal, linksModal, deleteAllModal, analyticsModal].forEach(modal => {
     if (modal) {
       modal.addEventListener('click', (e) => {
         if (e.target === modal) modal.classList.remove('open');
       });
+    }
+  });
+}
+
+// ==================== TOPIC TREND ANALYTICS & GRAPHICS ====================
+
+function populateAnalyticsTopicDropdown() {
+  const sel = document.getElementById('analytics-topic-select');
+  if (!sel) return;
+  const current = sel.value;
+  sel.innerHTML = '<option value="all">All Topics (Aggregated)</option>';
+  state.keywords.forEach(kw => {
+    const opt = document.createElement('option');
+    opt.value = kw.keyword;
+    opt.textContent = `${kw.keyword} (${kw.article_count} articles)`;
+    sel.appendChild(opt);
+  });
+  if (current && [...sel.options].some(o => o.value === current)) {
+    sel.value = current;
+  }
+}
+
+async function refreshAnalytics() {
+  const selTopic = document.getElementById('analytics-topic-select');
+  const selDays = document.getElementById('analytics-days-select');
+  const selTheme = document.getElementById('analytics-theme-select');
+
+  const topic = selTopic ? selTopic.value : 'all';
+  const days = selDays ? selDays.value : '30';
+  const theme = selTheme ? selTheme.value : 'dark';
+  const isDark = theme !== 'light';
+
+  // Update titles
+  const topicTitle = document.getElementById('report-topic-title');
+  if (topicTitle) {
+    topicTitle.textContent = `Media Coverage Analysis: ${topic === 'all' ? 'All Tracked Topics' : topic}`;
+  }
+  const dateWindow = document.getElementById('report-date-window');
+  if (dateWindow) {
+    dateWindow.textContent = `Verified news volume and publisher distribution across the last ${days} days`;
+  }
+
+  // Update Download button & Server PNG Graphic preview
+  const downloadBtn = document.getElementById('btn-download-chart-png');
+  const previewImg = document.getElementById('analytics-graphic-img');
+  const queryParams = new URLSearchParams({
+    keyword: topic,
+    days: days,
+    theme: theme
+  });
+
+  if (downloadBtn) {
+    downloadBtn.href = `/api/analytics/chart.png?${queryParams.toString()}&download=true`;
+  }
+  if (previewImg) {
+    previewImg.src = `/api/analytics/chart.png?${queryParams.toString()}&t=${Date.now()}`;
+  }
+
+  // Fetch JSON data for live interactive cards & charts
+  try {
+    const res = await fetch(`/api/analytics/data?${queryParams.toString()}`);
+    const data = await res.json();
+
+    // Populate KPIs
+    const totalEl = document.getElementById('kpi-total-news');
+    if (totalEl) totalEl.textContent = data.total_articles;
+
+    const velEl = document.getElementById('kpi-daily-velocity');
+    if (velEl) velEl.textContent = `${data.avg_per_day}/day`;
+
+    const srcEl = document.getElementById('kpi-sources-count');
+    if (srcEl) srcEl.textContent = `${data.distinct_sources} outlets`;
+
+    const peakEl = document.getElementById('kpi-peak-day');
+    if (peakEl) peakEl.textContent = `${data.peak_day.count} news`;
+
+    const peakDateEl = document.getElementById('kpi-peak-date');
+    if (peakDateEl) {
+      peakDateEl.textContent = data.peak_day.date ? `Peak on ${data.peak_day.date}` : 'No peak recorded';
+    }
+
+    // Render Canvas Timeline
+    drawTimelineCanvas(data.daily_trends, isDark);
+
+    // Render Top Sources Bar List
+    const sourcesContainer = document.getElementById('sources-bars-list');
+    if (sourcesContainer) {
+      const topSrcs = data.top_sources || [];
+      if (topSrcs.length === 0) {
+        sourcesContainer.innerHTML = '<div class="empty-hint" style="padding: 20px;">No source data in this timeframe.</div>';
+      } else {
+        const maxSrcCount = Math.max(...topSrcs.map(s => s.count), 1);
+        sourcesContainer.innerHTML = topSrcs.map(src => {
+          const pct = Math.max(8, Math.round((src.count / maxSrcCount) * 100));
+          return `
+            <div class="source-bar-item">
+              <div class="source-bar-info">
+                <span class="source-bar-name" title="${escapeHtml(src.source)}">${escapeHtml(src.source)}</span>
+                <span class="source-bar-count">${src.count} articles</span>
+              </div>
+              <div class="source-progress-track">
+                <div class="source-progress-fill" style="width: ${pct}%;"></div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
+  } catch (err) {
+    console.error('Error fetching analytics data:', err);
+  }
+}
+
+function drawTimelineCanvas(dailyTrends, isDark) {
+  const canvas = document.getElementById('timeline-chart-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  
+  canvas.width = (rect.width || 600) * dpr;
+  canvas.height = (rect.height || 260) * dpr;
+  ctx.scale(dpr, dpr);
+
+  const w = rect.width || 600;
+  const h = rect.height || 260;
+
+  ctx.clearRect(0, 0, w, h);
+
+  if (!dailyTrends || dailyTrends.length === 0) {
+    ctx.fillStyle = isDark ? '#8b949e' : '#656d76';
+    ctx.font = '14px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('No data available in this timeframe', w / 2, h / 2);
+    return;
+  }
+
+  const paddingLeft = 36;
+  const paddingRight = 20;
+  const paddingTop = 25;
+  const paddingBottom = 35;
+
+  const chartW = w - paddingLeft - paddingRight;
+  const chartH = h - paddingTop - paddingBottom;
+
+  const maxVal = Math.max(...dailyTrends.map(d => d.count), 5);
+  const ceilMax = Math.ceil(maxVal * 1.25);
+
+  // Background Gridlines
+  ctx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)';
+  ctx.lineWidth = 1;
+  ctx.fillStyle = isDark ? '#8b949e' : '#656d76';
+  ctx.font = '10px sans-serif';
+  ctx.textAlign = 'right';
+
+  const gridSteps = 4;
+  for (let i = 0; i <= gridSteps; i++) {
+    const yVal = Math.round((ceilMax / gridSteps) * i);
+    const yPos = paddingTop + chartH - (yVal / ceilMax) * chartH;
+    ctx.beginPath();
+    ctx.moveTo(paddingLeft, yPos);
+    ctx.lineTo(w - paddingRight, yPos);
+    ctx.stroke();
+    ctx.fillText(yVal, paddingLeft - 8, yPos + 3);
+  }
+
+  // Calculate points
+  const points = dailyTrends.map((d, idx) => {
+    const x = paddingLeft + (idx / Math.max(dailyTrends.length - 1, 1)) * chartW;
+    const y = paddingTop + chartH - (d.count / ceilMax) * chartH;
+    return { x, y, count: d.count, date: d.date };
+  });
+
+  // Draw Area Gradient Fill
+  const gradient = ctx.createLinearGradient(0, paddingTop, 0, paddingTop + chartH);
+  if (isDark) {
+    gradient.addColorStop(0, 'rgba(47, 129, 247, 0.4)');
+    gradient.addColorStop(1, 'rgba(47, 129, 247, 0.0)');
+  } else {
+    gradient.addColorStop(0, 'rgba(9, 105, 218, 0.35)');
+    gradient.addColorStop(1, 'rgba(9, 105, 218, 0.02)');
+  }
+
+  ctx.beginPath();
+  ctx.moveTo(points[0].x, paddingTop + chartH);
+  ctx.lineTo(points[0].x, points[0].y);
+  for (let i = 1; i < points.length; i++) {
+    const prev = points[i - 1];
+    const curr = points[i];
+    const cpX = (prev.x + curr.x) / 2;
+    ctx.bezierCurveTo(cpX, prev.y, cpX, curr.y, curr.x, curr.y);
+  }
+  ctx.lineTo(points[points.length - 1].x, paddingTop + chartH);
+  ctx.closePath();
+  ctx.fillStyle = gradient;
+  ctx.fill();
+
+  // Draw Curved Stroke
+  ctx.beginPath();
+  ctx.moveTo(points[0].x, points[0].y);
+  for (let i = 1; i < points.length; i++) {
+    const prev = points[i - 1];
+    const curr = points[i];
+    const cpX = (prev.x + curr.x) / 2;
+    ctx.bezierCurveTo(cpX, prev.y, cpX, curr.y, curr.x, curr.y);
+  }
+  ctx.strokeStyle = isDark ? '#2f81f7' : '#0969da';
+  ctx.lineWidth = 2.5;
+  ctx.stroke();
+
+  // Draw Points & Labels along X axis
+  const labelInterval = Math.max(1, Math.floor(points.length / 6));
+
+  points.forEach((pt, idx) => {
+    if (pt.count > 0) {
+      ctx.beginPath();
+      ctx.arc(pt.x, pt.y, 3.5, 0, Math.PI * 2);
+      ctx.fillStyle = isDark ? '#58a6ff' : '#0969da';
+      ctx.fill();
+      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = isDark ? '#0d1117' : '#ffffff';
+      ctx.stroke();
+    }
+
+    // X-axis date labels
+    if (idx % labelInterval === 0 || idx === points.length - 1) {
+      ctx.fillStyle = isDark ? '#8b949e' : '#656d76';
+      ctx.font = '10px sans-serif';
+      ctx.textAlign = 'center';
+      const parts = pt.date.split('-');
+      const shortDate = `${parts[1]}/${parts[2]}`;
+      ctx.fillText(shortDate, pt.x, paddingTop + chartH + 16);
     }
   });
 }

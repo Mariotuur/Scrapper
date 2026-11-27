@@ -304,6 +304,50 @@ def clear_links_file_route():
     return jsonify({"status": "ok", "message": "news_links.txt cleared"})
 
 
+# ==================== TOPIC TREND ANALYTICS & GRAPHICS ====================
+
+@app.route("/api/analytics/data", methods=["GET"])
+def get_analytics_data_route():
+    """Returns aggregated topic volume trends, daily velocity, and media sources."""
+    keyword = request.args.get("keyword")
+    try:
+        days = int(request.args.get("days", "30"))
+    except Exception:
+        days = 30
+    data = database.get_analytics_data(keyword=keyword, days=days)
+    return jsonify(data)
+
+
+@app.route("/api/analytics/chart.png", methods=["GET"])
+def get_analytics_chart_route():
+    """Generates and serves a publication-ready PNG graphic showing news momentum."""
+    import chart_generator
+
+    keyword = request.args.get("keyword")
+    try:
+        days = int(request.args.get("days", "30"))
+    except Exception:
+        days = 30
+    theme = request.args.get("theme", "dark")
+    download = request.args.get("download", "false").lower() == "true"
+
+    img_bytes = chart_generator.generate_topic_trend_chart(
+        keyword=keyword,
+        days=days,
+        theme=theme
+    )
+
+    clean_kw = (keyword.strip() if keyword and keyword.lower() != "all" else "all_topics").replace(" ", "_")
+    filename = f"news_trend_{clean_kw}_{days}d.png"
+
+    return send_file(
+        io.BytesIO(img_bytes),
+        mimetype="image/png",
+        as_attachment=download,
+        download_name=filename
+    )
+
+
 # ==================== SERVER-SENT EVENTS (SSE) ====================
 
 @app.route("/api/events")

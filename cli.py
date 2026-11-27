@@ -150,8 +150,25 @@ if __name__ == "__main__":
     parser.add_argument("-i", "--interval", type=int, default=5, help="Refresh interval in minutes (default: 5)")
     parser.add_argument("-r", "--region", type=str, default="en-US", help="Region and language code, e.g. en-US, es-ES")
     parser.add_argument("--no-notifications", action="store_true", help="Disable Windows desktop notifications")
+    parser.add_argument("--chart", action="store_true", help="Generate and save a publication-quality trend chart graphic as 'news_trend_report.png'")
+    parser.add_argument("--chart-days", type=int, default=30, help="Days to include in trend chart (default: 30)")
 
     args = parser.parse_args()
+
+    if args.chart:
+        database.init_db()
+        import chart_generator
+        chart_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "news_trend_report.png")
+        kw = args.keywords.split(",")[0].strip() if args.keywords else None
+        chart_generator.generate_topic_trend_chart(
+            keyword=kw,
+            days=args.chart_days,
+            output_path=chart_file
+        )
+        print(Fore.GREEN + f"\n[✓] Topic trend graphic successfully generated and saved to:")
+        print(Fore.CYAN + f"    {chart_file}\n")
+        sys.exit(0)
+
     run_cli_scanner(
         keywords_arg=args.keywords,
         websites_arg=args.websites,

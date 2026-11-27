@@ -59,6 +59,16 @@
           <span>Links File</span>
         </button>
 
+        <!-- Topic Trends & Analytics Button -->
+        <button id="btn-open-analytics" class="btn btn-secondary" title="View topic trend graphics and print media coverage report">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          <span>📊 Trends & Graphic</span>
+        </button>
+
         <!-- Settings Button -->
         <button id="btn-open-settings" class="btn btn-icon" title="Settings">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -391,6 +401,134 @@
       <div class="modal-footer">
         <button class="btn btn-secondary" id="btn-cancel-delete-all">Cancel</button>
         <button class="btn btn-danger" id="btn-confirm-delete-all">Delete All News</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Topic Trends & Media Coverage Graphic Modal -->
+  <div class="modal-backdrop" id="modal-analytics">
+    <div class="modal-dialog modal-analytics-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>📈 Topic Media Trend & Coverage Report</h3>
+          <p class="modal-subtitle">Demonstrates that your chosen topic is actively discussed and covered in news</p>
+        </div>
+        <div class="analytics-header-actions">
+          <button id="btn-print-report" class="btn btn-primary" title="Print report or save as PDF">
+            🖨️ Print / Save PDF
+          </button>
+          <a id="btn-download-chart-png" class="btn btn-accent" href="/api/analytics/chart.png?download=true" download="news_trend_report.png" title="Download high-resolution graphic for presentations">
+            📥 Download Graphic (PNG)
+          </a>
+          <button class="btn-close-modal" id="btn-close-analytics">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body analytics-modal-body">
+        
+        <!-- Controls Bar: Topic & Timeframe -->
+        <div class="analytics-controls-bar">
+          <div class="control-group">
+            <label for="analytics-topic-select">Selected Topic:</label>
+            <select id="analytics-topic-select" class="select-input">
+              <option value="all">All Topics (Aggregated)</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label for="analytics-days-select">Timeframe:</label>
+            <select id="analytics-days-select" class="select-input">
+              <option value="7">Last 7 days</option>
+              <option value="14">Last 14 days</option>
+              <option value="30" selected>Last 30 days</option>
+              <option value="60">Last 60 days</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label for="analytics-theme-select">Graphic Style:</label>
+            <select id="analytics-theme-select" class="select-input">
+              <option value="dark" selected>Modern Dark</option>
+              <option value="light">Clean Paper (White)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Printable Executive Report Section -->
+        <div id="printable-analytics-report" class="analytics-report-container">
+          
+          <!-- Report Header (Visible in UI and Print) -->
+          <div class="report-header-banner">
+            <div>
+              <h2 id="report-topic-title" class="report-main-title">Media Coverage Analysis: All Topics</h2>
+              <p id="report-date-window" class="report-date-window">Analysis period: Last 30 days</p>
+            </div>
+            <div class="report-badge-status">
+              <span class="status-indicator-dot"></span>
+              <span>Active Media Interest Verified</span>
+            </div>
+          </div>
+
+          <!-- KPI Summary Cards -->
+          <div class="analytics-kpis-grid">
+            <div class="kpi-card">
+              <span class="kpi-label">TOTAL NEWS ARTICLES</span>
+              <span class="kpi-value highlight-blue" id="kpi-total-news">0</span>
+              <span class="kpi-hint">Articles detected in timeframe</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">PUBLICATION VELOCITY</span>
+              <span class="kpi-value highlight-green" id="kpi-daily-velocity">0/day</span>
+              <span class="kpi-hint">Average news items per day</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">DISTINCT MEDIA OUTLETS</span>
+              <span class="kpi-value highlight-purple" id="kpi-sources-count">0</span>
+              <span class="kpi-hint">Independent publishers reporting</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">HIGHEST PEAK DAY</span>
+              <span class="kpi-value highlight-orange" id="kpi-peak-day">0 news</span>
+              <span class="kpi-hint" id="kpi-peak-date">Peak news volume day</span>
+            </div>
+          </div>
+
+          <!-- Charts Row: Timeline and Sources -->
+          <div class="analytics-charts-grid">
+            <div class="chart-box">
+              <div class="chart-header">
+                <h4>📅 Daily Coverage Timeline (News Momentum)</h4>
+                <span class="chart-sub">Volume of news articles published day by day</span>
+              </div>
+              <div class="chart-canvas-wrapper">
+                <canvas id="timeline-chart-canvas" width="600" height="260"></canvas>
+              </div>
+            </div>
+
+            <div class="chart-box">
+              <div class="chart-header">
+                <h4>🌐 Top Reporting Media Outlets</h4>
+                <span class="chart-sub">Distribution of news sources covering this topic</span>
+              </div>
+              <div id="sources-bars-list" class="sources-bars-container">
+                <!-- Dynamically generated bars -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Server High-Res Graphic Embed / Preview -->
+          <div class="chart-graphic-card">
+            <div class="chart-header">
+              <h4>🖼️ High-Resolution Graphic (Ready to Copy / Save)</h4>
+              <span class="chart-sub">Generated 150 DPI graphic ready to copy into slides, PowerPoint, or Word</span>
+            </div>
+            <div class="graphic-preview-wrapper">
+              <img id="analytics-graphic-img" src="/api/analytics/chart.png" alt="Topic Trend Graphic">
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </div>

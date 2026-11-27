@@ -715,5 +715,99 @@ def get_recent_logs(limit: int = 20) -> List[Dict[str, Any]]:
         return [dict(r) for r in rows]
 
 
+# ==================== TOPIC TREND ANALYTICS ====================
+
+def get_analytics_data(keyword: Optional[str] = None, days: int = 30) -> Dict[str, Any]:
+    """
+    Computes news volume trends over time, top sources, and key metrics
+    for proving the media importance and momentum of a topic.
+    """
+    if days <= 0:
+        days = 30
+
+    now = datetime.now(timezone.utc)
+    cutoff_date = (now - timedelta(days=days)).strftime("%Y-%m-%d")
+
+    with get_db_connection() as conn:
+        cursor = conn.cursor()
+
+        # Build WHERE clause
+        where_clauses = ["COALESCE(NULLIF(SUBSTR(published_at, 1, 10), ''), SUBSTR(discovered_at, 1, 10)) >= ?"]
+        params = [cutoff_date]
+
+        if keyword and keyword.lower() != "all":
+            where_clauses.append("LOWER(keyword_matched) = LOWER(?)")
+            params.append(keyword.strip())
+
+        where_sql = "WHERE " + " AND ".join(where_clauses)
+
+        # 1. Total articles count in period
+        cursor.execute(f"SELECT COUNT(*) FROM articles {where_sql}", params)
+        total_articles = cursor.fetchone()[0]
+
+        # 2. Daily counts
+        cursor.execute(f"""
+            SELECT 
+                COALESCE(NULLIF(SUBSTR(published_at, 1, 10), ''), SUBSTR(discovered_at, 1, 10)) as pub_day,
+                COUNT(*) as count
+            FROM articles
+            {where_sql}
+            GROUP BY pub_day
+            ORDER BY pub_day ASC
+        """, params)
+        raw_daily = {row["pub_day"]: row["count"] for row in cursor.fetchall()}
+
+        # Fill all dates in range
+        daily_trends = []
+        peak_day = {"date": None, "count": 0}
+        for i in reversed(range(days + 1)):
+            day_str = (now - timedelta(days=i)).strftime("%Y-%m-%d")
+            cnt = raw_daily.get(day_str, 0)
+            daily_trends.append({"date": day_str, "count": cnt})
+            if cnt > peak_day["count"]:
+                peak_day = {"date": day_str, "count": cnt}
+
+        # 3. Top sources
+        cursor.execute(f"""
+            SELECT source, COUNT(*) as count
+            FROM articles
+            {where_sql}
+            GROUP BY source
+            ORDER BY count DESC
+            LIMIT 10
+        """, params)
+        top_sources = [{"source": row["source"], "count": row["count"]} for row in cursor.fetchall()]
+
+        # 4. Keyword breakdown
+        cursor.execute(f"""
+            SELECT keyword_matched, COUNT(*) as count
+            FROM articles
+            {where_sql}
+            GROUP BY keyword_matched
+            ORDER BY count DESC
+        """, params)
+        keywords_breakdown = [{"keyword": row["keyword_matched"], "count": row["count"]} for row in cursor.fetchall()]
+
+        # Distinct sources count
+        cursor.execute(f"SELECT COUNT(DISTINCT source) FROM articles {where_sql}", params)
+        distinct_sources = cursor.fetchone()[0]
+
+        avg_per_day = round(total_articles / max(days, 1), 1)
+
+        return {
+            "keyword": keyword or "all",
+            "days": days,
+            "total_articles": total_articles,
+            "distinct_sources": distinct_sources,
+            "avg_per_day": avg_per_day,
+            "peak_day": peak_day,
+            "start_date": cutoff_date,
+            "end_date": now.strftime("%Y-%m-%d"),
+            "daily_trends": daily_trends,
+            "top_sources": top_sources,
+            "keywords_breakdown": keywords_breakdown
+        }
+
+
 # Initialize on import
 init_db()
