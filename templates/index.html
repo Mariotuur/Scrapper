@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Monitor - Internet Keyword & Website Tracker</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- App Container -->
+  <div class="app-layout">
+    
+    <!-- Top Header -->
+    <header class="top-nav">
+      <div class="nav-brand">
+        <div class="brand-icon">📰</div>
+        <div class="brand-text">
+          <h1>News Monitor</h1>
+          <span class="subtitle">Internet Keyword & Website Tracker</span>
+        </div>
+      </div>
+
+      <div class="nav-controls">
+        <!-- Live Status Pill -->
+        <div class="status-pill" id="status-pill">
+          <span class="pulse-dot"></span>
+          <span id="status-text">Connecting...</span>
+        </div>
+
+        <!-- Timer Pill -->
+        <div class="timer-pill" id="timer-pill" title="Countdown to next automatic internet scan">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span id="countdown-display">--:--</span>
+        </div>
+
+        <!-- Scan Now Button -->
+        <button id="btn-scan-now" class="btn btn-primary" title="Trigger an immediate scan">
+          <svg class="icon spin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+          </svg>
+          <span id="scan-btn-label">Scan Now</span>
+        </button>
+
+        <!-- Links File Button -->
+        <button id="btn-open-links" class="btn btn-secondary" title="View news_links.txt">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Links File</span>
+        </button>
+
+        <!-- Settings Button -->
+        <button id="btn-open-settings" class="btn btn-icon" title="Settings">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-row">
+      <div class="stat-card">
+        <span class="stat-title">Active Keywords</span>
+        <span class="stat-value" id="stat-active-keywords">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-title">Website Filter</span>
+        <div class="stat-group">
+          <span class="stat-value" id="stat-active-websites">All</span>
+          <span class="stat-badge" id="stat-website-mode">Unrestricted</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-title">Total Articles</span>
+        <span class="stat-value" id="stat-total-articles">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-title">Unread</span>
+        <span class="stat-value highlight" id="stat-unread-articles">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-title">Bookmarked</span>
+        <span class="stat-value" id="stat-bookmarked-articles">0</span>
+      </div>
+    </section>
+
+    <!-- Main Content Area: Two Columns (Left: Filters & Watchlists, Right: News Feed) -->
+    <main class="dashboard-grid">
+      
+      <!-- Left Panel: Keywords & Website Filter Manager -->
+      <aside class="side-panel">
+        
+        <!-- Keyword Management Card -->
+        <div class="card watchlist-card">
+          <div class="card-header">
+            <div class="card-title-group">
+              <span class="card-icon">🎯</span>
+              <h2>Keywords to Monitor</h2>
+            </div>
+            <span class="count-pill" id="keyword-count-pill">0</span>
+          </div>
+
+          <form id="form-add-keyword" class="input-form">
+            <input 
+              type="text" 
+              id="input-keyword" 
+              placeholder="e.g. OpenAI, 'quantum computing', AI..." 
+              autocomplete="off"
+              required
+            >
+            <button type="submit" class="btn btn-accent">Add</button>
+          </form>
+          <p class="form-hint">Tip: Comma-separate to add multiple words at once</p>
+
+          <div class="tags-container" id="keywords-list">
+            <div class="empty-hint">No keywords added yet. Add one above!</div>
+          </div>
+        </div>
+
+        <!-- Target Websites / Domain Filter Card -->
+        <div class="card watchlist-card">
+          <div class="card-header">
+            <div class="card-title-group">
+              <span class="card-icon">🌐</span>
+              <h2>Filter by Websites</h2>
+            </div>
+            <span class="count-pill" id="website-count-pill">All</span>
+          </div>
+
+          <div class="filter-status-banner" id="website-filter-banner">
+            <span class="banner-icon">ℹ️</span>
+            <span id="website-filter-status-text">Searching all internet sources. Add website names below to restrict search!</span>
+          </div>
+
+          <form id="form-add-website" class="input-form">
+            <input 
+              type="text" 
+              id="input-website" 
+              placeholder="e.g. elpais.com, bbc.com, Reuters..." 
+              autocomplete="off"
+              required
+            >
+            <button type="submit" class="btn btn-accent">Filter</button>
+          </form>
+          <p class="form-hint">Enter domain (e.g. <code>elpais.com</code>) or name (e.g. <code>BBC</code>, <code>Reuters</code>)</p>
+
+          <div class="tags-container" id="websites-list">
+            <div class="empty-hint">No website filter active (searches entire web).</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- Right Panel: News Articles Feed -->
+      <section class="feed-section">
+        
+        <!-- Feed Filter & Search Bar -->
+        <div class="feed-toolbar">
+          <div class="toolbar-tabs">
+            <button class="tab-btn active" data-filter="all">All News</button>
+            <button class="tab-btn" data-filter="unread">Unread <span class="tab-badge" id="tab-unread-count">0</span></button>
+            <button class="tab-btn" data-filter="bookmarked">Bookmarked ⭐</button>
+          </div>
+
+          <div class="toolbar-filters">
+            <!-- Keyword filter dropdown -->
+            <select id="select-filter-keyword" class="select-input">
+              <option value="all">All Keywords</option>
+            </select>
+
+            <!-- Website filter dropdown -->
+            <select id="select-filter-website" class="select-input">
+              <option value="all">All Sources / Webs</option>
+            </select>
+
+            <!-- Instant search box -->
+            <div class="search-box">
+              <input type="text" id="input-search-feed" placeholder="Search headlines & snippets...">
+              <button id="btn-clear-search" class="btn-clear" title="Clear search">&times;</button>
+            </div>
+          </div>
+
+          <div class="toolbar-actions">
+            <button id="btn-mark-all-read" class="btn btn-subtle" title="Mark all displayed articles as read">
+              ✓ Mark All Read
+            </button>
+            <div class="dropdown">
+              <button id="btn-export-dropdown" class="btn btn-subtle">
+                Export ▾
+              </button>
+              <div class="dropdown-menu" id="export-menu">
+                <a href="#" id="export-csv">Export as CSV</a>
+                <a href="#" id="export-json">Export as JSON</a>
+              </div>
+            </div>
+            <button id="btn-clear-history" class="btn btn-subtle btn-danger-hover" title="Clear articles history">
+              Clear History
+            </button>
+          </div>
+        </div>
+
+        <!-- Articles Stream Container -->
+        <div class="articles-container" id="articles-feed">
+          <div class="loading-state">
+            <div class="spinner"></div>
+            <p>Loading detected articles...</p>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Settings Modal -->
+  <div class="modal-backdrop" id="modal-settings">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>⚙️ Monitor Settings</h3>
+        <button class="btn-close-modal" id="btn-close-settings">&times;</button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="setting-item">
+          <div class="setting-text">
+            <label for="setting-interval">Auto-Refresh Interval</label>
+            <span>How often the monitor searches the internet in the background.</span>
+          </div>
+          <select id="setting-interval" class="select-input">
+            <option value="1">1 minute</option>
+            <option value="5">5 minutes</option>
+            <option value="10">10 minutes</option>
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="60">60 minutes</option>
+          </select>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-text">
+            <label for="setting-region">Region & Language</label>
+            <span>Tailor Google News headlines to your locale.</span>
+          </div>
+          <select id="setting-region" class="select-input">
+            <option value="en-US">English (United States)</option>
+            <option value="en-GB">English (United Kingdom)</option>
+            <option value="es-ES">Spanish (Spain / España)</option>
+            <option value="es-MX">Spanish (Mexico)</option>
+            <option value="fr-FR">French (France)</option>
+            <option value="de-DE">German (Germany)</option>
+            <option value="it-IT">Italian (Italy)</option>
+          </select>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-text">
+            <label for="setting-notifications">Windows Desktop Notifications</label>
+            <span>Show system tray toast notifications when new articles arrive.</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="setting-notifications">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-text">
+            <label for="setting-sound">Audio Chime Alert</label>
+            <span>Play a subtle chime sound when new news is detected.</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="setting-sound">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-text">
+            <label for="setting-reddit">Include Reddit Discussions</label>
+            <span>Also search recent Reddit submissions matching your keywords.</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="setting-reddit">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-text">
+            <label for="setting-hn">Include Hacker News</label>
+            <span>Also search tech discussions on Hacker News.</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="setting-hn">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button id="btn-save-settings" class="btn btn-primary">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Links File Modal -->
+  <div class="modal-backdrop" id="modal-links">
+    <div class="modal-dialog modal-large">
+      <div class="modal-header">
+        <h3>📄 Instant Detected Links (<code>news_links.txt</code>)</h3>
+        <button class="btn-close-modal" id="btn-close-links">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="links-modal-desc">
+          Newly discovered news links are automatically written here in real time.
+        </p>
+        <pre id="links-file-content" class="code-preview">Loading links...</pre>
+      </div>
+      <div class="modal-footer">
+        <a id="btn-download-links" class="btn btn-secondary" href="/api/links-file?download=true">
+          Download File
+        </a>
+        <button id="btn-clear-links" class="btn btn-subtle btn-danger-hover">
+          Clear Links File
+        </button>
+        <button id="btn-refresh-links" class="btn btn-primary">
+          Refresh View
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="/static/app.js"></script>
+</body>
+</html>

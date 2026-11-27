@@ -14,6 +14,7 @@ from datetime import datetime
 
 import database
 from scheduler import scheduler
+import frontend_assets
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
 
@@ -21,6 +22,7 @@ app = Flask(__name__, static_folder="static", template_folder="templates")
 @app.route("/")
 def index():
     """Main dashboard page."""
+    frontend_assets.ensure_frontend_files()
     return render_template("index.html")
 
 
