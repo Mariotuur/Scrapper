@@ -230,6 +230,13 @@ def update_settings():
     """Updates settings."""
     data = request.get_json() or {}
     database.update_settings(data)
+    if "max_article_age_days" in data:
+        try:
+            days = int(data["max_article_age_days"])
+            if days > 0:
+                database.purge_old_articles(max_age_days=days, preserve_bookmarks=True)
+        except Exception:
+            pass
     return jsonify({"status": "ok", "settings": database.get_settings()})
 
 

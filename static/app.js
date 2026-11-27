@@ -797,6 +797,7 @@ function initEventHandlers() {
   document.getElementById('btn-save-settings').addEventListener('click', async () => {
     const updated = {
       refresh_interval_minutes: document.getElementById('setting-interval').value,
+      max_article_age_days: document.getElementById('setting-max-age').value,
       region_language: document.getElementById('setting-region').value,
       enable_windows_notifications: document.getElementById('setting-notifications').checked ? 'true' : 'false',
       enable_sound: document.getElementById('setting-sound').checked ? 'true' : 'false',
@@ -810,6 +811,7 @@ function initEventHandlers() {
     });
     state.settings = updated;
     settingsModal.classList.remove('open');
+    await fetchArticles();
     await fetchStatus();
   });
 
@@ -855,6 +857,7 @@ async function refreshLinksPreview() {
 function populateSettingsModal() {
   const s = state.settings;
   if (s.refresh_interval_minutes) document.getElementById('setting-interval').value = s.refresh_interval_minutes;
+  if (s.max_article_age_days) document.getElementById('setting-max-age').value = s.max_article_age_days;
   if (s.region_language) document.getElementById('setting-region').value = s.region_language;
   document.getElementById('setting-notifications').checked = s.enable_windows_notifications !== 'false';
   document.getElementById('setting-sound').checked = s.enable_sound !== 'false';

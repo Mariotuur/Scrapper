@@ -11,7 +11,7 @@ import re
 import html
 import unicodedata
 import email.utils
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Any, Optional
 import feedparser
 
@@ -40,6 +40,37 @@ def parse_rfc822_date(date_str: str) -> str:
             return datetime.fromisoformat(date_str.replace("Z", "+00:00")).isoformat()
         except Exception:
             return datetime.now().isoformat()
+
+
+def is_within_max_age(date_str: str, max_age_days: int = 30) -> bool:
+    """
+    Checks if an article's published date is within the allowed maximum age (e.g. 30 days).
+    Returns True if the article is within the age limit (or if max_age_days is 0/disabled).
+    Returns False if the article is older than max_age_days.
+    """
+    if not date_str or max_age_days <= 0:
+        return True
+    try:
+        clean_str = date_str.replace("Z", "+00:00")
+        try:
+            dt = datetime.fromisoformat(clean_str)
+        except Exception:
+            dt = email.utils.parsedate_to_datetime(date_str)
+
+        now = datetime.now(timezone.utc)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        else:
+            dt = dt.astimezone(timezone.utc)
+
+        diff = now - dt
+        # If older than max_age_days
+        if diff.total_seconds() > max_age_days * 86400:
+            return False
+        return True
+    except Exception:
+        # If date cannot be parsed, allow it
+        return True
 
 
 def extract_keywords_from_query(query: str) -> List[str]:
@@ -131,16 +162,23 @@ def matches_website_filter(article: Dict[str, Any], websites: Optional[List[str]
     return False
 
 
-def build_google_news_query(keyword: str, websites: Optional[List[str]] = None) -> str:
+def build_google_news_query(keyword: str, websites: Optional[List[str]] = None, max_age_days: int = 30) -> str:
     """
-    Constructs a Google News search query with website/source domain restrictions.
+    Constructs a Google News search query with website/source domain restrictions
+    and optional date recency filter (e.g. when:30d).
     """
     cleaned_kw = keyword.strip()
+    time_filter = f"when:{max_age_days}d" if max_age_days > 0 else ""
+
     if not websites:
+        if time_filter:
+            return f"{cleaned_kw} {time_filter}"
         return cleaned_kw
 
     clean_webs = [clean_website_name(w) for w in websites if w and w.strip()]
     if not clean_webs:
+        if time_filter:
+            return f"{cleaned_kw} {time_filter}"
         return cleaned_kw
 
     site_terms = []
@@ -152,16 +190,26 @@ def build_google_news_query(keyword: str, websites: Optional[List[str]] = None) 
             site_terms.append(f'(site:{w_nospace}.com OR site:{w_nospace}.es OR "{w}")')
 
     if len(site_terms) == 1:
-        return f"{cleaned_kw} {site_terms[0]}"
+        base = f"{cleaned_kw} {site_terms[0]}"
     else:
         combined = " OR ".join(site_terms)
-        return f"{cleaned_kw} ({combined})"
+        base = f"{cleaned_kw} ({combined})"
+
+    if time_filter:
+        return f"{base} {time_filter}"
+    return base
 
 
 class NewsScanner:
-    def __init__(self, region_language: str = "en-US", websites: Optional[List[str]] = None):
+    def __init__(
+        self,
+        region_language: str = "en-US",
+        websites: Optional[List[str]] = None,
+        max_age_days: int = 30
+    ):
         self.region_language = region_language
         self.websites = [w.strip() for w in websites if w and w.strip()] if websites else []
+        self.max_age_days = max_age_days
 
     def _parse_google_entries(self, entries, keyword: str, target_webs: Optional[List[str]] = None) -> List[Dict[str, Any]]:
         """Parses and filters Google News feed entries."""
@@ -171,6 +219,10 @@ class NewsScanner:
             link = entry.get("link", "")
             pub_date_str = entry.get("published", "")
             published_at = parse_rfc822_date(pub_date_str)
+
+            # Filter out articles older than the specified max age limit (e.g. 30 days)
+            if not is_within_max_age(published_at, self.max_age_days):
+                continue
 
             # Extract source and clean headline
             source_title = getattr(entry, "source", {}).get("title", "")
@@ -224,8 +276,8 @@ class NewsScanner:
         lang = parts[0] if len(parts) > 0 else "en"
         country = parts[1] if len(parts) > 1 else "US"
 
-        # 1. Primary targeted query (with site filter if specified)
-        search_query = build_google_news_query(keyword, target_webs)
+        # 1. Primary targeted query (with site filter and time limit if specified)
+        search_query = build_google_news_query(keyword, target_webs, max_age_days=self.max_age_days)
         encoded_query = urllib.parse.quote(search_query)
         rss_url = f"https://news.google.com/rss/search?q={encoded_query}&hl={lang}-{country}&gl={country}&ceid={country}:{lang}"
 
@@ -239,9 +291,11 @@ class NewsScanner:
             articles = self._parse_google_entries(feed.entries[:max_results], keyword, target_webs)
 
             # 2. Fallback: if website filter was active but targeted query yielded 0 results,
-            # query Google News with just the keyword and post-filter by source/url to catch any edge cases
+            # query Google News with keyword + time filter and post-filter by source/url to catch any edge cases
             if not articles and target_webs:
-                plain_encoded = urllib.parse.quote(keyword)
+                time_filter = f" when:{self.max_age_days}d" if self.max_age_days > 0 else ""
+                fallback_query = f"{keyword}{time_filter}"
+                plain_encoded = urllib.parse.quote(fallback_query)
                 fallback_url = f"https://news.google.com/rss/search?q={plain_encoded}&hl={lang}-{country}&gl={country}&ceid={country}:{lang}"
                 req_fb = urllib.request.Request(fallback_url, headers={"User-Agent": USER_AGENT})
                 with urllib.request.urlopen(req_fb, timeout=12) as response_fb:
@@ -283,6 +337,10 @@ class NewsScanner:
                 title = clean_html(entry.get("title", ""))
                 link = entry.get("link", "")
                 published_at = parse_rfc822_date(entry.get("published", ""))
+
+                if not is_within_max_age(published_at, self.max_age_days):
+                    continue
+
                 snippet = clean_html(entry.get("summary", ""))[:300]
 
                 art = {
@@ -324,7 +382,12 @@ class NewsScanner:
 
         articles = []
         encoded = urllib.parse.quote(keyword)
-        api_url = f"https://hn.algolia.com/api/v1/search_by_date?query={encoded}&tags=story&hitsPerPage={max_results}"
+        cutoff_param = ""
+        if self.max_age_days > 0:
+            min_ts = int((datetime.now(timezone.utc) - timedelta(days=self.max_age_days)).timestamp())
+            cutoff_param = f"&numericFilters=created_at_i>{min_ts}"
+
+        api_url = f"https://hn.algolia.com/api/v1/search_by_date?query={encoded}&tags=story{cutoff_param}&hitsPerPage={max_results}"
 
         try:
             req = urllib.request.Request(api_url, headers={"User-Agent": USER_AGENT})
@@ -336,6 +399,11 @@ class NewsScanner:
                 title = hit.get("title", "")
                 link = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
                 created_at = hit.get("created_at", "")
+                pub_date = parse_rfc822_date(created_at)
+
+                if not is_within_max_age(pub_date, self.max_age_days):
+                    continue
+
                 points = hit.get("points") or 0
                 author = hit.get("author", "anonymous")
 
@@ -346,7 +414,7 @@ class NewsScanner:
                     "source": "Hacker News",
                     "source_url": "https://news.ycombinator.com",
                     "snippet": f"Score: {points} points | Author: {author} | Hacker News discussion",
-                    "published_at": parse_rfc822_date(created_at)
+                    "published_at": pub_date
                 }
                 if matches_website_filter(art, target_webs):
                     articles.append(art)

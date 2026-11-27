@@ -125,6 +125,14 @@ class NewsScheduler:
         include_hn = settings.get("enable_hackernews", "false").lower() == "true"
         region_lang = settings.get("region_language", "en-US")
         enable_notif = settings.get("enable_windows_notifications", "true").lower() == "true"
+        try:
+            max_age_days = int(settings.get("max_article_age_days", "30"))
+        except Exception:
+            max_age_days = 30
+
+        # Purge articles older than max_age_days to keep feed fresh (preserves saved bookmarks)
+        if max_age_days > 0:
+            database.purge_old_articles(max_age_days=max_age_days, preserve_bookmarks=True)
 
         active_keywords = database.get_keywords(active_only=True)
         kw_list = [k["keyword"] for k in active_keywords]
@@ -150,7 +158,11 @@ class NewsScheduler:
             })
             return {"status": "empty", "message": "No active keywords tracked", "new_count": 0}
 
-        scanner = NewsScanner(region_language=region_lang, websites=web_list)
+        scanner = NewsScanner(
+            region_language=region_lang,
+            websites=web_list,
+            max_age_days=max_age_days
+        )
         all_new_articles = []
         total_discovered = 0
 

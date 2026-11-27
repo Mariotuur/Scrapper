@@ -9,11 +9,41 @@ import os
 import json
 import hashlib
 import re
-from datetime import datetime
+import email.utils
+from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Any, Optional
 
 DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "news_monitor.db")
 LINKS_FILE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "news_links.txt")
+
+
+def is_within_max_age(date_str: str, max_age_days: int = 30) -> bool:
+    """
+    Checks if an article's published date is within the allowed maximum age (e.g. 30 days).
+    Returns True if the article is within the age limit (or if max_age_days is 0/disabled).
+    Returns False if the article is older than max_age_days.
+    """
+    if not date_str or max_age_days <= 0:
+        return True
+    try:
+        clean_str = date_str.replace("Z", "+00:00")
+        try:
+            dt = datetime.fromisoformat(clean_str)
+        except Exception:
+            dt = email.utils.parsedate_to_datetime(date_str)
+
+        now = datetime.now(timezone.utc)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        else:
+            dt = dt.astimezone(timezone.utc)
+
+        diff = now - dt
+        if diff.total_seconds() > max_age_days * 86400:
+            return False
+        return True
+    except Exception:
+        return True
 
 
 def get_db_connection() -> sqlite3.Connection:
@@ -180,6 +210,7 @@ def init_db():
         # Default settings if not already set
         default_settings = {
             "refresh_interval_minutes": "10",
+            "max_article_age_days": "30",
             "enable_windows_notifications": "true",
             "enable_sound": "true",
             "enable_reddit": "false",
@@ -196,6 +227,9 @@ def init_db():
             )
 
         conn.commit()
+
+    # Clean up any outdated articles older than max_age_days (preserving user bookmarks)
+    purge_old_articles(30, preserve_bookmarks=True)
 
 
 # ==================== KEYWORD OPERATIONS ====================
@@ -373,11 +407,17 @@ def generate_article_hash(link: str, title: str) -> str:
 def save_articles(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     Saves a batch of articles into the database.
-    Skips duplicates. Returns the list of genuinely NEW articles saved.
+    Skips duplicates and articles older than max_article_age_days (e.g. 30 days).
+    Returns the list of genuinely NEW articles saved.
     Instantly appends new article links to news_links.txt.
     """
     if not articles:
         return []
+
+    try:
+        max_age_days = int(get_setting("max_article_age_days", "30"))
+    except Exception:
+        max_age_days = 30
 
     new_articles = []
     now = datetime.now().isoformat()
@@ -385,6 +425,11 @@ def save_articles(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     with get_db_connection() as conn:
         cursor = conn.cursor()
         for art in articles:
+            # Skip articles older than the allowed max age (avoids news from years ago)
+            pub_date = art.get("published_at", "")
+            if pub_date and not is_within_max_age(pub_date, max_age_days):
+                continue
+
             guid_hash = art.get("guid_hash") or generate_article_hash(art.get("link", ""), art.get("title", ""))
             try:
                 cursor.execute("""
@@ -551,6 +596,31 @@ def clear_articles(only_unbookmarked: bool = False, keyword: Optional[str] = Non
         cursor.execute(f"DELETE FROM articles {where_sql}", params)
         conn.commit()
         return cursor.rowcount
+
+
+def purge_old_articles(max_age_days: int = 30, preserve_bookmarks: bool = True) -> int:
+    """
+    Deletes articles whose published_at date is older than max_age_days (e.g. 30 days).
+    Preserves bookmarked articles if preserve_bookmarks is True.
+    Returns number of deleted articles.
+    """
+    if max_age_days <= 0:
+        return 0
+
+    cutoff_iso = (datetime.now(timezone.utc) - timedelta(days=max_age_days)).isoformat()
+
+    with get_db_connection() as conn:
+        cursor = conn.cursor()
+        if preserve_bookmarks:
+            cursor.execute("""
+                DELETE FROM articles 
+                WHERE published_at < ? AND (is_bookmarked = 0 OR is_bookmarked IS NULL)
+            """, (cutoff_iso,))
+        else:
+            cursor.execute("DELETE FROM articles WHERE published_at < ?", (cutoff_iso,))
+        count = cursor.rowcount
+        conn.commit()
+        return count
 
 
 def get_dashboard_stats() -> Dict[str, Any]:

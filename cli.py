@@ -65,11 +65,17 @@ def run_cli_scanner(
     else:
         print(Fore.YELLOW + f"  Website Filters   : All Websites (Unfiltered internet search)")
     print(Fore.YELLOW + f"  Refresh Timer     : Every {interval_minutes} minute(s)")
+    print(Fore.YELLOW + f"  Max Article Age   : Last {database.get_setting('max_article_age_days', '30')} days")
     print(Fore.YELLOW + f"  Region / Language : {region}")
     print(Fore.YELLOW + f"  Desktop Alerts    : {'Enabled' if enable_notif else 'Disabled'}")
     print(Style.BRIGHT + Fore.CYAN + "=" * 65 + "\n")
 
-    scanner = NewsScanner(region_language=region, websites=web_names)
+    try:
+        max_age_days = int(database.get_setting("max_article_age_days", "30"))
+    except Exception:
+        max_age_days = 30
+
+    scanner = NewsScanner(region_language=region, websites=web_names, max_age_days=max_age_days)
 
     try:
         while True:
